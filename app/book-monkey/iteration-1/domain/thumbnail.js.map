@@ -1,0 +1,1 @@
+{"version":3,"file":"thumbnail.js","sourceRoot":"","sources":["thumbnail.ts"],"names":[],"mappings":";;;;;;;YAAA;gBACI,mBACS,GAAW,EACX,KAAa;oBADb,QAAG,GAAH,GAAG,CAAQ;oBACX,UAAK,GAAL,KAAK,CAAQ;gBAAI,CAAC;gBAC/B,gBAAC;YAAD,CAAC,AAJD,IAIC;YAJD,iCAIC,CAAA","sourcesContent":["export class Thumbnail {\n    constructor(\n      public url: string,\n      public title: string) { }\n}\n"]}
