@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/router', '../services/books/book-store.service', '../pipes/isbn/isbn'], function(exports_1, context_1) {
+System.register(['angular2/core', 'angular2/router', '../services/books/book-store.service', '../pipes/isbn-pipe/isbn-pipe'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', 'angular2/router', '../services/books/book-sto
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, router_1, book_store_service_1, isbn_1;
+    var core_1, router_1, book_store_service_1, isbn_pipe_1;
     var BookDetailsComponent;
     return {
         setters:[
@@ -23,8 +23,8 @@ System.register(['angular2/core', 'angular2/router', '../services/books/book-sto
             function (book_store_service_1_1) {
                 book_store_service_1 = book_store_service_1_1;
             },
-            function (isbn_1_1) {
-                isbn_1 = isbn_1_1;
+            function (isbn_pipe_1_1) {
+                isbn_pipe_1 = isbn_pipe_1_1;
             }],
         execute: function() {
             BookDetailsComponent = (function () {
@@ -42,7 +42,7 @@ System.register(['angular2/core', 'angular2/router', '../services/books/book-sto
                         selector: 'book-details',
                         templateUrl: '/app/book-monkey/iteration-5/pipes/book-details/book-details.html',
                         providers: [book_store_service_1.BookStoreService],
-                        pipes: [isbn_1.IsbnPipe]
+                        pipes: [isbn_pipe_1.IsbnPipe]
                     }), 
                     __metadata('design:paramtypes', [router_1.RouteParams, book_store_service_1.BookStoreService])
                 ], BookDetailsComponent);

@@ -22,7 +22,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 function IsbnPipe() {
                 }
                 IsbnPipe.prototype.transform = function (value, args) {
-                    if (value.length !== 10 && value.length !== 13)
+                    if (!value || value.length !== 10 && value.length !== 13)
                         return null;
                     var prefix = '';
                     if (args[0]) {
@@ -45,4 +45,4 @@ System.register(['angular2/core'], function(exports_1, context_1) {
         }
     }
 });
-//# sourceMappingURL=isbn.js.map
+//# sourceMappingURL=isbn-pipe.js.map

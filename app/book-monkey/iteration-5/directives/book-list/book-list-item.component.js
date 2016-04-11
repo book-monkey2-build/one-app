@@ -1,4 +1,4 @@
-System.register(['angular2/core', '../../domain/book', '../pipes/isbn/isbn'], function(exports_1, context_1) {
+System.register(['angular2/core', '../../domain/book', '../pipes/isbn-pipe/isbn-pipe'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', '../../domain/book', '../pipes/isbn/isbn'], fu
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, book_1, isbn_1;
+    var core_1, book_1, isbn_pipe_1;
     var BookListItem;
     return {
         setters:[
@@ -20,8 +20,8 @@ System.register(['angular2/core', '../../domain/book', '../pipes/isbn/isbn'], fu
             function (book_1_1) {
                 book_1 = book_1_1;
             },
-            function (isbn_1_1) {
-                isbn_1 = isbn_1_1;
+            function (isbn_pipe_1_1) {
+                isbn_pipe_1 = isbn_pipe_1_1;
             }],
         execute: function() {
             BookListItem = (function () {
@@ -35,7 +35,7 @@ System.register(['angular2/core', '../../domain/book', '../pipes/isbn/isbn'], fu
                     core_1.Component({
                         selector: '.book-list-item',
                         templateUrl: '/app/book-monkey/iteration-5/pipes/book-list/book-list-item.component.html',
-                        pipes: [isbn_1.IsbnPipe]
+                        pipes: [isbn_pipe_1.IsbnPipe]
                     }), 
                     __metadata('design:paramtypes', [])
                 ], BookListItem);
