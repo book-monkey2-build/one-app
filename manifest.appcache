@@ -1,6 +1,6 @@
 CACHE MANIFEST
 # sw.bundle: ng-cli
-# sw.version: f16f648530c674e8291af82516872d2cbf907d00
+# sw.version: fac8a33ccf324fcad15d8517ee24385e43bccb15
 # sw.file.hash: e639420ca84e2a2610fcf4cb7002a888767cdf69
 /app.js
 # sw.file.hash: 9ea0edfd5fb62c2ca7c1f12de7cc3d555a3d1abf
@@ -439,17 +439,19 @@ CACHE MANIFEST
 /app/samples.js
 # sw.file.hash: 872dbd06208346f771f93921f809e511b105c2cf
 /app/samples.js.map
-# sw.file.hash: 1b2cd430f18dc099a4dbfc14ca1b55ac921f7c47
+# sw.file.hash: 091cfa4ea10e279244edeb2fd4c4a171db56318a
 /app/snippets/app.ts.snippet
 # sw.file.hash: abad8c925a1857f78e7e64c841165d0153d29b17
 /app/snippets/index.html
 # sw.file.hash: 84161b857f5c547e3699ddfbffc6d8d737542e01
 /favicon.ico
+# sw.file.hash: 980242aafb28307dcf9cb58b212dbd545352ff93
+/forkme_light_background.png
 # sw.file.hash: 6bdf7a1860919442df775f164a41236b0952bb8d
 /images/book-thumbnail.png
 # sw.file.hash: 2528ceb0efe4ea932bffb6f5bb9100932c617556
 /images/monkey-thinking.png
-# sw.file.hash: 3ec6e7c8ea2cb37f676430a77923205495afeee3
+# sw.file.hash: 5c4d09de01e999bfca2741ae8e16edcead862405
 /index.html
 # sw.file.hash: e5e036b749a151842a579c1f964e7e57e9abd09d
 /tsconfig.json
