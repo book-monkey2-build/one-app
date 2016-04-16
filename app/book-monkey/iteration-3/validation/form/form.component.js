@@ -49,8 +49,9 @@ var FormComponent = (function () {
     };
     FormComponent = __decorate([
         core_1.Component({
-            selector: 'it3-book-form',
-            templateUrl: 'app/book-monkey/iteration-3/validation/form/form.component.html'
+            selector: 'book-form',
+            moduleId: module.id,
+            templateUrl: 'form.component.html'
         }), 
         __metadata('design:paramtypes', [common_1.FormBuilder])
     ], FormComponent);

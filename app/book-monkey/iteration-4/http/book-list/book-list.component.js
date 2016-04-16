@@ -10,7 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('angular2/core');
 var router_1 = require('angular2/router');
-var book_list_item_component_1 = require('./book-list-item.component');
+var book_list_item_component_1 = require('../book-list-item/book-list-item.component');
 var book_store_service_1 = require('../services/books/book-store.service');
 var BookListComponent = (function () {
     function BookListComponent(bs) {
@@ -24,7 +24,8 @@ var BookListComponent = (function () {
         core_1.Component({
             selector: 'book-list',
             directives: [book_list_item_component_1.BookListItem, router_1.RouterLink],
-            templateUrl: '/app/book-monkey/iteration-4/http/book-list/book-list.component.html',
+            moduleId: module.id,
+            templateUrl: 'book-list.component.html',
             providers: [book_store_service_1.BookStoreService]
         }), 
         __metadata('design:paramtypes', [book_store_service_1.BookStoreService])
