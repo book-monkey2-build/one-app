@@ -22,6 +22,9 @@ var BookDetailsComponent = (function () {
         this.bs.getSingle(this.params.get('isbn'))
             .subscribe(function (res) { return _this.book = res; });
     };
+    BookDetailsComponent.prototype.getRating = function (num) {
+        return new Array(num);
+    };
     BookDetailsComponent = __decorate([
         core_1.Component({
             selector: 'book-details',

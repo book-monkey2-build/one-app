@@ -27,6 +27,9 @@ var BookDetailsComponent = (function () {
             new book_1.Thumbnail('https://goo.gl/LnYTQD', 'Angular 2 Logo')
         ];
     }
+    BookDetailsComponent.prototype.getRating = function (num) {
+        return new Array(num);
+    };
     BookDetailsComponent = __decorate([
         core_1.Component({
             selector: 'book-details',
