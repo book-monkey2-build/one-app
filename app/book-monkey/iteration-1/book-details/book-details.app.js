@@ -15,7 +15,7 @@ var BookMonkeyApp = (function () {
     }
     BookMonkeyApp = __decorate([
         core_1.Component({
-            selector: 'book-monkey',
+            selector: 'book-monkey-app',
             directives: [book_details_component_1.BookDetailsComponent],
             template: "<book-details></book-details>"
         }), 

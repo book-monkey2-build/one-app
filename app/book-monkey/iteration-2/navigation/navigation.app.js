@@ -21,9 +21,9 @@ var BookMonkeyApp = (function () {
             { path: 'books/...', name: 'Books', component: books_component_1.BooksComponent }
         ]),
         core_1.Component({
-            selector: 'navigation-app',
+            selector: 'book-monkey-app',
             moduleId: module.id,
-            templateUrl: 'navigation.component.html',
+            templateUrl: 'navigation.app.html',
             styles: [
                 ".router-link-active {\n      color: #ffffff !important;\n      background: #DB282C !important;\n    }"
             ],
@@ -34,4 +34,4 @@ var BookMonkeyApp = (function () {
     return BookMonkeyApp;
 }());
 exports.BookMonkeyApp = BookMonkeyApp;
-//# sourceMappingURL=navigation.component.js.map
+//# sourceMappingURL=navigation.app.js.map

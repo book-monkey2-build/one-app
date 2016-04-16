@@ -11,7 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('angular2/core');
 var router_1 = require('angular2/router');
 var di_app_1 = require('./di/di.app');
-var navigation_component_1 = require('./navigation/navigation.component');
+var navigation_app_1 = require('./navigation/navigation.app');
 var IterationTwoComponent = (function () {
     function IterationTwoComponent(router) {
         this.router = router;
@@ -24,7 +24,7 @@ var IterationTwoComponent = (function () {
         }),
         router_1.RouteConfig([
             { path: 'dependency-injection/', name: 'Dependency-Injection', component: di_app_1.BookMonkeyApp, useAsDefault: true },
-            { path: 'navigation/...', name: 'Navigation', component: navigation_component_1.BookMonkeyApp }
+            { path: 'navigation/...', name: 'Navigation', component: navigation_app_1.BookMonkeyApp }
         ]), 
         __metadata('design:paramtypes', [router_1.Router])
     ], IterationTwoComponent);
