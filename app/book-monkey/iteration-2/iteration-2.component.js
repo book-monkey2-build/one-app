@@ -12,21 +12,21 @@ var core_1 = require('angular2/core');
 var router_1 = require('angular2/router');
 var di_app_1 = require('./di/di.app');
 var navigation_app_1 = require('./navigation/navigation.app');
+var active_class_directive_1 = require('../../directives/active-class/active-class.directive');
 var IterationTwoComponent = (function () {
-    function IterationTwoComponent(router) {
-        this.router = router;
+    function IterationTwoComponent() {
     }
     IterationTwoComponent = __decorate([
         core_1.Component({
             selector: 'iteration-2',
-            template: "\n    <div class=\"ui two small ordered steps\">\n    <a [routerLink]=\"['Dependency-Injection']\"\n       [class.active]=\"router.isRouteActive(router.generate(['./Dependency-Injection']))\"\n       class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Dependency-Injection</div>\n      </div>\n    </a>\n    <a [routerLink]=\"['Navigation']\"\n       [class.active]=\"router.isRouteActive(router.generate(['./Navigation']))\"\n       class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Navigation</div>\n      </div>\n    </a>\n  </div>\n  <div class=\"ui raised padded container segment\">\n    <router-outlet></router-outlet>\n  </div>\n  ",
-            directives: [router_1.ROUTER_DIRECTIVES]
+            template: "\n    <div class=\"ui two small ordered steps\">\n    <a [routerLink]=\"['Dependency-Injection']\"\n       activeClass=\"active\"\n       class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Dependency-Injection</div>\n      </div>\n    </a>\n    <a [routerLink]=\"['Navigation']\"\n       activeClass=\"active\"\n       class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Navigation</div>\n      </div>\n    </a>\n  </div>\n  <div class=\"ui raised padded container segment\">\n    <router-outlet></router-outlet>\n  </div>\n  ",
+            directives: [router_1.ROUTER_DIRECTIVES, active_class_directive_1.ActiveClassDirective]
         }),
         router_1.RouteConfig([
             { path: 'dependency-injection/', name: 'Dependency-Injection', component: di_app_1.BookMonkeyApp, useAsDefault: true },
             { path: 'navigation/...', name: 'Navigation', component: navigation_app_1.BookMonkeyApp }
         ]), 
-        __metadata('design:paramtypes', [router_1.Router])
+        __metadata('design:paramtypes', [])
     ], IterationTwoComponent);
     return IterationTwoComponent;
 }());

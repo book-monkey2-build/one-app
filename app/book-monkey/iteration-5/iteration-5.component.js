@@ -13,22 +13,22 @@ var http_1 = require('angular2/http');
 var router_1 = require('angular2/router');
 var pipes_app_1 = require('./pipes/pipes.app');
 var directives_app_1 = require('./directives/directives.app');
+var active_class_directive_1 = require('../../directives/active-class/active-class.directive');
 var IterationFiveComponent = (function () {
-    function IterationFiveComponent(router) {
-        this.router = router;
+    function IterationFiveComponent() {
     }
     IterationFiveComponent = __decorate([
         core_1.Component({
             selector: 'iteration-5',
-            template: "\n    <div class=\"ui two small ordered steps\">\n    <a [routerLink]=\"['Pipes']\"\n       [class.active]=\"router.isRouteActive(router.generate(['./Pipes']))\"\n       class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Pipes</div>\n      </div>\n    </a>\n    <a [routerLink]=\"['Directives']\"\n       [class.active]=\"router.isRouteActive(router.generate(['./Directives']))\"\n       class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Direktiven</div>\n      </div>\n    </a>\n  </div>\n  <div class=\"ui raised padded container segment\">\n    <router-outlet></router-outlet>\n  </div>\n  ",
+            template: "\n    <div class=\"ui two small ordered steps\">\n    <a [routerLink]=\"['Pipes']\"\n       activeClass=\"active\"\n       class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Pipes</div>\n      </div>\n    </a>\n    <a [routerLink]=\"['Directives']\"\n       activeClass=\"active\"\n       class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Direktiven</div>\n      </div>\n    </a>\n  </div>\n  <div class=\"ui raised padded container segment\">\n    <router-outlet></router-outlet>\n  </div>\n  ",
             directives: [router_1.ROUTER_DIRECTIVES],
-            providers: [http_1.HTTP_PROVIDERS]
+            providers: [http_1.HTTP_PROVIDERS, active_class_directive_1.ActiveClassDirective]
         }),
         router_1.RouteConfig([
             { path: 'pipes/...', name: 'Pipes', component: pipes_app_1.BookMonkeyApp, useAsDefault: true },
             { path: 'directives/...', name: 'Directives', component: directives_app_1.BookMonkeyApp }
         ]), 
-        __metadata('design:paramtypes', [router_1.Router])
+        __metadata('design:paramtypes', [])
     ], IterationFiveComponent);
     return IterationFiveComponent;
 }());

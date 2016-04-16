@@ -16,17 +16,15 @@ var iteration_2_component_1 = require('./book-monkey/iteration-2/iteration-2.com
 var iteration_3_component_1 = require('./book-monkey/iteration-3/iteration-3.component');
 var iteration_4_component_1 = require('./book-monkey/iteration-4/iteration-4.component');
 var iteration_5_component_1 = require('./book-monkey/iteration-5/iteration-5.component');
+var active_class_directive_1 = require('./directives/active-class/active-class.directive');
 var SamplesApp = (function () {
-    function SamplesApp(router) {
-        this.router = router;
+    function SamplesApp() {
     }
     SamplesApp = __decorate([
         core_1.Component({
             selector: 'samples-app',
-            providers: [],
             templateUrl: 'app/samples.html',
-            directives: [router_1.ROUTER_DIRECTIVES],
-            pipes: []
+            directives: [router_1.ROUTER_DIRECTIVES, active_class_directive_1.ActiveClassDirective]
         }),
         router_1.RouteConfig([
             {
@@ -60,7 +58,7 @@ var SamplesApp = (function () {
                 name: 'Iteration-5',
                 component: iteration_5_component_1.IterationFiveComponent
             }]), 
-        __metadata('design:paramtypes', [router_1.Router])
+        __metadata('design:paramtypes', [])
     ], SamplesApp);
     return SamplesApp;
 }());

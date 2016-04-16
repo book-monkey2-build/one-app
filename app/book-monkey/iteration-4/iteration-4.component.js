@@ -12,21 +12,21 @@ var core_1 = require('angular2/core');
 var http_1 = require('angular2/http');
 var router_1 = require('angular2/router');
 var http_app_1 = require('./http/http.app');
+var active_class_directive_1 = require('../../directives/active-class/active-class.directive');
 var IterationFourComponent = (function () {
-    function IterationFourComponent(router) {
-        this.router = router;
+    function IterationFourComponent() {
     }
     IterationFourComponent = __decorate([
         core_1.Component({
             selector: 'iteration-4',
-            template: "\n    <div class=\"ui one small ordered steps\">\n    <a [routerLink]=\"['Http']\"\n       [class.active]=\"router.isRouteActive(router.generate(['./Http']))\"\n       class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Http</div>\n      </div>\n    </a>\n  </div>\n  <div class=\"ui raised padded container segment\">\n    <router-outlet></router-outlet>\n  </div>\n  ",
+            template: "\n    <div class=\"ui one small ordered steps\">\n    <a [routerLink]=\"['Http']\"\n       activeClass=\"active\"\n       class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Http</div>\n      </div>\n    </a>\n  </div>\n  <div class=\"ui raised padded container segment\">\n    <router-outlet></router-outlet>\n  </div>\n  ",
             directives: [router_1.ROUTER_DIRECTIVES],
-            providers: [http_1.HTTP_PROVIDERS]
+            providers: [http_1.HTTP_PROVIDERS, active_class_directive_1.ActiveClassDirective]
         }),
         router_1.RouteConfig([
             { path: 'http/...', name: 'Http', component: http_app_1.BookMonkeyApp, useAsDefault: true },
         ]), 
-        __metadata('design:paramtypes', [router_1.Router])
+        __metadata('design:paramtypes', [])
     ], IterationFourComponent);
     return IterationFourComponent;
 }());
