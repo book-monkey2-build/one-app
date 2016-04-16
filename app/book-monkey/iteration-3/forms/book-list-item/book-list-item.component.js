@@ -20,7 +20,8 @@ var BookListItem = (function () {
     BookListItem = __decorate([
         core_1.Component({
             selector: '.book-list-item',
-            templateUrl: '/app/book-monkey/iteration-3/validation/book-list/book-list-item.component.html'
+            moduleId: module.id,
+            templateUrl: 'book-list-item.component.html'
         }), 
         __metadata('design:paramtypes', [])
     ], BookListItem);

@@ -13,26 +13,27 @@ var router_1 = require('angular2/router');
 var home_component_1 = require('./home/home.component');
 var books_component_1 = require('./books/books.component');
 var form_component_1 = require('./form/form.component');
-var FormsApp = (function () {
-    function FormsApp() {
+var BookMonkeyApp = (function () {
+    function BookMonkeyApp() {
     }
-    FormsApp = __decorate([
+    BookMonkeyApp = __decorate([
         router_1.RouteConfig([
             { path: 'home/', name: 'Home', component: home_component_1.HomeComponent, useAsDefault: true },
             { path: 'books/...', name: 'Books', component: books_component_1.BooksComponent },
             { path: 'admin/', name: 'Admin', component: form_component_1.FormComponent }
         ]),
         core_1.Component({
-            selector: 'forms-app',
-            templateUrl: '/app/book-monkey/iteration-3/forms/forms.component.html',
+            selector: 'book-monkey-app',
+            moduleId: module.id,
+            templateUrl: 'validation.app.html',
             styles: [
                 ".router-link-active {\n      color: #ffffff !important;\n      background: #DB282C !important;\n    }"
             ],
             directives: [router_1.ROUTER_DIRECTIVES]
         }), 
         __metadata('design:paramtypes', [])
-    ], FormsApp);
-    return FormsApp;
+    ], BookMonkeyApp);
+    return BookMonkeyApp;
 }());
-exports.FormsApp = FormsApp;
-//# sourceMappingURL=forms.component.js.map
+exports.BookMonkeyApp = BookMonkeyApp;
+//# sourceMappingURL=validation.app.js.map
