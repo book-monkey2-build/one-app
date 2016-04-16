@@ -23,7 +23,7 @@ var BookListComponent = (function () {
     }
     BookListComponent = __decorate([
         core_1.Component({
-            selector: 'it1-book-list',
+            selector: 'book-list',
             directives: [book_list_item_component_1.BookListItem],
             moduleId: module.id,
             templateUrl: 'book-list.component.html'

@@ -1,6 +1,6 @@
 CACHE MANIFEST
 # sw.bundle: ng-cli
-# sw.version: e370f51281033f530144abde9249fe6c44e7a61a
+# sw.version: 6afbffef5def3c95c1b31198e50d115c6e40166b
 # sw.file.hash: b082ede0256110bcab66cb20821310951b487bbe
 /app.js
 # sw.file.hash: a4522ad18c0961f4e637a19fcdab653d053dd004
@@ -13,23 +13,23 @@ CACHE MANIFEST
 /app/book-monkey/iteration-1/book-details/book-details/book-details.html
 # sw.file.hash: 231a2c356ae8cd9de4f311ac421d2b8e72e57e29
 /app/book-monkey/iteration-1/book-list-refactored/book-list-item/book-list-item.component.html
-# sw.file.hash: 9683b9edf6498cda2ca766eea93c354a39cd0b82
+# sw.file.hash: a27bb1cbced730b8e7015d71b012c5d473cca4fc
 /app/book-monkey/iteration-1/book-list-refactored/book-list-item/book-list-item.component.js
-# sw.file.hash: d5e1d342895ccd73add5842de605b1a8e6d2154f
+# sw.file.hash: 9bec6e59b64b40f0bddf4addc5ded52956e7edd1
 /app/book-monkey/iteration-1/book-list-refactored/book-list-item/book-list-item.component.js.map
-# sw.file.hash: 80fa91d8fb3c54faebf6a8e320ffba429a45e526
+# sw.file.hash: 30224545a0ac5e2f6cdd389535380c559de0130f
 /app/book-monkey/iteration-1/book-list-refactored/book-list/book-list.component.html
-# sw.file.hash: 61fb56ca422bfb413da0ded594425c2fb0a41a4a
+# sw.file.hash: b5c50131e94452828d3d2103ad380581a314fb7e
 /app/book-monkey/iteration-1/book-list-refactored/book-list/book-list.component.js
-# sw.file.hash: d8eea17fdfadcc4ec8e224908d99132b9377dabe
+# sw.file.hash: 725871263d6ebbacaa7e871448d7604e0a55ba1c
 /app/book-monkey/iteration-1/book-list-refactored/book-list/book-list.component.js.map
 # sw.file.hash: 0bd31ae8410f3295f308c5fc6d24ec7c60b750b8
 /app/book-monkey/iteration-1/book-list/app.ts.snippet
 # sw.file.hash: 8519ca974409138a993c310a24bfd95b84b15760
 /app/book-monkey/iteration-1/book-list/book-list/book-list.component.html
-# sw.file.hash: ffaa1a2abc362a97d7dd8dadebd6d415913038ff
+# sw.file.hash: 8cf522014b53c7e102668fc45eec6b1e35e9eb38
 /app/book-monkey/iteration-1/book-list/book-list/book-list.component.js
-# sw.file.hash: 20848be23225e5ee908e03be5b18352eddc6e9d5
+# sw.file.hash: d3aeaaa2ce331c12b59635d335433748a11631fc
 /app/book-monkey/iteration-1/book-list/book-list/book-list.component.js.map
 # sw.file.hash: 393a594a8dd5a7da24013d8d1225272623e8f868
 /app/book-monkey/iteration-1/book-list/book-list/book-list.component.spec.js

@@ -19,7 +19,7 @@ var BookListItem = (function () {
     ], BookListItem.prototype, "book", void 0);
     BookListItem = __decorate([
         core_1.Component({
-            selector: '.it1-book-list-item',
+            selector: '.book-list-item',
             moduleId: module.id,
             templateUrl: 'book-list-item.component.html'
         }), 
