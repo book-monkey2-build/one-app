@@ -25,7 +25,8 @@ var BookDetailsComponent = (function () {
     BookDetailsComponent = __decorate([
         core_1.Component({
             selector: 'book-details',
-            templateUrl: '/app/book-monkey/iteration-5/pipes/book-details/book-details.html',
+            moduleId: module.id,
+            templateUrl: 'book-details.html',
             providers: [book_store_service_1.BookStoreService],
             pipes: [isbn_pipe_1.IsbnPipe]
         }), 

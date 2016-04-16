@@ -13,24 +13,27 @@ var router_1 = require('angular2/router');
 var home_component_1 = require('./home/home.component');
 var books_component_1 = require('./books/books.component');
 var form_component_1 = require('./form/form.component');
-var active_class_directive_1 = require('./directives/active-class/active-class.directive');
-var DirectivesApp = (function () {
-    function DirectivesApp() {
+var BookMonkeyApp = (function () {
+    function BookMonkeyApp() {
     }
-    DirectivesApp = __decorate([
+    BookMonkeyApp = __decorate([
         router_1.RouteConfig([
             { path: 'home/', name: 'Home', component: home_component_1.HomeComponent, useAsDefault: true },
             { path: 'books/...', name: 'Books', component: books_component_1.BooksComponent },
             { path: 'admin/', name: 'Admin', component: form_component_1.FormComponent }
         ]),
         core_1.Component({
-            selector: 'pipes-app',
-            templateUrl: '/app/book-monkey/iteration-5/directives/directives.component.html',
-            directives: [router_1.ROUTER_DIRECTIVES, active_class_directive_1.ActiveClassDirective]
+            selector: 'book-monkey-app',
+            moduleId: module.id,
+            templateUrl: 'pipes.app.html',
+            styles: [
+                ".router-link-active {\n      color: #ffffff !important;\n      background: #DB282C !important;\n    }"
+            ],
+            directives: [router_1.ROUTER_DIRECTIVES]
         }), 
         __metadata('design:paramtypes', [])
-    ], DirectivesApp);
-    return DirectivesApp;
+    ], BookMonkeyApp);
+    return BookMonkeyApp;
 }());
-exports.DirectivesApp = DirectivesApp;
-//# sourceMappingURL=directives.component.js.map
+exports.BookMonkeyApp = BookMonkeyApp;
+//# sourceMappingURL=pipes.app.js.map

@@ -21,7 +21,8 @@ var BookListItem = (function () {
     BookListItem = __decorate([
         core_1.Component({
             selector: '.book-list-item',
-            templateUrl: '/app/book-monkey/iteration-5/pipes/book-list/book-list-item.component.html',
+            moduleId: module.id,
+            templateUrl: 'book-list-item.component.html',
             pipes: [isbn_pipe_1.IsbnPipe]
         }), 
         __metadata('design:paramtypes', [])
