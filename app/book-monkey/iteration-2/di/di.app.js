@@ -9,22 +9,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('angular2/core');
-var book_1 = require('../../domain/book');
-var BookListItem = (function () {
-    function BookListItem() {
+var book_list_component_1 = require('./book-list/book-list.component');
+var BookMonkeyApp = (function () {
+    function BookMonkeyApp() {
     }
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', book_1.Book)
-    ], BookListItem.prototype, "book", void 0);
-    BookListItem = __decorate([
+    BookMonkeyApp = __decorate([
         core_1.Component({
-            selector: '.book-list-item',
-            templateUrl: '/app/book-monkey/iteration-2/navigation/book-list/book-list-item.component.html'
+            selector: 'book-monkey',
+            directives: [book_list_component_1.BookListComponent],
+            template: "<book-list></book-list>"
         }), 
         __metadata('design:paramtypes', [])
-    ], BookListItem);
-    return BookListItem;
+    ], BookMonkeyApp);
+    return BookMonkeyApp;
 }());
-exports.BookListItem = BookListItem;
-//# sourceMappingURL=book-list-item.component.js.map
+exports.BookMonkeyApp = BookMonkeyApp;
+//# sourceMappingURL=di.app.js.map

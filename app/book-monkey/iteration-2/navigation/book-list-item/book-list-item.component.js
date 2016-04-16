@@ -9,24 +9,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('angular2/core');
-var router_1 = require('angular2/router');
-var book_store_service_1 = require('../services/books/book-store.service');
-var BookDetailsComponent = (function () {
-    function BookDetailsComponent(params, bs) {
-        this.params = params;
-        this.bs = bs;
-        this.book = bs.getSingle(params.get('isbn'));
+var book_1 = require('../../domain/book');
+var BookListItem = (function () {
+    function BookListItem() {
     }
-    BookDetailsComponent = __decorate([
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', book_1.Book)
+    ], BookListItem.prototype, "book", void 0);
+    BookListItem = __decorate([
         core_1.Component({
-            selector: 'book-details',
+            selector: '.book-list-item',
             moduleId: module.id,
-            templateUrl: 'book-details.html',
-            providers: [book_store_service_1.BookStoreService]
+            templateUrl: 'book-list-item.component.html'
         }), 
-        __metadata('design:paramtypes', [router_1.RouteParams, book_store_service_1.BookStoreService])
-    ], BookDetailsComponent);
-    return BookDetailsComponent;
+        __metadata('design:paramtypes', [])
+    ], BookListItem);
+    return BookListItem;
 }());
-exports.BookDetailsComponent = BookDetailsComponent;
-//# sourceMappingURL=book-details.component.js.map
+exports.BookListItem = BookListItem;
+//# sourceMappingURL=book-list-item.component.js.map

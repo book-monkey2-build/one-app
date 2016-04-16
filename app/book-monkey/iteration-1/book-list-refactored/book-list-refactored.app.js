@@ -9,24 +9,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('angular2/core');
-var router_1 = require('angular2/router');
-var book_store_service_1 = require('../services/books/book-store.service');
-var BookDetailsComponent = (function () {
-    function BookDetailsComponent(params, bs) {
-        this.params = params;
-        this.bs = bs;
-        this.book = bs.getSingle(params.get('isbn'));
+var book_list_component_1 = require('./book-list/book-list.component');
+var BookMonkeyApp = (function () {
+    function BookMonkeyApp() {
     }
-    BookDetailsComponent = __decorate([
+    BookMonkeyApp = __decorate([
         core_1.Component({
-            selector: 'book-details',
-            moduleId: module.id,
-            templateUrl: 'book-details.html',
-            providers: [book_store_service_1.BookStoreService]
+            selector: 'book-monkey',
+            directives: [book_list_component_1.BookListComponent],
+            template: "<book-list></book-list>"
         }), 
-        __metadata('design:paramtypes', [router_1.RouteParams, book_store_service_1.BookStoreService])
-    ], BookDetailsComponent);
-    return BookDetailsComponent;
+        __metadata('design:paramtypes', [])
+    ], BookMonkeyApp);
+    return BookMonkeyApp;
 }());
-exports.BookDetailsComponent = BookDetailsComponent;
-//# sourceMappingURL=book-details.component.js.map
+exports.BookMonkeyApp = BookMonkeyApp;
+//# sourceMappingURL=book-list-refactored.app.js.map

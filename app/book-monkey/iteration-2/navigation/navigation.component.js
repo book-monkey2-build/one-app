@@ -12,25 +12,26 @@ var core_1 = require('angular2/core');
 var router_1 = require('angular2/router');
 var home_component_1 = require('./home/home.component');
 var books_component_1 = require('./books/books.component');
-var NavigationApp = (function () {
-    function NavigationApp() {
+var BookMonkeyApp = (function () {
+    function BookMonkeyApp() {
     }
-    NavigationApp = __decorate([
+    BookMonkeyApp = __decorate([
         router_1.RouteConfig([
             { path: 'home/', name: 'Home', component: home_component_1.HomeComponent, useAsDefault: true },
             { path: 'books/...', name: 'Books', component: books_component_1.BooksComponent }
         ]),
         core_1.Component({
             selector: 'navigation-app',
-            templateUrl: '/app/book-monkey/iteration-2/navigation/navigation.component.html',
+            moduleId: module.id,
+            templateUrl: 'navigation.component.html',
             styles: [
                 ".router-link-active {\n      color: #ffffff !important;\n      background: #DB282C !important;\n    }"
             ],
             directives: [router_1.ROUTER_DIRECTIVES]
         }), 
         __metadata('design:paramtypes', [])
-    ], NavigationApp);
-    return NavigationApp;
+    ], BookMonkeyApp);
+    return BookMonkeyApp;
 }());
-exports.NavigationApp = NavigationApp;
+exports.BookMonkeyApp = BookMonkeyApp;
 //# sourceMappingURL=navigation.component.js.map
