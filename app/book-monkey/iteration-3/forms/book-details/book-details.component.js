@@ -25,7 +25,8 @@ var BookDetailsComponent = (function () {
             selector: 'book-details',
             moduleId: module.id,
             templateUrl: 'book-details.html',
-            providers: [book_store_service_1.BookStoreService]
+            providers: [book_store_service_1.BookStoreService],
+            directives: [router_1.ROUTER_DIRECTIVES]
         }), 
         __metadata('design:paramtypes', [router_1.RouteParams, book_store_service_1.BookStoreService])
     ], BookDetailsComponent);

@@ -12,7 +12,7 @@ var core_1 = require('angular2/core');
 var router_1 = require('angular2/router');
 var home_component_1 = require('./home/home.component');
 var books_component_1 = require('./books/books.component');
-var form_component_1 = require('./form/form.component');
+var admin_component_1 = require('./admin/admin.component');
 var BookMonkeyApp = (function () {
     function BookMonkeyApp() {
     }
@@ -20,7 +20,7 @@ var BookMonkeyApp = (function () {
         router_1.RouteConfig([
             { path: 'home/', name: 'Home', component: home_component_1.HomeComponent, useAsDefault: true },
             { path: 'books/...', name: 'Books', component: books_component_1.BooksComponent },
-            { path: 'admin/', name: 'Admin', component: form_component_1.FormComponent }
+            { path: 'admin/...', name: 'Admin', component: admin_component_1.AdminComponent }
         ]),
         core_1.Component({
             selector: 'book-monkey-app',

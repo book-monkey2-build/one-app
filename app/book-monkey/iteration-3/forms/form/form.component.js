@@ -9,26 +9,56 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('angular2/core');
+var router_1 = require('angular2/router');
 var common_1 = require('angular2/common');
+var book_store_service_1 = require('../services/books/book-store.service');
 var FormComponent = (function () {
-    function FormComponent(fb) {
+    function FormComponent(fb, routeData, routeParams, bs) {
         this.fb = fb;
-        this.myForm = fb.group({
-            title: [''],
-            subtitle: [''],
-            isbn: [''],
-            description: [''],
-            authors: fb.array(['']),
-            thumbnails: fb.array([
-                fb.group({ url: [''], title: [''] })
-            ]),
-            rating: [''],
-            published: ['']
-        });
+        this.routeData = routeData;
+        this.routeParams = routeParams;
+        this.bs = bs;
+        var formData;
+        if (routeData.get('mode') === 'edit') {
+            var isbn = routeParams.get('isbn');
+            var book = bs.getSingle(isbn);
+            formData = this.initFormDataEdit(book);
+        }
+        else {
+            formData = this.initFormDataAdd();
+        }
+        this.myForm = this.fb.group(formData);
         // this allows us to manipulate the form at runtime
         this.authorsControlArray = this.myForm.controls['authors'];
         this.thumbnailsControlArray = this.myForm.controls['thumbnails'];
     }
+    FormComponent.prototype.initFormDataAdd = function () {
+        return {
+            title: ['add'],
+            subtitle: [''],
+            isbn: [''],
+            description: [''],
+            authors: this.fb.array(['']),
+            thumbnails: this.fb.array([
+                this.fb.group({ url: [''], title: [''] })
+            ]),
+            rating: [''],
+            published: ['']
+        };
+    };
+    FormComponent.prototype.initFormDataEdit = function (book) {
+        var _this = this;
+        return {
+            title: [book.title],
+            subtitle: [book.subtitle],
+            isbn: [book.isbn],
+            description: [book.description],
+            authors: this.fb.array(book.authors),
+            thumbnails: this.fb.array(book.thumbnails.map(function (t) { return _this.fb.group({ url: [t.url], title: [t.title] }); })),
+            rating: [book.rating],
+            published: [book.published]
+        };
+    };
     FormComponent.prototype.addAuthorControl = function () {
         this.authorsControlArray.push(this.fb.control(''));
     };
@@ -42,9 +72,10 @@ var FormComponent = (function () {
         core_1.Component({
             selector: 'book-form',
             moduleId: module.id,
-            templateUrl: 'form.component.html'
+            templateUrl: 'form.component.html',
+            providers: [book_store_service_1.BookStoreService]
         }), 
-        __metadata('design:paramtypes', [common_1.FormBuilder])
+        __metadata('design:paramtypes', [common_1.FormBuilder, router_1.RouteData, router_1.RouteParams, book_store_service_1.BookStoreService])
     ], FormComponent);
     return FormComponent;
 }());

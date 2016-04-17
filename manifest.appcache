@@ -1,6 +1,6 @@
 CACHE MANIFEST
 # sw.bundle: ng-cli
-# sw.version: d34bf56699139980299a670a67a6d9667774290c
+# sw.version: eab95f7f08a5b6764033fb0c2f9fbf6a69ca9f20
 # sw.file.hash: b082ede0256110bcab66cb20821310951b487bbe
 /app.js
 # sw.file.hash: a4522ad18c0961f4e637a19fcdab653d053dd004
@@ -141,11 +141,15 @@ CACHE MANIFEST
 /app/book-monkey/iteration-3/domain/thumbnail.js
 # sw.file.hash: aa598f799f737d739b4f579eeec4c8ca70bf7e26
 /app/book-monkey/iteration-3/domain/thumbnail.js.map
-# sw.file.hash: c3a69ba6804e5b65e83a2ee1379bfc807317fb91
+# sw.file.hash: 8e425608c9f6cd40083363efe292923876dcda8b
+/app/book-monkey/iteration-3/forms/admin/admin.component.js
+# sw.file.hash: d6ed701ee6b892a4b739cd504784b40793535a43
+/app/book-monkey/iteration-3/forms/admin/admin.component.js.map
+# sw.file.hash: 1f50609c48d17d36b67cf5a79494086ff0d56349
 /app/book-monkey/iteration-3/forms/book-details/book-details.component.js
-# sw.file.hash: fd36c7d2e875bb36188fd2f57d1bff62410e2ebe
+# sw.file.hash: 17bdbc747df01c8aa6f771c3f19b9529c187627a
 /app/book-monkey/iteration-3/forms/book-details/book-details.component.js.map
-# sw.file.hash: e099698d21a13140856059d6f3253ec0dc65b495
+# sw.file.hash: 038078b80d6301592b007c0c2169fc967023e303
 /app/book-monkey/iteration-3/forms/book-details/book-details.html
 # sw.file.hash: da67c256320fd3f9078bba545441f4ebe19aa4db
 /app/book-monkey/iteration-3/forms/book-list-item/book-list-item.component.html
@@ -165,15 +169,15 @@ CACHE MANIFEST
 /app/book-monkey/iteration-3/forms/books/books.component.js.map
 # sw.file.hash: db1324531890642f2b2a13dfff01c5dbe7c6d2ce
 /app/book-monkey/iteration-3/forms/form/form.component.html
-# sw.file.hash: 6610bad8c9e5bb7926c4c4c9e2f2e0858bb0ce08
+# sw.file.hash: 92752987d1292c4c3a41b2a1990960e5109db5db
 /app/book-monkey/iteration-3/forms/form/form.component.js
-# sw.file.hash: 71dfa71a473dbcbe953a690962fe60ae39e20dfa
+# sw.file.hash: 69812057c2c5bfe1481cfd1de45c955f5e1434d7
 /app/book-monkey/iteration-3/forms/form/form.component.js.map
 # sw.file.hash: 245397fcbd8799e0a49a9c7c10c36c18dc96e777
 /app/book-monkey/iteration-3/forms/forms.app.html
-# sw.file.hash: f3d4a0a60f97dd25d665331122dcea8e814ee7bc
+# sw.file.hash: 451eb98b5b4b07d6a9a24bdb1ef4f72702b6429d
 /app/book-monkey/iteration-3/forms/forms.app.js
-# sw.file.hash: c1423c85906213be4c47aa07dab75eb95d23b39f
+# sw.file.hash: 45d8e7f17f9c26d4f30b082349f85af5b25cbf9c
 /app/book-monkey/iteration-3/forms/forms.app.js.map
 # sw.file.hash: 14825bc04696127a1d1c61adcfbbcac573d5159f
 /app/book-monkey/iteration-3/forms/home/home.component.js
