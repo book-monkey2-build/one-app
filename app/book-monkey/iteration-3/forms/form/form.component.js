@@ -34,7 +34,7 @@ var FormComponent = (function () {
     }
     FormComponent.prototype.initFormDataAdd = function () {
         return {
-            title: ['add'],
+            title: [''],
             subtitle: [''],
             isbn: [''],
             description: [''],

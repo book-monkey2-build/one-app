@@ -1,6 +1,6 @@
 CACHE MANIFEST
 # sw.bundle: ng-cli
-# sw.version: 278c5df9cf894649f29f5848772dd146d89885b3
+# sw.version: 20842553c009b088636ee0dfd35781139c07159d
 # sw.file.hash: b082ede0256110bcab66cb20821310951b487bbe
 /app.js
 # sw.file.hash: a4522ad18c0961f4e637a19fcdab653d053dd004
@@ -169,9 +169,9 @@ CACHE MANIFEST
 /app/book-monkey/iteration-3/forms/books/books.component.js.map
 # sw.file.hash: db1324531890642f2b2a13dfff01c5dbe7c6d2ce
 /app/book-monkey/iteration-3/forms/form/form.component.html
-# sw.file.hash: 92752987d1292c4c3a41b2a1990960e5109db5db
+# sw.file.hash: 7340f87516672f3ed72d5ba90808368b792a21e8
 /app/book-monkey/iteration-3/forms/form/form.component.js
-# sw.file.hash: 69812057c2c5bfe1481cfd1de45c955f5e1434d7
+# sw.file.hash: e172eb70add35511c8e65948384c34440ee90401
 /app/book-monkey/iteration-3/forms/form/form.component.js.map
 # sw.file.hash: 245397fcbd8799e0a49a9c7c10c36c18dc96e777
 /app/book-monkey/iteration-3/forms/forms.app.html
