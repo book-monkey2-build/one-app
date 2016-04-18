@@ -17,7 +17,7 @@ var AdminComponent = (function () {
     AdminComponent = __decorate([
         router_1.RouteConfig([
             { path: '/add', name: 'Add', component: form_component_1.FormComponent, data: { mode: 'add' }, useAsDefault: true },
-            { path: '/edit/:isbn', name: 'Edit', component: form_component_1.FormComponent, data: { mode: 'edit' } }
+            { path: '/update/:isbn', name: 'Update', component: form_component_1.FormComponent, data: { mode: 'update' } }
         ]),
         core_1.Component({
             directives: [router_1.RouterOutlet],

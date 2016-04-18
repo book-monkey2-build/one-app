@@ -25,7 +25,7 @@ var BookMonkeyApp = (function () {
         core_1.Component({
             selector: 'book-monkey-app',
             moduleId: module.id,
-            templateUrl: 'validation.app.html',
+            templateUrl: 'book-monkey.html',
             styles: [
                 ".router-link-active {\n      color: #ffffff !important;\n      background: #DB282C !important;\n    }"
             ],
@@ -36,4 +36,4 @@ var BookMonkeyApp = (function () {
     return BookMonkeyApp;
 }());
 exports.BookMonkeyApp = BookMonkeyApp;
-//# sourceMappingURL=validation.app.js.map
+//# sourceMappingURL=book-monkey.js.map

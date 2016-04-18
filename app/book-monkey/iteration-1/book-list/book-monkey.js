@@ -24,4 +24,4 @@ var BookMonkeyApp = (function () {
     return BookMonkeyApp;
 }());
 exports.BookMonkeyApp = BookMonkeyApp;
-//# sourceMappingURL=book-list.app.js.map
+//# sourceMappingURL=book-monkey.js.map

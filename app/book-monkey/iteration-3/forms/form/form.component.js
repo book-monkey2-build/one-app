@@ -19,10 +19,10 @@ var FormComponent = (function () {
         this.routeParams = routeParams;
         this.bs = bs;
         var formData;
-        if (routeData.get('mode') === 'edit') {
+        if (routeData.get('mode') === 'update') {
             var isbn = routeParams.get('isbn');
             var book = bs.getSingle(isbn);
-            formData = this.initFormDataEdit(book);
+            formData = this.initFormDataUpdate(book);
         }
         else {
             formData = this.initFormDataAdd();
@@ -46,7 +46,7 @@ var FormComponent = (function () {
             published: ['']
         };
     };
-    FormComponent.prototype.initFormDataEdit = function (book) {
+    FormComponent.prototype.initFormDataUpdate = function (book) {
         var _this = this;
         return {
             title: [book.title],

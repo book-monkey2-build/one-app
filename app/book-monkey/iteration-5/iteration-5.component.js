@@ -11,8 +11,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('angular2/core');
 var http_1 = require('angular2/http');
 var router_1 = require('angular2/router');
-var pipes_app_1 = require('./pipes/pipes.app');
-var directives_app_1 = require('./directives/directives.app');
+var book_monkey_1 = require('./pipes/book-monkey');
+var book_monkey_2 = require('./directives/book-monkey');
 var active_class_directive_1 = require('../../directives/active-class/active-class.directive');
 var IterationFiveComponent = (function () {
     function IterationFiveComponent() {
@@ -25,8 +25,8 @@ var IterationFiveComponent = (function () {
             providers: [http_1.HTTP_PROVIDERS, active_class_directive_1.ActiveClassDirective]
         }),
         router_1.RouteConfig([
-            { path: 'pipes/...', name: 'Pipes', component: pipes_app_1.BookMonkeyApp, useAsDefault: true },
-            { path: 'directives/...', name: 'Directives', component: directives_app_1.BookMonkeyApp }
+            { path: 'pipes/...', name: 'Pipes', component: book_monkey_1.BookMonkeyApp, useAsDefault: true },
+            { path: 'directives/...', name: 'Directives', component: book_monkey_2.BookMonkeyApp }
         ]), 
         __metadata('design:paramtypes', [])
     ], IterationFiveComponent);

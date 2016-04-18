@@ -9,31 +9,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('angular2/core');
-var router_1 = require('angular2/router');
-var home_component_1 = require('./home/home.component');
-var books_component_1 = require('./books/books.component');
-var admin_component_1 = require('./admin/admin.component');
+var book_list_component_1 = require('./book-list/book-list.component');
 var BookMonkeyApp = (function () {
     function BookMonkeyApp() {
     }
     BookMonkeyApp = __decorate([
-        router_1.RouteConfig([
-            { path: 'home/', name: 'Home', component: home_component_1.HomeComponent, useAsDefault: true },
-            { path: 'books/...', name: 'Books', component: books_component_1.BooksComponent },
-            { path: 'admin/...', name: 'Admin', component: admin_component_1.AdminComponent }
-        ]),
         core_1.Component({
             selector: 'book-monkey-app',
-            moduleId: module.id,
-            templateUrl: 'forms.app.html',
-            styles: [
-                ".router-link-active {\n      color: #ffffff !important;\n      background: #DB282C !important;\n    }"
-            ],
-            directives: [router_1.ROUTER_DIRECTIVES]
+            directives: [book_list_component_1.BookListComponent],
+            template: "<book-list></book-list>"
         }), 
         __metadata('design:paramtypes', [])
     ], BookMonkeyApp);
     return BookMonkeyApp;
 }());
 exports.BookMonkeyApp = BookMonkeyApp;
-//# sourceMappingURL=forms.app.js.map
+//# sourceMappingURL=book-monkey.js.map

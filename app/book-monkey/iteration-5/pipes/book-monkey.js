@@ -13,7 +13,6 @@ var router_1 = require('angular2/router');
 var home_component_1 = require('./home/home.component');
 var books_component_1 = require('./books/books.component');
 var form_component_1 = require('./form/form.component');
-var active_class_directive_1 = require('./directives/active-class/active-class.directive');
 var BookMonkeyApp = (function () {
     function BookMonkeyApp() {
     }
@@ -26,12 +25,15 @@ var BookMonkeyApp = (function () {
         core_1.Component({
             selector: 'book-monkey-app',
             moduleId: module.id,
-            templateUrl: 'directives.app.html',
-            directives: [router_1.ROUTER_DIRECTIVES, active_class_directive_1.ActiveClassDirective]
+            templateUrl: 'book-monkey.html',
+            styles: [
+                ".router-link-active {\n      color: #ffffff !important;\n      background: #DB282C !important;\n    }"
+            ],
+            directives: [router_1.ROUTER_DIRECTIVES]
         }), 
         __metadata('design:paramtypes', [])
     ], BookMonkeyApp);
     return BookMonkeyApp;
 }());
 exports.BookMonkeyApp = BookMonkeyApp;
-//# sourceMappingURL=directives.app.js.map
+//# sourceMappingURL=book-monkey.js.map

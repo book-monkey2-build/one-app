@@ -10,8 +10,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('angular2/core');
 var router_1 = require('angular2/router');
-var forms_app_1 = require('./forms/forms.app');
-var validation_app_1 = require('./validation/validation.app');
+var book_monkey_1 = require('./forms/book-monkey');
+var book_monkey_2 = require('./validation/book-monkey');
 var active_class_directive_1 = require('../../directives/active-class/active-class.directive');
 var IterationThreeComponent = (function () {
     function IterationThreeComponent() {
@@ -23,8 +23,8 @@ var IterationThreeComponent = (function () {
             directives: [router_1.ROUTER_DIRECTIVES, active_class_directive_1.ActiveClassDirective]
         }),
         router_1.RouteConfig([
-            { path: 'form/...', name: 'Forms', component: forms_app_1.BookMonkeyApp, useAsDefault: true },
-            { path: 'validation/...', name: 'Form-Validation', component: validation_app_1.BookMonkeyApp }
+            { path: 'form/...', name: 'Forms', component: book_monkey_1.BookMonkeyApp, useAsDefault: true },
+            { path: 'validation/...', name: 'Form-Validation', component: book_monkey_2.BookMonkeyApp }
         ]), 
         __metadata('design:paramtypes', [])
     ], IterationThreeComponent);

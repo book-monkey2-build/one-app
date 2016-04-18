@@ -10,9 +10,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('angular2/core');
 var router_1 = require('angular2/router');
-var book_details_app_1 = require('./book-details/book-details.app');
-var book_list_app_1 = require('./book-list/book-list.app');
-var book_list_refactored_app_1 = require('./book-list-refactored/book-list-refactored.app');
+var book_monkey_1 = require('./book-details/book-monkey');
+var book_monkey_2 = require('./book-list/book-monkey');
+var book_monkey_3 = require('./book-list-refactored/book-monkey');
 var active_class_directive_1 = require('../../directives/active-class/active-class.directive');
 var IterationOneComponent = (function () {
     function IterationOneComponent() {
@@ -24,9 +24,9 @@ var IterationOneComponent = (function () {
             directives: [router_1.ROUTER_DIRECTIVES, active_class_directive_1.ActiveClassDirective]
         }),
         router_1.RouteConfig([
-            { path: '/book-details', name: 'BookDetails', component: book_details_app_1.BookMonkeyApp, useAsDefault: true },
-            { path: '/book-list', name: 'BookList', component: book_list_app_1.BookMonkeyApp },
-            { path: '/book-list-refactored', name: 'BookListRefactored', component: book_list_refactored_app_1.BookMonkeyApp }
+            { path: '/book-details', name: 'BookDetails', component: book_monkey_1.BookMonkeyApp, useAsDefault: true },
+            { path: '/book-list', name: 'BookList', component: book_monkey_2.BookMonkeyApp },
+            { path: '/book-list-refactored', name: 'BookListRefactored', component: book_monkey_3.BookMonkeyApp }
         ]), 
         __metadata('design:paramtypes', [])
     ], IterationOneComponent);

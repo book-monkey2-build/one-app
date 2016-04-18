@@ -11,7 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('angular2/core');
 var http_1 = require('angular2/http');
 var router_1 = require('angular2/router');
-var http_app_1 = require('./http/http.app');
+var book_monkey_1 = require('./http/book-monkey');
 var active_class_directive_1 = require('../../directives/active-class/active-class.directive');
 var IterationFourComponent = (function () {
     function IterationFourComponent() {
@@ -24,7 +24,7 @@ var IterationFourComponent = (function () {
             providers: [http_1.HTTP_PROVIDERS, active_class_directive_1.ActiveClassDirective]
         }),
         router_1.RouteConfig([
-            { path: 'http/...', name: 'Http', component: http_app_1.BookMonkeyApp, useAsDefault: true },
+            { path: 'http/...', name: 'Http', component: book_monkey_1.BookMonkeyApp, useAsDefault: true },
         ]), 
         __metadata('design:paramtypes', [])
     ], IterationFourComponent);

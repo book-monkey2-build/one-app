@@ -10,8 +10,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('angular2/core');
 var router_1 = require('angular2/router');
-var di_app_1 = require('./di/di.app');
-var navigation_app_1 = require('./navigation/navigation.app');
+var book_monkey_1 = require('./di/book-monkey');
+var book_monkey_2 = require('./navigation/book-monkey');
 var active_class_directive_1 = require('../../directives/active-class/active-class.directive');
 var IterationTwoComponent = (function () {
     function IterationTwoComponent() {
@@ -23,8 +23,8 @@ var IterationTwoComponent = (function () {
             directives: [router_1.ROUTER_DIRECTIVES, active_class_directive_1.ActiveClassDirective]
         }),
         router_1.RouteConfig([
-            { path: 'dependency-injection/', name: 'Dependency-Injection', component: di_app_1.BookMonkeyApp, useAsDefault: true },
-            { path: 'navigation/...', name: 'Navigation', component: navigation_app_1.BookMonkeyApp }
+            { path: 'dependency-injection/', name: 'Dependency-Injection', component: book_monkey_1.BookMonkeyApp, useAsDefault: true },
+            { path: 'navigation/...', name: 'Navigation', component: book_monkey_2.BookMonkeyApp }
         ]), 
         __metadata('design:paramtypes', [])
     ], IterationTwoComponent);
