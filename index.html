@@ -44,8 +44,10 @@
   <script>
     System.config({
       packages: {
-        app: { format: 'cjs' },
-        domain: { format: 'cjs' }
+        app: {
+          format: 'cjs',
+          defaultExtension: 'js'
+        }
       }
     });
     System.import('app.js').then(null, console.error.bind(console));
