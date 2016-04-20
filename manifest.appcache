@@ -1,6 +1,6 @@
 CACHE MANIFEST
 # sw.bundle: ng-cli
-# sw.version: 91b81008043e494a6242a689379c7d7b3424c27c
+# sw.version: eef96262f790b7b3bf81f2a4aa71204cc4ff7640
 # sw.file.hash: b082ede0256110bcab66cb20821310951b487bbe
 /app.js
 # sw.file.hash: a4522ad18c0961f4e637a19fcdab653d053dd004
@@ -543,7 +543,7 @@ CACHE MANIFEST
 /images/monkey-thinking.png
 # sw.file.hash: 40c57ab87467d946899c4ed8524fd4ec6f7a1b2a
 /index.html
-# sw.file.hash: ca4c5f745de834a1ebc8eb7ec8e841d4a75821f4
+# sw.file.hash: 489a9ee0fa0cae91df72604b07f19b66717f3952
 /index.single.html
 # sw.file.hash: 866e0d442ab28a3f6037bbbf3b98e84afc60d1a0
 /tsconfig.json
