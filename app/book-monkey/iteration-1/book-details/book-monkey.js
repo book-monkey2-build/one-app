@@ -9,15 +9,28 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('angular2/core');
+var common_1 = require('angular2/common');
+var book_list_component_1 = require('./book-list/book-list.component');
 var book_details_component_1 = require('./book-details/book-details.component');
 var BookMonkeyApp = (function () {
     function BookMonkeyApp() {
+        this.listOn = true;
+        this.detailsOn = false;
     }
+    BookMonkeyApp.prototype.showList = function () {
+        this.listOn = true;
+        this.detailsOn = false;
+    };
+    BookMonkeyApp.prototype.showDetails = function (book) {
+        this.book = book;
+        this.listOn = false;
+        this.detailsOn = true;
+    };
     BookMonkeyApp = __decorate([
         core_1.Component({
             selector: 'book-monkey-app',
-            directives: [book_details_component_1.BookDetailsComponent],
-            template: "<book-details></book-details>"
+            directives: [book_list_component_1.BookListComponent, book_details_component_1.BookDetailsComponent, common_1.CORE_DIRECTIVES],
+            template: "\n    <book-list *ngIf=\"listOn\" (showDetailsEvent)=\"showDetails($event)\"></book-list>\n    <book-details *ngIf=\"detailsOn\" (showListEvent)=\"showList()\" [book]=\"book\"></book-details>\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], BookMonkeyApp);

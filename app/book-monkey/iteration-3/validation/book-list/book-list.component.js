@@ -21,7 +21,8 @@ var BookListComponent = (function () {
         core_1.Component({
             selector: 'book-list',
             directives: [book_list_item_component_1.BookListItem, router_1.RouterLink],
-            templateUrl: '/app/book-monkey/iteration-3/validation/book-list/book-list.component.html',
+            moduleId: module.id,
+            templateUrl: 'book-list.component.html',
             providers: [book_store_service_1.BookStoreService]
         }), 
         __metadata('design:paramtypes', [book_store_service_1.BookStoreService])
