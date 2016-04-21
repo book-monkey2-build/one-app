@@ -1,6 +1,6 @@
 CACHE MANIFEST
 # sw.bundle: ng-cli
-# sw.version: 7bd86a13e676189e8c6c08564453eb22ab0d4ee9
+# sw.version: e93515f111265bf8a9b71924b1ab5daa7b8d4edd
 # sw.file.hash: b082ede0256110bcab66cb20821310951b487bbe
 /app.js
 # sw.file.hash: a4522ad18c0961f4e637a19fcdab653d053dd004
@@ -541,7 +541,7 @@ CACHE MANIFEST
 /favicon.ico
 # sw.file.hash: 980242aafb28307dcf9cb58b212dbd545352ff93
 /forkme_light_background.png
-# sw.file.hash: 6bdf7a1860919442df775f164a41236b0952bb8d
+# sw.file.hash: 8b7804ef094bf936f084b3abf9ec5c4e78ecf87b
 /images/book-thumbnail.png
 # sw.file.hash: 2528ceb0efe4ea932bffb6f5bb9100932c617556
 /images/monkey-thinking.png
