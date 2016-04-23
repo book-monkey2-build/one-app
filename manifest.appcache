@@ -1,6 +1,6 @@
 CACHE MANIFEST
 # sw.bundle: ng-cli
-# sw.version: e93515f111265bf8a9b71924b1ab5daa7b8d4edd
+# sw.version: a443f30ff1c64b29f459edb15b0e5a962b289ebc
 # sw.file.hash: b082ede0256110bcab66cb20821310951b487bbe
 /app.js
 # sw.file.hash: a4522ad18c0961f4e637a19fcdab653d053dd004
@@ -83,9 +83,9 @@ CACHE MANIFEST
 /app/book-monkey/iteration-1/book-list/domain/thumbnail.js
 # sw.file.hash: aa598f799f737d739b4f579eeec4c8ca70bf7e26
 /app/book-monkey/iteration-1/book-list/domain/thumbnail.js.map
-# sw.file.hash: 26ba39dae6a34a577de63ce519a4b7630ca97f51
+# sw.file.hash: d8d958186cb6cf42c8416c3d8d1a60b56af84bec
 /app/book-monkey/iteration-1/iteration-1.component.js
-# sw.file.hash: b6ac06b7be79813f9d7606c13e12bb2a0154f850
+# sw.file.hash: 679c0e0ebf3f4e00060cc249d22d9b14a9fb1b5f
 /app/book-monkey/iteration-1/iteration-1.component.js.map
 # sw.file.hash: da67c256320fd3f9078bba545441f4ebe19aa4db
 /app/book-monkey/iteration-2/di/book-list-item/book-list-item.component.html
