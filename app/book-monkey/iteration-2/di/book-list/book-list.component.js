@@ -14,8 +14,16 @@ var book_store_service_1 = require('../services/books/book-store.service');
 var BookListComponent = (function () {
     function BookListComponent(bs) {
         this.bs = bs;
+        this.showDetailsEvent = new core_1.EventEmitter();
         this.books = bs.getAll();
     }
+    BookListComponent.prototype.showDetails = function (book) {
+        this.showDetailsEvent.emit(book);
+    };
+    __decorate([
+        core_1.Output(), 
+        __metadata('design:type', core_1.EventEmitter)
+    ], BookListComponent.prototype, "showDetailsEvent", void 0);
     BookListComponent = __decorate([
         core_1.Component({
             selector: 'book-list',
