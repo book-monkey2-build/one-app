@@ -1,6 +1,6 @@
 CACHE MANIFEST
 # sw.bundle: ng-cli
-# sw.version: 01107ed50be655749c04ab28e76cca3f02790899
+# sw.version: 763ac5a87ccd90a3ef91ebf706a2bc48a45471d0
 # sw.file.hash: b082ede0256110bcab66cb20821310951b487bbe
 /app.js
 # sw.file.hash: a4522ad18c0961f4e637a19fcdab653d053dd004
@@ -11,11 +11,17 @@ CACHE MANIFEST
 /app/book-monkey/iteration-1/book-details/book-details/book-details.component.js.map
 # sw.file.hash: 2b7a3d279ad2fd3d35eb66d18ce839434558c983
 /app/book-monkey/iteration-1/book-details/book-details/book-details.html
-# sw.file.hash: 8be54268931d4775a32ac3900deb86d1169d643f
+# sw.file.hash: da67c256320fd3f9078bba545441f4ebe19aa4db
+/app/book-monkey/iteration-1/book-details/book-list-item/book-list-item.component.html
+# sw.file.hash: 5d19d65b818605e71333da53235fa35b3e11cda3
+/app/book-monkey/iteration-1/book-details/book-list-item/book-list-item.component.js
+# sw.file.hash: be4dbf7a0b119cd9f00e009f263265cbe49383b4
+/app/book-monkey/iteration-1/book-details/book-list-item/book-list-item.component.js.map
+# sw.file.hash: 740389b2c2f9e861b39ad71e8e0ea4542a1d6207
 /app/book-monkey/iteration-1/book-details/book-list/book-list.component.html
-# sw.file.hash: 4e0d39feef981bff13841fb994b1b47cb392d505
+# sw.file.hash: b5bd78808a77a170c937e25a13b89dc7b01fa19f
 /app/book-monkey/iteration-1/book-details/book-list/book-list.component.js
-# sw.file.hash: 556d1183780a27d5d43f5e94a9ad2a3d6c1dc0a6
+# sw.file.hash: 71977d55f5533ded0923bf36eb92afad205fc508
 /app/book-monkey/iteration-1/book-details/book-list/book-list.component.js.map
 # sw.file.hash: c092743ed3c837edee15673f9fda99a5cca9bd8c
 /app/book-monkey/iteration-1/book-details/book-list/book-list.component.spec.js

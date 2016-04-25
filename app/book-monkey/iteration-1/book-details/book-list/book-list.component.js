@@ -9,6 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('angular2/core');
+var book_list_item_component_1 = require('../book-list-item/book-list-item.component');
 var book_1 = require('../domain/book');
 var BookListComponent = (function () {
     function BookListComponent() {
@@ -28,6 +29,7 @@ var BookListComponent = (function () {
     BookListComponent = __decorate([
         core_1.Component({
             selector: 'book-list',
+            directives: [book_list_item_component_1.BookListItem],
             moduleId: module.id,
             templateUrl: 'book-list.component.html'
         }), 
