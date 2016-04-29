@@ -43,9 +43,9 @@ System.register(['angular2/core', 'angular2/router', './book-details/book-monkey
                         directives: [router_1.ROUTER_DIRECTIVES, active_class_directive_1.ActiveClassDirective]
                     }),
                     router_1.RouteConfig([
-                        { path: '/book-details', name: 'BookDetails', component: book_monkey_1.BookMonkeyApp, useAsDefault: true },
-                        { path: '/book-list', name: 'BookList', component: book_monkey_2.BookMonkeyApp },
-                        { path: '/book-list-refactored', name: 'BookListRefactored', component: book_monkey_3.BookMonkeyApp }
+                        { path: '/book-list', name: 'BookList', component: book_monkey_2.BookMonkeyApp, useAsDefault: true },
+                        { path: '/book-list-refactored', name: 'BookListRefactored', component: book_monkey_3.BookMonkeyApp },
+                        { path: '/book-details', name: 'BookDetails', component: book_monkey_1.BookMonkeyApp }
                     ]), 
                     __metadata('design:paramtypes', [])
                 ], IterationOneComponent);
