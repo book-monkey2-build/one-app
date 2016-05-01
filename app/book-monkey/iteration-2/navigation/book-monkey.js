@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/router', './home/home.component', './books/books.component'], function(exports_1, context_1) {
+System.register(['angular2/core', 'angular2/router', './home/index', './books/index'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', 'angular2/router', './home/home.component', '.
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, router_1, home_component_1, books_component_1;
+    var core_1, router_1, index_1, index_2;
     var BookMonkeyApp;
     return {
         setters:[
@@ -20,11 +20,11 @@ System.register(['angular2/core', 'angular2/router', './home/home.component', '.
             function (router_1_1) {
                 router_1 = router_1_1;
             },
-            function (home_component_1_1) {
-                home_component_1 = home_component_1_1;
+            function (index_1_1) {
+                index_1 = index_1_1;
             },
-            function (books_component_1_1) {
-                books_component_1 = books_component_1_1;
+            function (index_2_1) {
+                index_2 = index_2_1;
             }],
         execute: function() {
             BookMonkeyApp = (function () {
@@ -32,8 +32,8 @@ System.register(['angular2/core', 'angular2/router', './home/home.component', '.
                 }
                 BookMonkeyApp = __decorate([
                     router_1.RouteConfig([
-                        { path: 'home/', name: 'Home', component: home_component_1.HomeComponent, useAsDefault: true },
-                        { path: 'books/...', name: 'Books', component: books_component_1.BooksComponent }
+                        { path: 'home/', name: 'Home', component: index_1.HomeComponent, useAsDefault: true },
+                        { path: 'books/...', name: 'Books', component: index_2.BooksComponent }
                     ]),
                     core_1.Component({
                         selector: 'book-monkey-app',

@@ -1,4 +1,4 @@
-System.register(['angular2/core', '../book-list-item/book-list-item.component', '../services/books/book-store.service'], function(exports_1, context_1) {
+System.register(['angular2/core', '../book-list-item/index', '../services/books/book-store.service'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,15 +10,15 @@ System.register(['angular2/core', '../book-list-item/book-list-item.component', 
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, book_list_item_component_1, book_store_service_1;
+    var core_1, index_1, book_store_service_1;
     var BookListComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             },
-            function (book_list_item_component_1_1) {
-                book_list_item_component_1 = book_list_item_component_1_1;
+            function (index_1_1) {
+                index_1 = index_1_1;
             },
             function (book_store_service_1_1) {
                 book_store_service_1 = book_store_service_1_1;
@@ -40,7 +40,7 @@ System.register(['angular2/core', '../book-list-item/book-list-item.component', 
                 BookListComponent = __decorate([
                     core_1.Component({
                         selector: 'book-list',
-                        directives: [book_list_item_component_1.BookListItem],
+                        directives: [index_1.BookListItemComponent],
                         moduleId: __moduleName,
                         templateUrl: 'book-list.component.html',
                         providers: [book_store_service_1.BookStoreService]

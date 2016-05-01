@@ -43,7 +43,7 @@ System.register(['angular2/core', '../domain/book'], function(exports_1, context
                     core_1.Component({
                         selector: 'book-details',
                         moduleId: __moduleName,
-                        templateUrl: 'book-details.html'
+                        templateUrl: 'book-details.component.html'
                     }), 
                     __metadata('design:paramtypes', [])
                 ], BookDetailsComponent);

@@ -37,7 +37,7 @@ System.register(['angular2/core', 'angular2/router', '../services/books/book-sto
                     core_1.Component({
                         selector: 'book-details',
                         moduleId: __moduleName,
-                        templateUrl: 'book-details.html',
+                        templateUrl: 'book-details.component.html',
                         providers: [book_store_service_1.BookStoreService]
                     }), 
                     __metadata('design:paramtypes', [router_1.RouteParams, book_store_service_1.BookStoreService])
