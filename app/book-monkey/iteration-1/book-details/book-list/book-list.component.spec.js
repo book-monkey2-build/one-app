@@ -1,5 +1,5 @@
 "use strict";
-var testing_1 = require('angular2/testing');
+var testing_1 = require('@angular/core/testing');
 var book_list_component_1 = require('./book-list.component');
 testing_1.describe('Book List', function () {
     var bookList;
