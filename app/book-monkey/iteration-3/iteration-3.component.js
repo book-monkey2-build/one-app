@@ -10,8 +10,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
-var index_1 = require('./forms/index');
-var index_2 = require('./validation/index');
 var active_class_directive_1 = require('../../directives/active-class/active-class.directive');
 var IterationThreeComponent = (function () {
     function IterationThreeComponent() {
@@ -19,13 +17,9 @@ var IterationThreeComponent = (function () {
     IterationThreeComponent = __decorate([
         core_1.Component({
             selector: 'iteration-3',
-            template: "\n    <div class=\"ui two small ordered steps\">\n    <a [routerLink]=\"['form','home']\"\n       activeClass=\"active\"\n       class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Formulare</div>\n      </div>\n    </a>\n    <a [routerLink]=\"['validation','home']\"\n       activeClass=\"active\"\n       class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Formularvalidierung</div>\n      </div>\n    </a>\n  </div>\n  <div class=\"ui raised padded container segment\">\n    <router-outlet></router-outlet>\n  </div>\n  ",
+            template: "\n    <div class=\"ui two small ordered steps\">\n    <a [routerLink]=\"['form']\"\n       activeClass=\"active\"\n       class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Formulare</div>\n      </div>\n    </a>\n    <a [routerLink]=\"['validation']\"\n       activeClass=\"active\"\n       class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Formularvalidierung</div>\n      </div>\n    </a>\n  </div>\n  <div class=\"ui raised padded container segment\">\n    <router-outlet></router-outlet>\n  </div>\n  ",
             directives: [router_1.ROUTER_DIRECTIVES, active_class_directive_1.ActiveClassDirective]
-        }),
-        router_1.Routes([
-            { path: '/form', component: index_1.BookMonkeyAppComponent },
-            { path: '/validation', component: index_2.BookMonkeyAppComponent }
-        ]), 
+        }), 
         __metadata('design:paramtypes', [])
     ], IterationThreeComponent);
     return IterationThreeComponent;

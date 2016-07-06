@@ -10,9 +10,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
-var index_1 = require('./book-details/index');
-var index_2 = require('./book-list/index');
-var index_3 = require('./book-list-refactored/index');
 var active_class_directive_1 = require('../../directives/active-class/active-class.directive');
 var IterationOneComponent = (function () {
     function IterationOneComponent() {
@@ -22,12 +19,7 @@ var IterationOneComponent = (function () {
             selector: 'iteration-1',
             template: "\n    <div class=\"ui three small ordered steps\">\n      <a [routerLink]=\"['book-list']\"\n         activeClass=\"active\"\n         class=\"step\">\n        <div class=\"content\">\n          <div class=\"title\">Listenansicht</div>\n        </div>\n      </a>\n      <a [routerLink]=\"['book-list-refactored']\"\n         activeClass=\"active\"\n         class=\"step\">\n        <div class=\"content\">\n          <div class=\"title\">Verbesserte Listenansicht</div>\n        </div>\n      </a>\n      <a [routerLink]=\"['book-details']\"\n         activeClass=\"active\"\n         class=\"step\">\n        <div class=\"content\">\n          <div class=\"title\">Detailansicht</div>\n        </div>\n      </a>\n    </div>\n    <div class=\"ui raised padded container segment\">\n      <router-outlet></router-outlet>\n    </div>\n  ",
             directives: [router_1.ROUTER_DIRECTIVES, active_class_directive_1.ActiveClassDirective]
-        }),
-        router_1.Routes([
-            { path: '/book-list', component: index_2.BookMonkeyAppComponent },
-            { path: '/book-list-refactored', component: index_3.BookMonkeyAppComponent },
-            { path: '/book-details', component: index_1.BookMonkeyAppComponent }
-        ]), 
+        }), 
         __metadata('design:paramtypes', [])
     ], IterationOneComponent);
     return IterationOneComponent;

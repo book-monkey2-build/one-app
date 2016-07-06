@@ -9,14 +9,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var router_1 = require('@angular/router');
+var router_2 = require('@angular/router');
 var book_store_service_1 = require('../services/books/book-store.service');
 var BookDetailsComponent = (function () {
-    function BookDetailsComponent(bs) {
+    function BookDetailsComponent(bs, router, route) {
         this.bs = bs;
+        this.router = router;
+        this.route = route;
     }
-    BookDetailsComponent.prototype.routerOnActivate = function (curr) {
-        var isbn = curr.getParam('isbn');
-        this.book = this.bs.getSingle(isbn);
+    BookDetailsComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.route.params.subscribe(function (params) {
+            _this.book = _this.bs.getSingle(params['isbn']);
+        });
     };
     BookDetailsComponent.prototype.getRating = function (num) {
         return new Array(num);
@@ -26,9 +32,10 @@ var BookDetailsComponent = (function () {
             selector: 'book-details',
             moduleId: module.id,
             templateUrl: 'book-details.component.html',
-            providers: [book_store_service_1.BookStoreService]
+            providers: [book_store_service_1.BookStoreService],
+            directives: [router_1.ROUTER_DIRECTIVES]
         }), 
-        __metadata('design:paramtypes', [book_store_service_1.BookStoreService])
+        __metadata('design:paramtypes', [book_store_service_1.BookStoreService, router_2.Router, router_2.ActivatedRoute])
     ], BookDetailsComponent);
     return BookDetailsComponent;
 }());

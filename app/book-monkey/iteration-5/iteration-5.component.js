@@ -10,8 +10,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
-var index_1 = require('./pipes/index');
-var index_2 = require('./directives/index');
 var active_class_directive_1 = require('../../directives/active-class/active-class.directive');
 var IterationFiveComponent = (function () {
     function IterationFiveComponent() {
@@ -21,11 +19,7 @@ var IterationFiveComponent = (function () {
             selector: 'iteration-5',
             template: "\n    <div class=\"ui two small ordered steps\">\n    <a [routerLink]=\"['pipes']\"\n       activeClass=\"active\"\n       class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Pipes</div>\n      </div>\n    </a>\n    <a [routerLink]=\"['directives']\"\n       activeClass=\"active\"\n       class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Direktiven</div>\n      </div>\n    </a>\n  </div>\n  <div class=\"ui raised padded container segment\">\n    <router-outlet></router-outlet>\n  </div>\n  ",
             directives: [router_1.ROUTER_DIRECTIVES, active_class_directive_1.ActiveClassDirective]
-        }),
-        router_1.Routes([
-            { path: '/pipes', component: index_1.BookMonkeyAppComponent },
-            { path: '/directives', component: index_2.BookMonkeyAppComponent }
-        ]), 
+        }), 
         __metadata('design:paramtypes', [])
     ], IterationFiveComponent);
     return IterationFiveComponent;

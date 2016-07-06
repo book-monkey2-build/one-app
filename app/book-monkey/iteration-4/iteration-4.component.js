@@ -10,7 +10,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
-var index_1 = require('./http/index');
 var active_class_directive_1 = require('../../directives/active-class/active-class.directive');
 var IterationFourComponent = (function () {
     function IterationFourComponent() {
@@ -20,10 +19,7 @@ var IterationFourComponent = (function () {
             selector: 'iteration-4',
             template: "\n    <div class=\"ui one small ordered steps\">\n    <a [routerLink]=\"['http']\"\n       activeClass=\"active\"\n       class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Http</div>\n      </div>\n    </a>\n  </div>\n  <div class=\"ui raised padded container segment\">\n    <router-outlet></router-outlet>\n  </div>\n  ",
             directives: [router_1.ROUTER_DIRECTIVES, active_class_directive_1.ActiveClassDirective]
-        }),
-        router_1.Routes([
-            { path: '/http', component: index_1.BookMonkeyAppComponent },
-        ]), 
+        }), 
         __metadata('design:paramtypes', [])
     ], IterationFourComponent);
     return IterationFourComponent;
