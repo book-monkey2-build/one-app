@@ -1,1 +1,0 @@
-{"version":3,"file":"validation-result.js","sourceRoot":"","sources":["../../../../../home/travis/build/Angular2Buch/book-monkey2/tmp/broccoli_type_script_compiler-input_base_path-vgwVhzYL.tmp/0/src/app/book-monkey/iteration-4/http/validators/validation-result.ts"],"names":[],"mappings":"","sourcesContent":["export interface ValidationResult{\n   [key:string]:boolean;\n}"]}

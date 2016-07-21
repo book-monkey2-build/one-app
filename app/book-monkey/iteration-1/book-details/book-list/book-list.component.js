@@ -10,7 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var index_1 = require('../book-list-item/index');
-var book_1 = require('../domain/book');
+var book_1 = require('../shared/book');
 var BookListComponent = (function () {
     function BookListComponent() {
         this.showDetailsEvent = new core_1.EventEmitter();

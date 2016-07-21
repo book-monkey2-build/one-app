@@ -11,7 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
 var index_1 = require('../book-list-item/index');
-var book_store_service_1 = require('../services/books/book-store.service');
+var book_store_service_1 = require('../shared/book-store.service');
 var BookListComponent = (function () {
     function BookListComponent(bs) {
         this.bs = bs;

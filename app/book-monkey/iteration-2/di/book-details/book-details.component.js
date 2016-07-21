@@ -9,7 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var book_1 = require('../domain/book');
+var book_1 = require('../shared/book');
 var BookDetailsComponent = (function () {
     function BookDetailsComponent() {
         this.showListEvent = new core_1.EventEmitter();
