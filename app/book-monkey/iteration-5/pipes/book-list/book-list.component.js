@@ -23,9 +23,9 @@ var BookListComponent = (function () {
     BookListComponent = __decorate([
         core_1.Component({
             selector: 'book-list',
-            directives: [index_1.BookListItemComponent, router_1.ROUTER_DIRECTIVES],
             moduleId: module.id,
             templateUrl: 'book-list.component.html',
+            directives: [index_1.BookListItemComponent, router_1.ROUTER_DIRECTIVES],
             providers: [book_store_service_1.BookStoreService]
         }), 
         __metadata('design:paramtypes', [book_store_service_1.BookStoreService])

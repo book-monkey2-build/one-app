@@ -15,14 +15,16 @@ var book_store_service_1 = require('../shared/book-store.service');
 var BookListComponent = (function () {
     function BookListComponent(bs) {
         this.bs = bs;
-        this.books = bs.getAll();
     }
+    BookListComponent.prototype.ngOnInit = function () {
+        this.books = this.bs.getAll();
+    };
     BookListComponent = __decorate([
         core_1.Component({
             selector: 'book-list',
-            directives: [index_1.BookListItemComponent, router_1.ROUTER_DIRECTIVES],
             moduleId: module.id,
             templateUrl: 'book-list.component.html',
+            directives: [index_1.BookListItemComponent, router_1.ROUTER_DIRECTIVES],
             providers: [book_store_service_1.BookStoreService]
         }), 
         __metadata('design:paramtypes', [book_store_service_1.BookStoreService])
