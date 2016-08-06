@@ -33,7 +33,6 @@ var BookFormComponent = (function () {
         });
     };
     BookFormComponent.prototype.initBook = function (book) {
-        var _this = this;
         if (!book)
             book = new book_1.Book('', '', [''], new Date(), '', 0, [{ url: '', title: '' }], '');
         this.myForm = this.fb.group({
@@ -41,22 +40,28 @@ var BookFormComponent = (function () {
             subtitle: book.subtitle,
             isbn: book.isbn,
             description: book.description,
-            authors: this.fb.array(book.authors),
-            thumbnails: this.fb.array(book.thumbnails.map(function (t) { return _this.fb.group({
-                url: _this.fb.control(t.url),
-                title: _this.fb.control(t.title)
-            }); })),
+            authors: this.buildAuthorsArray(book.authors),
+            thumbnails: this.buildThumbnialsArray(book.thumbnails),
             published: book.published
         });
-        // this allows us to manipulate the form at runtime
-        this.authorsControlArray = this.myForm.controls['authors'];
-        this.thumbnailsControlArray = this.myForm.controls['thumbnails'];
+    };
+    BookFormComponent.prototype.buildAuthorsArray = function (authors) {
+        this.authors = this.fb.array(authors);
+        return this.authors;
+    };
+    BookFormComponent.prototype.buildThumbnialsArray = function (thumbnails) {
+        var _this = this;
+        this.thumbnails = this.fb.array(thumbnails.map(function (t) { return _this.fb.group({
+            url: _this.fb.control(t.url),
+            title: _this.fb.control(t.title)
+        }); }));
+        return this.thumbnails;
     };
     BookFormComponent.prototype.addAuthorControl = function () {
-        this.authorsControlArray.push(this.fb.control(''));
+        this.authors.push(this.fb.control(''));
     };
     BookFormComponent.prototype.addThumbnailControl = function () {
-        this.thumbnailsControlArray.push(this.fb.group({ url: [''], title: [''] }));
+        this.thumbnails.push(this.fb.group({ url: [''], title: [''] }));
     };
     BookFormComponent.prototype.submitForm = function (formData) {
         this.isUpdatingBook
