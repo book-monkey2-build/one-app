@@ -37,16 +37,16 @@ var BookFormComponent = (function () {
         if (!book)
             book = new book_1.Book('', '', [''], new Date(), '', 0, [{ url: '', title: '' }], '');
         this.myForm = this.fb.group({
-            title: [book.title],
-            subtitle: [book.subtitle],
-            isbn: [book.isbn],
-            description: [book.description],
+            title: book.title,
+            subtitle: book.subtitle,
+            isbn: book.isbn,
+            description: book.description,
             authors: this.fb.array(book.authors),
             thumbnails: this.fb.array(book.thumbnails.map(function (t) { return _this.fb.group({
                 url: _this.fb.control(t.url),
                 title: _this.fb.control(t.title)
             }); })),
-            published: [book.published]
+            published: book.published
         });
         // this allows us to manipulate the form at runtime
         this.authorsControlArray = this.myForm.controls['authors'];
