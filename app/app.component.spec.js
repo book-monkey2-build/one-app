@@ -1,25 +1,12 @@
-/*
-import {
-  beforeEachProviders,
-  describe,
-  expect,
-  it,
-  inject
-} from '@angular/core/testing';
-import { AppComponent } from '../app/book-monkey.component';
-
-beforeEachProviders(() => [AppComponent]);
-
-describe('App: BookMonkey', () => {
-  it('should create the app',
-      inject([AppComponent], (app: AppComponent) => {
-    expect(app).toBeTruthy();
-  }));
-
-  it('should have as title \'book-monkey works!\'',
-      inject([AppComponent], (app: AppComponent) => {
-    expect(app.title).toEqual('book-monkey works!');
-  }));
+"use strict";
+var testing_1 = require('@angular/core/testing');
+var app_component_1 = require('./app.component');
+describe('App: BookMonkey', function () {
+    beforeEach(function () {
+        testing_1.addProviders([app_component_1.AppComponent]);
+    });
+    it('should create the app', testing_1.inject([app_component_1.AppComponent], function (app) {
+        expect(app).toBeTruthy();
+    }));
 });
-*/ 
 //# sourceMappingURL=app.component.spec.js.map

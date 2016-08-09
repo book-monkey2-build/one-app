@@ -1,13 +1,15 @@
 "use strict";
-var testing_1 = require('@angular/core/testing');
 var book_list_component_1 = require('./book-list.component');
-testing_1.describe('Book List', function () {
-    var bookList;
-    testing_1.beforeEach(function () {
-        bookList = new book_list_component_1.BookListComponent();
+describe('Component: BookList', function () {
+    it('should create an instance', function () {
+        var component = new book_list_component_1.BookListComponent();
+        expect(component).toBeTruthy();
     });
-    testing_1.it('should contain two example books', function () {
-        testing_1.expect(bookList.books.length).toEqual(2);
+    /*
+    it('should contain two example books', () => {
+  
+      expect(bookList.books.length).toEqual(2);
     });
+    */
 });
 //# sourceMappingURL=book-list.component.spec.js.map
