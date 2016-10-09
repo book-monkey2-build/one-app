@@ -38027,7 +38027,7 @@ var map = {
 	],
 	"app/book-monkey/iteration-3/custom-validation/app.module": [
 		606,
-		4
+		3
 	],
 	"app/book-monkey/iteration-3/iteration-3.module": [
 		607,
@@ -38039,7 +38039,7 @@ var map = {
 	],
 	"app/book-monkey/iteration-3/template-driven-forms/app.module": [
 		609,
-		3
+		4
 	],
 	"app/book-monkey/iteration-4/http/app.module": [
 		610,
