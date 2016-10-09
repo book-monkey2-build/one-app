@@ -11,13 +11,13 @@ webpackJsonp([0,14],{
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(724);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__home_home_component__ = __webpack_require__(728);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__book_list_book_list_component__ = __webpack_require__(727);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__book_list_item_book_list_item_component__ = __webpack_require__(786);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__book_list_item_book_list_item_component__ = __webpack_require__(788);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__book_details_book_details_component__ = __webpack_require__(725);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__book_form_book_form_component__ = __webpack_require__(726);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__shared_book_store_service__ = __webpack_require__(677);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__shared_isbn_pipe__ = __webpack_require__(787);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__shared_zoom_directive__ = __webpack_require__(790);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__app_routing_module_one_app__ = __webpack_require__(784);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__shared_isbn_pipe__ = __webpack_require__(789);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__shared_zoom_directive__ = __webpack_require__(792);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__app_routing_module_one_app__ = __webpack_require__(785);
 /* harmony export (binding) */ __webpack_require__.d(exports, "AppModule", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -8849,7 +8849,7 @@ var BookStoreService = (function () {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__thumbnail__ = __webpack_require__(789);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__thumbnail__ = __webpack_require__(791);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Book; });
 /* unused harmony reexport Thumbnail */
 
@@ -8895,7 +8895,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'bm-root',
-            template: __webpack_require__(831)
+            template: __webpack_require__(834)
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
@@ -8953,7 +8953,7 @@ var BookDetailsComponent = (function () {
     };
     BookDetailsComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            template: __webpack_require__(832)
+            template: __webpack_require__(835)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__shared_book_store_service__["a" /* BookStoreService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__shared_book_store_service__["a" /* BookStoreService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* Router */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === 'function' && _c) || Object])
     ], BookDetailsComponent);
@@ -8971,9 +8971,10 @@ var BookDetailsComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(185);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(644);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_isbn_validator__ = __webpack_require__(788);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__shared_book__ = __webpack_require__(686);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_book__ = __webpack_require__(686);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__validation__ = __webpack_require__(787);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_book_store_service__ = __webpack_require__(677);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__shared_isbn_validator__ = __webpack_require__(790);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return BookFormComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -8990,18 +8991,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var BookFormComponent = (function () {
     function BookFormComponent(fb, bs, route, router) {
         this.fb = fb;
         this.bs = bs;
         this.route = route;
         this.router = router;
-        this.book = __WEBPACK_IMPORTED_MODULE_4__shared_book__["a" /* Book */].empty();
+        this.book = __WEBPACK_IMPORTED_MODULE_3__shared_book__["a" /* Book */].empty();
+        this.validation = new __WEBPACK_IMPORTED_MODULE_4__validation__["a" /* Validation */]();
         this.isUpdatingBook = false;
     }
     BookFormComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.initBook(this.book);
+        this.myForm.valueChanges.subscribe(function () { return _this.updateErrorMessages(); });
         this.route.params.subscribe(function (params) {
             var isbn = params['isbn'];
             if (isbn) {
@@ -9017,11 +9021,11 @@ var BookFormComponent = (function () {
             subtitle: [book.subtitle],
             isbn: [book.isbn, __WEBPACK_IMPORTED_MODULE_2__angular_forms__["Validators"].compose([
                     __WEBPACK_IMPORTED_MODULE_2__angular_forms__["Validators"].required,
-                    __WEBPACK_IMPORTED_MODULE_3__shared_isbn_validator__["a" /* validateIsbn */]
+                    __WEBPACK_IMPORTED_MODULE_6__shared_isbn_validator__["a" /* validateIsbn */]
                 ])],
             description: [book.description],
             authors: this.buildAuthorsArray(book.authors),
-            thumbnails: this.buildThumbnailsArray(book.thumbnails),
+            thumbnails: this.buildThumbnialsArray(book.thumbnails),
             published: [
                 book.published,
                 __WEBPACK_IMPORTED_MODULE_2__angular_forms__["Validators"].pattern('([1-9]|0[1-9]|(1|2)[0-9]|3[0-1])\.([1-9]|0[1-9]|1[0-2])\.[0-9]{4}')
@@ -9032,19 +9036,19 @@ var BookFormComponent = (function () {
         this.authors = this.fb.array(authors, __WEBPACK_IMPORTED_MODULE_2__angular_forms__["Validators"].required);
         return this.authors;
     };
-    BookFormComponent.prototype.buildThumbnailsArray = function (thumbnails) {
+    BookFormComponent.prototype.buildThumbnialsArray = function (thumbnails) {
         var _this = this;
         this.thumbnails = this.fb.array(thumbnails.map(function (t) { return _this.fb.group({
-            url: _this.fb.control(t.url, __WEBPACK_IMPORTED_MODULE_2__angular_forms__["Validators"].required),
+            url: _this.fb.control(t.url),
             title: _this.fb.control(t.title)
         }); }));
         return this.thumbnails;
     };
     BookFormComponent.prototype.addAuthorControl = function () {
-        this.authors.push(this.fb.control(''));
+        this.authors.push(this.fb.control(null));
     };
     BookFormComponent.prototype.addThumbnailControl = function () {
-        this.thumbnails.push(this.fb.group({ url: [''], title: [''] }));
+        this.thumbnails.push(this.fb.group({ url: null, title: null }));
     };
     BookFormComponent.prototype.submitForm = function () {
         if (this.isUpdatingBook) {
@@ -9056,11 +9060,22 @@ var BookFormComponent = (function () {
             this.myForm.reset();
         }
     };
+    BookFormComponent.prototype.updateErrorMessages = function () {
+        for (var field in this.validation) {
+            this.validation[field].error = '';
+            var control = this.myForm.get(field);
+            if (control && control.dirty && control.invalid) {
+                for (var key in control.errors) {
+                    this.validation[field].error = this.validation[field].messages[key];
+                }
+            }
+        }
+        ;
+    };
     BookFormComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'bm-book-form',
-            template: __webpack_require__(833),
-            styles: [__webpack_require__(842)]
+            template: __webpack_require__(836)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormBuilder"] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormBuilder"]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_5__shared_book_store_service__["a" /* BookStoreService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_5__shared_book_store_service__["a" /* BookStoreService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* Router */]) === 'function' && _d) || Object])
     ], BookFormComponent);
@@ -9100,7 +9115,7 @@ var BookListComponent = (function () {
     BookListComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'bm-book-list',
-            template: __webpack_require__(835),
+            template: __webpack_require__(838),
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__shared_book_store_service__["a" /* BookStoreService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__shared_book_store_service__["a" /* BookStoreService */]) === 'function' && _a) || Object])
     ], BookListComponent);
@@ -9142,14 +9157,14 @@ var HomeComponent = (function () {
 
 /***/ },
 
-/***/ 784:
+/***/ 785:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(185);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_component__ = __webpack_require__(724);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_routing_module__ = __webpack_require__(785);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_routing_module__ = __webpack_require__(786);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return AppRoutingModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -9184,7 +9199,7 @@ var AppRoutingModule = (function () {
 
 /***/ },
 
-/***/ 785:
+/***/ 786:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9255,7 +9270,49 @@ var AppRoutingModule = (function () {
 
 /***/ },
 
-/***/ 786:
+/***/ 787:
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Validation; });
+var Validation = (function () {
+    function Validation() {
+        return {
+            title: {
+                error: '',
+                messages: {
+                    'required': 'Ein Buchtitel muss angegeben werden',
+                }
+            },
+            isbn: {
+                error: '',
+                messages: {
+                    'required': 'Es muss eine ISBN Nummer angegeben werden',
+                    'minlength': 'Die ISBN Nummer muss mindestens 10 Zeichen enthalten',
+                    'maxlength': 'Eine ISBN Nummer kann nicht mehr als 10 Zeichen haben'
+                }
+            },
+            published: {
+                error: '',
+                messages: {
+                    'required': 'Es muss ein Erscheinungsdatum angegeben werden'
+                }
+            },
+            authors: {
+                error: '',
+                messages: {
+                    'required': 'Es muss mindestens ein Autor angegeben werden'
+                }
+            }
+        };
+    }
+    return Validation;
+}());
+
+
+/***/ },
+
+/***/ 788:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9283,7 +9340,7 @@ var BookListItemComponent = (function () {
     BookListItemComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'a.bm-book-list-item',
-            template: __webpack_require__(834)
+            template: __webpack_require__(837)
         }), 
         __metadata('design:paramtypes', [])
     ], BookListItemComponent);
@@ -9294,7 +9351,7 @@ var BookListItemComponent = (function () {
 
 /***/ },
 
-/***/ 787:
+/***/ 789:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9340,7 +9397,7 @@ var IsbnPipe = (function () {
 
 /***/ },
 
-/***/ 788:
+/***/ 790:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9356,7 +9413,7 @@ function validateIsbn(control) {
 
 /***/ },
 
-/***/ 789:
+/***/ 791:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9372,7 +9429,7 @@ var Thumbnail = (function () {
 
 /***/ },
 
-/***/ 790:
+/***/ 792:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9428,45 +9485,38 @@ var ZoomDirective = (function () {
 
 /***/ },
 
-/***/ 831:
+/***/ 834:
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"ui three item tabs menu\">\n  <a [routerLink]=\"['home']\"  routerLinkActive=\"active\" class=\"item\">Home</a>\n  <a [routerLink]=\"['books']\" routerLinkActive=\"active\" class=\"item\">Bücher</a>\n  <a [routerLink]=\"['admin']\" routerLinkActive=\"active\" class=\"item\">Administration</a>\n</div>\n<router-outlet></router-outlet>\n";
 
 /***/ },
 
-/***/ 832:
+/***/ 835:
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"ui grid\" *ngIf=\"book\">\n  <div class=\"four wide column\">\n    <img class=\"ui large image\" [src]=\"book?.thumbnails && book?.thumbnails[0].url\">\n  </div>\n  <div class=\"twelve wide column\">\n    <h1 class=\"ui header\">{{ book?.title }}</h1>\n    <h3 class=\"ui header\">{{ book?.subtitle }}</h3>\n    <div class=\"ui divider\"></div>\n    <div class=\"ui grid\">\n      <div class=\"four wide column\">\n        <h4 class=\"ui header\">Autoren</h4>\n        <span *ngFor=\"let author of book?.authors; let l=last\">\n          {{ author }}<span *ngIf=\"!l\">, </span>\n        </span>\n      </div>\n      <div class=\"four wide column\">\n        <h4 class=\"ui header\">ISBN</h4>\n        {{ book?.isbn | isbn:true }}\n      </div>\n      <div class=\"four wide column\">\n        <h4 class=\"ui header\">Erschienen</h4>\n        {{ book?.published }}\n      </div>\n      <div class=\"four wide column\">\n        <h4 class=\"ui header\">Rating</h4>\n        <i *ngFor=\"let i of getRating(book?.rating)\" class=\"yellow star icon\"></i>\n      </div>\n    </div>\n  </div>\n  <div class=\"sixteen wide column\">\n    <h3 class=\"ui header\">Beschreibung</h3>\n    {{ book?.description }}\n  </div>\n  <div class=\"sixteen wide column\">\n    <div class=\"ui small images\">\n      <img *ngFor=\"let thumbnail of book?.thumbnails\" [src]=\"thumbnail.url\">\n    </div>\n  </div>\n</div>\n\n<button class=\"ui tiny red labeled icon button\"\n        (click)=\"deleteBook()\">\n  <i class=\"remove icon\"></i> Buch löschen\n</button>\n<a class=\"ui tiny yellow labeled icon button\"\n        [routerLink]=\"['../../admin', book?.isbn]\">\n  <i class=\"write icon\"></i> Buch bearbeiten\n</a>\n";
 
 /***/ },
 
-/***/ 833:
+/***/ 836:
 /***/ function(module, exports) {
 
-module.exports = "<h1>Buchformular</h1>\n<form [formGroup]=\"myForm\"\n      (ngSubmit)=\"submitForm()\"\n      class=\"ui form grid\">\n\n  <div class=\"four wide column\">\n    <h4 class=\"required\">Buchtitel</h4>\n  </div>\n  <div class=\"eleven wide column form\">\n    <input formControlName=\"title\"/>\n    <div class=\"ui negative message\"\n         *ngIf=\"myForm.controls.title.dirty && !myForm.controls.title.valid\">\n      Geben Sie den Titel des Buches an.\n    </div>\n  </div>\n\n  <div class=\"four wide column\">\n    <h4>Untertitel</h4>\n  </div>\n  <div class=\"eleven wide column\">\n    <input formControlName=\"subtitle\">\n  </div>\n\n  <div class=\"four wide column\">\n    <h4 class=\"required\">Erscheinungsdatum</h4>\n  </div>\n  <div class=\"eleven wide column\">\n    <input formControlName=\"published\">\n    <div class=\"ui message\"\n        [ngClass]=\"{negative: myForm.controls.published.touched}\"\n         *ngIf=\"myForm.controls.published.dirty && !myForm.controls.published.valid\">\n      Bitte geben Sie das Datum mit folgendem Format ein: dd.MM.yyyy\n    </div>\n  </div>\n\n  <div class=\"row\">\n    <div class=\"four wide column\">\n      <h4 class=\"required\">Autoren</h4>\n    </div>\n    <div class=\"eleven wide column\">\n      <div class=\"fields\">\n        <div formArrayName=\"authors\"\n            *ngFor=\"let control of authors.controls; let i = index\"\n            class=\"sixteen wide field\">\n            <input [formControlName]=\"i\" placeholder=\"Autor {{i+1}}\">\n        </div>\n      </div>\n      <!-- funktioniert nicht!! -->\n      <div class=\"ui negative message\"\n           *ngIf=\"myForm.controls.authors.dirty\n              && !myForm.controls.authors.valid\">\n        Geben Sie mindestens einen Autor an.\n      </div>\n    </div>\n    <div class=\"one wide field\">\n      <button type=\"button\"\n              (click)=\"addAuthorControl()\"\n              [disabled]=\"!myForm.controls.authors.valid\"\n              class=\"ui button\"> + </button>\n    </div>\n  </div>\n\n  <div class=\"four wide column\">\n    <h4 class=\"required\">ISBN</h4>\n  </div>\n  <div class=\"eleven wide column\">\n    <input formControlName=\"isbn\">\n    <div class=\"ui negative message\"\n         *ngIf=\"myForm.controls.isbn.dirty && myForm.controls.isbn.touched && myForm.controls.isbn.errors && myForm.controls.isbn.errors.isbn\">\n      Geben Sie eine gültige ISBN an.\n    </div>\n  </div>\n\n  <div class=\"four wide column\">\n    <h4>Beschreibung</h4>\n  </div>\n  <div class=\"eleven wide column\">\n    <textarea formControlName=\"description\" rows=\"3\"></textarea>\n  </div>\n\n  <div class=\"row\">\n    <div class=\"four wide column\">\n      <h4>Thumbnails</h4>\n    </div>\n    <div class=\"eleven wide column\">\n        <div formArrayName=\"thumbnails\"\n            *ngFor=\"let control of thumbnails.controls; let i = index\">\n            <div [formGroupName]=\"i\" class=\"inline fields\">\n                <input formControlName=\"url\" placeholder=\"http://bild{{i+1}}_Url\">\n                <input formControlName=\"title\" placeholder=\"Bild {{i+1}} Titel\">\n            </div>\n          </div>\n        </div>\n    <div class=\"one wide field\">\n      <button type=\"button\" class=\"ui button\"\n              (click)=\"addThumbnailControl()\"\n              [disabled]=\"!myForm.controls.thumbnails.valid\"> +\n      </button>\n    </div>\n  </div>\n\n  <div class=\"four wide column\"></div>\n  <div class=\"right twelfe wide column\">\n    <button type=\"submit\" class=\"ui button\"\n            [disabled]=\"!myForm.valid\">\n      Speichern\n    </button>\n  </div>\n\n</form>\n";
+module.exports = "<h1>Buchformular</h1>\n<form novalidate\n      class=\"ui large form\"\n      [formGroup]=\"myForm\"\n      (ngSubmit)=\"submitForm()\">\n\n  <div class=\"field\">\n    <label>Buchtitel</label>\n    <input formControlName=\"title\">\n    <div *ngIf=\"validation.title.error\" class=\"ui negative message\">\n      {{ validation.title.error }}\n    </div>\n  </div>\n  <div class=\"field\">\n    <label>Untertitel</label>\n    <input formControlName=\"subtitle\">\n  </div>\n  <div class=\"field\">\n    <label>ISBN-Nummer</label>\n    <input formControlName=\"isbn\">\n    <div *ngIf=\"validation.isbn.error\" class=\"ui negative message\">\n      {{ validation.isbn.error }}\n    </div>\n  </div>\n  <div class=\"field\">\n    <label>Erscheinungsdatum</label>\n    <input type=\"date\" \n           useValueAsDate \n           formControlName=\"published\">\n    <div *ngIf=\"validation.published.error\" class=\"ui negative message\">\n      {{ validation.published.error }}\n    </div>\n  </div>\n  <div class=\"field\">\n    <label>Autoren</label>\n    <div class=\"fields\" formArrayName=\"authors\">\n      <div class=\"fifteen wide field\" *ngFor=\"let control of authors.controls; let i = index\">\n        <input [formControlName]=\"i\" placeholder=\"Autor {{i+1}}\">\n      </div>        \n      <div class=\"one wide field\">\n        <button (click)=\"addAuthorControl()\" class=\"ui large button\" type=\"button\"> + </button>\n      </div>\n    </div>\n    <div *ngIf=\"validation.authors.error\" class=\"ui negative message\">\n      {{ validation.authors.error }}\n    </div>\n  </div>\n  <div class=\"field\">\n    <label>Beschreibung</label>\n    <textarea formControlName=\"description\" rows=\"3\"></textarea>\n  </div>\n  <div class=\"field\">\n    <label>Bilder</label>\n    <div formArrayName=\"thumbnails\">\n      <div class=\"fields\"\n          *ngFor=\"let control of thumbnails.controls; let i = index; let l = last\" \n          [formGroupName]=\"i\">\n        <div class=\"nine wide field\">\n          <input formControlName=\"url\" placeholder=\"http://bild{{i+1}}_Url\">\n        </div>\n        <div class=\"six wide field\">\n          <input formControlName=\"title\" placeholder=\"Bild {{i+1}} Titel\">\n        </div>\n        <div class=\"one wide field\" *ngIf=\"l\">\n          <button (click)=\"addThumbnailControl()\" class=\"ui large button\" type=\"button\"> + </button>\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <button type=\"submit\" class=\"ui button\" [disabled]=\"!myForm.valid\">Speichern</button>\n</form>";
 
 /***/ },
 
-/***/ 834:
+/***/ 837:
 /***/ function(module, exports) {
 
 module.exports = "<img class=\"ui tiny image\" [src]=\"book?.thumbnails && book?.thumbnails[0]?.url\" bmZoom=\"medium\">\n<div class=\"content\">\n  <div class=\"header\">{{ book?.title }}</div>\n  <div class=\"description\"> {{ book?.subtitle }} </div>\n  <div class=\"metadata\">\n    <span *ngFor=\"let author of book.authors; let l=last\">\n      {{ author }}<span *ngIf=\"!l\">, </span>\n    </span>\n  </div>\n  <div class=\"extra\">{{ book?.isbn | isbn:true }}</div>\n</div>\n";
 
 /***/ },
 
-/***/ 835:
+/***/ 838:
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"ui middle aligned selection divided list\">\n  <a class=\"bm-book-list-item item\"\n      *ngFor=\"let b of books\"\n      [book]=\"b\"\n      [routerLink]=\"[b.isbn]\"></a>\n</div>\n";
-
-/***/ },
-
-/***/ 842:
-/***/ function(module, exports) {
-
-module.exports = "h4.required:after {\n  content: ' *';\n  color: #9F3A38;\n}\n\n.ng-dirty.ng-invalid  {\n  border-color: #9F3A38 !important;\n}\n"
 
 /***/ }
 

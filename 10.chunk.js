@@ -6,7 +6,7 @@ webpackJsonp([10,14],{
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__iteration_4_component__ = __webpack_require__(723);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__iteration_4_routing_module__ = __webpack_require__(783);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__iteration_4_routing_module__ = __webpack_require__(784);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -67,7 +67,7 @@ var Iteration4Component = (function () {
 
 /***/ },
 
-/***/ 783:
+/***/ 784:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
