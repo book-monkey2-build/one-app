@@ -6189,10 +6189,8 @@ var BookDetailsComponent = (function () {
         this.route = route;
     }
     BookDetailsComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        this.route.params.subscribe(function (params) {
-            _this.book = _this.bs.getSingle(params['isbn']);
-        });
+        var params = this.route.snapshot.params;
+        this.book = this.bs.getSingle(params['isbn']);
     };
     BookDetailsComponent.prototype.getRating = function (num) {
         return new Array(num);
@@ -6256,14 +6254,12 @@ var BookFormComponent = (function () {
         var _this = this;
         this.initBook(this.book);
         this.myForm.valueChanges.subscribe(function () { return _this.updateErrorMessages(); });
-        this.route.params.subscribe(function (params) {
-            var isbn = params['isbn'];
-            if (isbn) {
-                _this.isUpdatingBook = true;
-                var book = _this.bs.getSingle(isbn);
-                _this.initBook(book);
-            }
-        });
+        var isbn = this.route.snapshot.params['isbn'];
+        if (isbn) {
+            this.isUpdatingBook = true;
+            var book = this.bs.getSingle(isbn);
+            this.initBook(book);
+        }
     };
     BookFormComponent.prototype.initBook = function (book) {
         this.myForm = this.fb.group({
