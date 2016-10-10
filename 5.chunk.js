@@ -54,7 +54,6 @@ var AppModule = (function () {
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_common__["a" /* CommonModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormsModule"],
                 __WEBPACK_IMPORTED_MODULE_1__angular_forms__["ReactiveFormsModule"],
                 __WEBPACK_IMPORTED_MODULE_10__app_routing_module_one_app__["a" /* AppRoutingModule */],
                 __WEBPACK_IMPORTED_MODULE_11_angular2_date_value_accessor__["DateValueAccessorModule"]
