@@ -6265,11 +6265,11 @@ var BookFormComponent = (function () {
         this.myForm = this.fb.group({
             title: [book.title, __WEBPACK_IMPORTED_MODULE_2__angular_forms__["Validators"].required],
             subtitle: [book.subtitle],
-            isbn: [book.isbn, __WEBPACK_IMPORTED_MODULE_2__angular_forms__["Validators"].compose([
+            isbn: [book.isbn, [
                     __WEBPACK_IMPORTED_MODULE_2__angular_forms__["Validators"].required,
                     __WEBPACK_IMPORTED_MODULE_2__angular_forms__["Validators"].minLength(10),
                     __WEBPACK_IMPORTED_MODULE_2__angular_forms__["Validators"].maxLength(13)
-                ])],
+                ]],
             description: [book.description],
             authors: this.buildAuthorsArray(book.authors),
             thumbnails: this.buildThumbnialsArray(book.thumbnails),
