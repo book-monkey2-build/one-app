@@ -16,8 +16,8 @@ webpackJsonp([0,14],{
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__book_form_book_form_component__ = __webpack_require__(728);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__shared_book_store_service__ = __webpack_require__(680);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__app_routing_module_one_app__ = __webpack_require__(785);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_angular2_date_value_accessor__ = __webpack_require__(662);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_angular2_date_value_accessor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12_angular2_date_value_accessor__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_angular_date_value_accessor__ = __webpack_require__(662);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_angular_date_value_accessor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12_angular_date_value_accessor__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__shared_isbn_pipe__ = __webpack_require__(789);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__shared_zoom_directive__ = __webpack_require__(792);
 /* harmony export (binding) */ __webpack_require__.d(exports, "AppModule", function() { return AppModule; });
@@ -66,7 +66,7 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_1__angular_forms__["ReactiveFormsModule"],
                 __WEBPACK_IMPORTED_MODULE_2__angular_http__["c" /* HttpModule */],
                 __WEBPACK_IMPORTED_MODULE_11__app_routing_module_one_app__["a" /* AppRoutingModule */],
-                __WEBPACK_IMPORTED_MODULE_12_angular2_date_value_accessor__["DateValueAccessorModule"]
+                __WEBPACK_IMPORTED_MODULE_12_angular_date_value_accessor__["DateValueAccessorModule"]
             ],
             providers: [
                 __WEBPACK_IMPORTED_MODULE_10__shared_book_store_service__["a" /* BookStoreService */]

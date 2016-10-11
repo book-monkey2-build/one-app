@@ -16,8 +16,8 @@ webpackJsonp([2,14],{
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__book_form_book_form_component__ = __webpack_require__(722);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__shared_book_store_service__ = __webpack_require__(679);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__app_routing_module_one_app__ = __webpack_require__(778);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_angular2_date_value_accessor__ = __webpack_require__(662);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_angular2_date_value_accessor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12_angular2_date_value_accessor__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_angular_date_value_accessor__ = __webpack_require__(662);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_angular_date_value_accessor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12_angular_date_value_accessor__);
 /* harmony export (binding) */ __webpack_require__.d(exports, "AppModule", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -60,7 +60,7 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_1__angular_forms__["ReactiveFormsModule"],
                 __WEBPACK_IMPORTED_MODULE_2__angular_http__["c" /* HttpModule */],
                 __WEBPACK_IMPORTED_MODULE_11__app_routing_module_one_app__["a" /* AppRoutingModule */],
-                __WEBPACK_IMPORTED_MODULE_12_angular2_date_value_accessor__["DateValueAccessorModule"]
+                __WEBPACK_IMPORTED_MODULE_12_angular_date_value_accessor__["DateValueAccessorModule"]
             ],
             providers: [
                 __WEBPACK_IMPORTED_MODULE_10__shared_book_store_service__["a" /* BookStoreService */]
