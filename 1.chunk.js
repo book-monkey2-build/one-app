@@ -11,14 +11,14 @@ webpackJsonp([1,14],{
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(732);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__home_home_component__ = __webpack_require__(736);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__book_list_book_list_component__ = __webpack_require__(735);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__book_list_item_book_list_item_component__ = __webpack_require__(797);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__book_list_item_book_list_item_component__ = __webpack_require__(798);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__book_details_book_details_component__ = __webpack_require__(733);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__book_form_book_form_component__ = __webpack_require__(734);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__shared_book_store_service__ = __webpack_require__(681);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__app_routing_module_one_app__ = __webpack_require__(794);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_angular_date_value_accessor__ = __webpack_require__(662);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_angular_date_value_accessor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12_angular_date_value_accessor__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__shared_isbn_pipe__ = __webpack_require__(798);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__shared_isbn_pipe__ = __webpack_require__(799);
 /* harmony export (binding) */ __webpack_require__.d(exports, "AppModule", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -9071,7 +9071,7 @@ var BookDetailsComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_book__ = __webpack_require__(690);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__book_form_error_messages__ = __webpack_require__(796);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_book_store_service__ = __webpack_require__(681);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__shared_isbn_validator__ = __webpack_require__(799);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__isbn_validator__ = __webpack_require__(797);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return BookFormComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -9119,15 +9119,12 @@ var BookFormComponent = (function () {
             subtitle: [this.book.subtitle],
             isbn: [this.book.isbn, [
                     __WEBPACK_IMPORTED_MODULE_2__angular_forms__["Validators"].required,
-                    __WEBPACK_IMPORTED_MODULE_6__shared_isbn_validator__["a" /* validateIsbn */]
+                    __WEBPACK_IMPORTED_MODULE_6__isbn_validator__["a" /* validateIsbn */]
                 ]],
             description: [this.book.description],
             authors: this.buildAuthorsArray(),
             thumbnails: this.buildThumbnialsArray(),
-            published: [
-                new Date(this.book.published),
-                __WEBPACK_IMPORTED_MODULE_2__angular_forms__["Validators"].pattern('([1-9]|0[1-9]|(1|2)[0-9]|3[0-1])\.([1-9]|0[1-9]|1[0-2])\.[0-9]{4}')
-            ]
+            published: [new Date(this.book.published)]
         });
         this.myForm.valueChanges.subscribe(function () { return _this.updateErrorMessages(); });
     };
@@ -9388,8 +9385,7 @@ var ErrorMessage = (function () {
 var BookFormErrorMessages = [
     new ErrorMessage('title', 'required', 'Ein Buchtitel muss angegeben werden'),
     new ErrorMessage('isbn', 'required', 'Es muss eine ISBN Nummer angegeben werden'),
-    new ErrorMessage('isbn', 'minlength', 'Die ISBN Nummer muss mindestens 10 Zeichen enthalten'),
-    new ErrorMessage('isbn', 'maxlength', 'Eine ISBN Nummer kann nicht mehr als 10 Zeichen haben'),
+    new ErrorMessage('isbn', 'isbnFormat', 'Die ISBN Nummer muss aus 10 oder 13 Zeichen bestehen'),
     new ErrorMessage('published', 'required', 'Es muss ein Erscheinungsdatum angegeben werden'),
     new ErrorMessage('author', 'required', 'Es muss ein Autor angegeben werden'),
 ];
@@ -9398,6 +9394,22 @@ var BookFormErrorMessages = [
 /***/ },
 
 /***/ 797:
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ exports["a"] = validateIsbn;
+function validateIsbn(control) {
+    var isolatedNumbers = control.value.replace(/[-]/g, '');
+    var isbnPattern = /(^\d{10}$)|(^\d{13}$)/g;
+    return isbnPattern.test(isolatedNumbers) ? null : {
+        isbnFormat: { valid: false }
+    };
+}
+
+
+/***/ },
+
+/***/ 798:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9436,7 +9448,7 @@ var BookListItemComponent = (function () {
 
 /***/ },
 
-/***/ 798:
+/***/ 799:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9478,22 +9490,6 @@ var IsbnPipe = (function () {
     ], IsbnPipe);
     return IsbnPipe;
 }());
-
-
-/***/ },
-
-/***/ 799:
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ exports["a"] = validateIsbn;
-function validateIsbn(control) {
-    var isolatedNumbers = control.value.replace(/[^-]/g, '');
-    var isbnPattern = /(^\d{10}$)|(^\d{13}$)/g;
-    return isbnPattern.test(isolatedNumbers) ? null : {
-        validateIsbn: { valid: false }
-    };
-}
 
 
 /***/ },

@@ -6271,10 +6271,7 @@ var BookFormComponent = (function () {
             description: [this.book.description],
             authors: this.buildAuthorsArray(),
             thumbnails: this.buildThumbnialsArray(),
-            published: [
-                this.book.published,
-                __WEBPACK_IMPORTED_MODULE_2__angular_forms__["Validators"].pattern('([1-9]|0[1-9]|(1|2)[0-9]|3[0-1])\.([1-9]|0[1-9]|1[0-2])\.[0-9]{4}')
-            ]
+            published: [this.book.published]
         });
         this.myForm.valueChanges.subscribe(function () { return _this.updateErrorMessages(); });
     };
