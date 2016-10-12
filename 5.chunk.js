@@ -6269,8 +6269,8 @@ var BookFormComponent = (function () {
                     __WEBPACK_IMPORTED_MODULE_2__angular_forms__["Validators"].maxLength(13)
                 ]],
             description: [this.book.description],
-            authors: this.buildAuthorsArray(this.book.authors),
-            thumbnails: this.buildThumbnialsArray(this.book.thumbnails),
+            authors: this.buildAuthorsArray(),
+            thumbnails: this.buildThumbnialsArray(),
             published: [
                 this.book.published,
                 __WEBPACK_IMPORTED_MODULE_2__angular_forms__["Validators"].pattern('([1-9]|0[1-9]|(1|2)[0-9]|3[0-1])\.([1-9]|0[1-9]|1[0-2])\.[0-9]{4}')
@@ -6278,13 +6278,13 @@ var BookFormComponent = (function () {
         });
         this.myForm.valueChanges.subscribe(function () { return _this.updateErrorMessages(); });
     };
-    BookFormComponent.prototype.buildAuthorsArray = function (authors) {
-        this.authors = this.fb.array(authors, __WEBPACK_IMPORTED_MODULE_2__angular_forms__["Validators"].required);
+    BookFormComponent.prototype.buildAuthorsArray = function () {
+        this.authors = this.fb.array(this.book.authors, __WEBPACK_IMPORTED_MODULE_2__angular_forms__["Validators"].required);
         return this.authors;
     };
-    BookFormComponent.prototype.buildThumbnialsArray = function (thumbnails) {
+    BookFormComponent.prototype.buildThumbnialsArray = function () {
         var _this = this;
-        this.thumbnails = this.fb.array(thumbnails.map(function (t) { return _this.fb.group({
+        this.thumbnails = this.fb.array(this.book.thumbnails.map(function (t) { return _this.fb.group({
             url: _this.fb.control(t.url),
             title: _this.fb.control(t.title)
         }); }));
