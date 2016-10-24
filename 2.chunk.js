@@ -8786,8 +8786,7 @@ var BookListComponent = (function () {
         this.bs = bs;
     }
     BookListComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        this.bs.getAll().subscribe(function (res) { return _this.books = res; });
+        this.booksOb = this.bs.getAll();
     };
     BookListComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
@@ -9120,7 +9119,7 @@ module.exports = "<img class=\"ui tiny image\"\n     *ngIf=\"book.thumbnails != 
 /***/ 862:
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"ui middle aligned selection divided list\">\n  <a class=\"bm-book-list-item item\"\n      *ngFor=\"let b of books\"\n      [book]=\"b\"\n      [routerLink]=\"b.isbn\"></a>\n</div>\n"
+module.exports = "<div class=\"ui middle aligned selection divided list\">\n  <a class=\"bm-book-list-item item\"\n      *ngFor=\"let b of booksOb | async\"\n      [book]=\"b\"\n      [routerLink]=\"b.isbn\"></a>\n</div>\n"
 
 /***/ }
 
