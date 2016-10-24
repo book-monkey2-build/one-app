@@ -1,4 +1,4 @@
-webpackJsonp([12,14],[
+webpackJsonp([14,16],[
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -37067,51 +37067,59 @@ exports.isPromise = isPromise;
 var map = {
 	"app/book-monkey/iteration-1/iteration-1.module": [
 		607,
-		6
+		7
 	],
 	"app/book-monkey/iteration-2/iteration-2.module": [
 		608,
-		8
+		9
 	],
 	"app/book-monkey/iteration-2/navigation/app.module": [
 		609,
-		7
+		8
 	],
 	"app/book-monkey/iteration-3/http/app.module": [
 		610,
-		5
+		6
 	],
 	"app/book-monkey/iteration-3/iteration-3.module": [
 		611,
-		11
+		13
 	],
 	"app/book-monkey/iteration-4/custom-validation/app.module": [
 		612,
-		2
+		3
 	],
 	"app/book-monkey/iteration-4/iteration-4.module": [
 		613,
-		10
+		12
 	],
 	"app/book-monkey/iteration-4/reactive-forms/app.module": [
 		614,
-		4
+		5
 	],
 	"app/book-monkey/iteration-4/template-driven-forms/app.module": [
 		615,
-		3
+		4
 	],
 	"app/book-monkey/iteration-5/directives/app.module": [
 		616,
-		0
+		1
 	],
 	"app/book-monkey/iteration-5/iteration-5.module": [
 		617,
-		9
+		11
 	],
 	"app/book-monkey/iteration-5/pipes/app.module": [
 		618,
-		1
+		2
+	],
+	"app/book-monkey/iteration-6/iteration-6.module": [
+		619,
+		10
+	],
+	"app/book-monkey/iteration-6/modules/app.module": [
+		620,
+		0
 	]
 };
 function webpackAsyncContext(req) {
@@ -48950,6 +48958,10 @@ var routes = [
     {
         path: 'iteration-5',
         loadChildren: 'app/book-monkey/iteration-5/iteration-5.module'
+    },
+    {
+        path: 'iteration-6',
+        loadChildren: 'app/book-monkey/iteration-6/iteration-6.module'
     }
 ];
 var AppRoutingModule = (function () {
@@ -52105,7 +52117,7 @@ module.exports = ".let-space-for-footer {\n  margin-bottom: 140px;\n}\n\n.ui.foo
 /* 580 */
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"let-space-for-footer\">\n\n  <div class=\"ui six steps\">\n    <a routerLink=\"/\" routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact: true}\" class=\"step\">\n      <i class=\"home icon\"></i>\n    </a>\n    <a routerLink=\"/iteration-1\" routerLinkActive=\"active\" class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Iteration-1</div>\n        <div class=\"description\">Komponenten</div>\n      </div>\n    </a>\n    <a routerLink=\"/iteration-2\" routerLinkActive=\"active\" class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Iteration-2</div>\n        <div class=\"description\">Dependency-Injection und Routing</div>\n      </div>\n    </a>\n    <a routerLink=\"/iteration-3\" routerLinkActive=\"active\" class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Iteration-3</div>\n        <div class=\"description\">Http</div>\n      </div>\n    </a>\n    <a routerLink=\"/iteration-4\" routerLinkActive=\"active\" class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Iteration-4</div>\n        <div class=\"description\">Formulare und Validierung</div>\n      </div>\n    </a>\n    <a routerLink=\"/iteration-5\" routerLinkActive=\"active\" class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Iteration-5</div>\n        <div class=\"description\">Pipes und Direktiven</div>\n      </div>\n    </a>\n  </div>\n\n  <router-outlet></router-outlet>\n</div>\n\n<a [href]=\"repositoryUrl\" target=\"_blank\">\n<div class=\"ui inverted vertical footer segment\">\n    <div class=\"ui center aligned container\">\n\n\n<h4 class=\"ui inverted icon header\">\n  <i class=\"github icon\"></i>\n      <div class=\"content\">\n        {{ repoName }}\n        <div class=\"sub header\">Quelltext auf Github</div>\n      </div>\n</h4>\n\n    </div>\n  </div>\n    </a>\n"
+module.exports = "<div class=\"let-space-for-footer\">\n\n  <div class=\"ui seven steps\">\n    <a routerLink=\"/\" routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact: true}\" class=\"step\">\n      <i class=\"home icon\"></i>\n    </a>\n    <a routerLink=\"/iteration-1\" routerLinkActive=\"active\" class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Iteration-1</div>\n        <div class=\"description\">Komponenten</div>\n      </div>\n    </a>\n    <a routerLink=\"/iteration-2\" routerLinkActive=\"active\" class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Iteration-2</div>\n        <div class=\"description\">Dependency-Injection und Routing</div>\n      </div>\n    </a>\n    <a routerLink=\"/iteration-3\" routerLinkActive=\"active\" class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Iteration-3</div>\n        <div class=\"description\">Http</div>\n      </div>\n    </a>\n    <a routerLink=\"/iteration-4\" routerLinkActive=\"active\" class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Iteration-4</div>\n        <div class=\"description\">Formulare und Validierung</div>\n      </div>\n    </a>\n    <a routerLink=\"/iteration-5\" routerLinkActive=\"active\" class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Iteration-5</div>\n        <div class=\"description\">Pipes und Direktiven</div>\n      </div>\n    </a>\n    <a routerLink=\"/iteration-6\" routerLinkActive=\"active\" class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Iteration-6</div>\n        <div class=\"description\">Module und Routing</div>\n      </div>\n    </a>\n  </div>\n\n  <router-outlet></router-outlet>\n</div>\n\n<a [href]=\"repositoryUrl\" target=\"_blank\">\n<div class=\"ui inverted vertical footer segment\">\n    <div class=\"ui center aligned container\">\n\n\n<h4 class=\"ui inverted icon header\">\n  <i class=\"github icon\"></i>\n      <div class=\"content\">\n        {{ repoName }}\n        <div class=\"sub header\">Quelltext auf Github</div>\n      </div>\n</h4>\n\n    </div>\n  </div>\n    </a>\n"
 
 /***/ },
 /* 581 */
