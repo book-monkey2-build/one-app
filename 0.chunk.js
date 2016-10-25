@@ -11,10 +11,8 @@ webpackJsonp([0,16],{
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__home_home_component__ = __webpack_require__(749);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_book_store_service__ = __webpack_require__(687);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_routing_module_one_app__ = __webpack_require__(817);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_angular_date_value_accessor__ = __webpack_require__(680);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_angular_date_value_accessor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_angular_date_value_accessor__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__book_book_module__ = __webpack_require__(821);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__admin_admin_module__ = __webpack_require__(814);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__book_book_module__ = __webpack_require__(821);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__admin_admin_module__ = __webpack_require__(814);
 /* harmony export (binding) */ __webpack_require__.d(exports, "AppModule", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -25,7 +23,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
 
 
 
@@ -48,9 +45,8 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_0__angular_common__["a" /* CommonModule */],
                 __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* HttpModule */],
                 __WEBPACK_IMPORTED_MODULE_6__app_routing_module_one_app__["a" /* AppRoutingModule */],
-                __WEBPACK_IMPORTED_MODULE_7_angular_date_value_accessor__["DateValueAccessorModule"],
-                __WEBPACK_IMPORTED_MODULE_8__book_book_module__["a" /* BookModule */],
-                __WEBPACK_IMPORTED_MODULE_9__admin_admin_module__["a" /* AdminModule */]
+                __WEBPACK_IMPORTED_MODULE_7__book_book_module__["a" /* BookModule */],
+                __WEBPACK_IMPORTED_MODULE_8__admin_admin_module__["a" /* AdminModule */]
             ],
             providers: [
                 __WEBPACK_IMPORTED_MODULE_5__shared_book_store_service__["a" /* BookStoreService */]
@@ -8876,6 +8872,8 @@ var AdminRoutingModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(658);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__admin_routing_module__ = __webpack_require__(813);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__book_form_book_form_component__ = __webpack_require__(745);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_angular_date_value_accessor__ = __webpack_require__(680);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_angular_date_value_accessor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_angular_date_value_accessor__);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return AdminModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -8891,6 +8889,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var AdminModule = (function () {
     function AdminModule() {
     }
@@ -8899,8 +8898,8 @@ var AdminModule = (function () {
             imports: [
                 __WEBPACK_IMPORTED_MODULE_1__angular_common__["a" /* CommonModule */],
                 __WEBPACK_IMPORTED_MODULE_3__admin_routing_module__["a" /* AdminRoutingModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormsModule"],
                 __WEBPACK_IMPORTED_MODULE_2__angular_forms__["ReactiveFormsModule"],
+                __WEBPACK_IMPORTED_MODULE_5_angular_date_value_accessor__["DateValueAccessorModule"]
             ],
             declarations: [__WEBPACK_IMPORTED_MODULE_4__book_form_book_form_component__["a" /* BookFormComponent */]]
         }), 
