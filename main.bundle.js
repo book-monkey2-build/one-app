@@ -35019,8 +35019,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var AppComponent = (function () {
     function AppComponent(r) {
+        this.r = r;
+        this.mobileLayout = false;
+        this.showSidebar = false;
+    }
+    AppComponent.prototype.ngOnInit = function () {
         var _this = this;
-        r.events
+        this.r.events
             .filter(function (e) { return e instanceof __WEBPACK_IMPORTED_MODULE_1__angular_router__["d" /* NavigationEnd */]; })
             .subscribe(function (e) {
             var url = e.urlAfterRedirects;
@@ -35034,7 +35039,20 @@ var AppComponent = (function () {
             }
             _this.repositoryUrl = 'https://github.com/book-monkey2-build/' + _this.repoName;
         });
-    }
+        this.onResize();
+    };
+    AppComponent.prototype.toggleSidebar = function () {
+        this.showSidebar = !this.showSidebar;
+    };
+    AppComponent.prototype.onResize = function () {
+        this.mobileLayout = (window.innerWidth < 767) ? true : false;
+    };
+    __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["HostListener"])('window:resize', ['$event']), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', []), 
+        __metadata('design:returntype', void 0)
+    ], AppComponent.prototype, "onResize", null);
     AppComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'bm-root',
@@ -52111,13 +52129,13 @@ process.umask = function() { return 0; };
 /* 579 */
 /***/ function(module, exports) {
 
-module.exports = ".let-space-for-footer {\n  margin-bottom: 140px;\n}\n\n.ui.footer.segment {\n  width: 100%;\n  position: fixed;\n  left:0;\n  bottom:0;\n}\n\nh4.ui.inverted.icon.header {\n  margin:0px;\n}\n"
+module.exports = ".let-space-for-footer {\n  margin-top: 60px;\n}\n\n.let-space-for-mobile-top-menu {\n  margin-bottom: 140px;\n}\n\n.ui.footer.segment {\n  width: 100%;\n  position: fixed;\n  left:0;\n  bottom:0;\n}\n\nh4.ui.inverted.icon.header {\n  margin:0px;\n}\n"
 
 /***/ },
 /* 580 */
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"let-space-for-footer\">\n\n  <div class=\"ui seven steps\">\n    <a routerLink=\"/\" routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact: true}\" class=\"step\">\n      <i class=\"home icon\"></i>\n    </a>\n    <a routerLink=\"/iteration-1\" routerLinkActive=\"active\" class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Iteration 1</div>\n        <div class=\"description\">Komponenten</div>\n      </div>\n    </a>\n    <a routerLink=\"/iteration-2\" routerLinkActive=\"active\" class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Iteration 2</div>\n        <div class=\"description\">Dependency-Injection und Routing</div>\n      </div>\n    </a>\n    <a routerLink=\"/iteration-3\" routerLinkActive=\"active\" class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Iteration 3</div>\n        <div class=\"description\">Http</div>\n      </div>\n    </a>\n    <a routerLink=\"/iteration-4\" routerLinkActive=\"active\" class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Iteration 4</div>\n        <div class=\"description\">Formulare und Validierung</div>\n      </div>\n    </a>\n    <a routerLink=\"/iteration-5\" routerLinkActive=\"active\" class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Iteration 5</div>\n        <div class=\"description\">Pipes und Direktiven</div>\n      </div>\n    </a>\n    <a routerLink=\"/iteration-6\" routerLinkActive=\"active\" class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Iteration 6</div>\n        <div class=\"description\">Module und Routing</div>\n      </div>\n    </a>\n  </div>\n\n  <router-outlet></router-outlet>\n</div>\n\n<a [href]=\"repositoryUrl\" target=\"_blank\">\n<div class=\"ui inverted vertical footer segment\">\n    <div class=\"ui center aligned container\">\n\n\n<h4 class=\"ui inverted icon header\">\n  <i class=\"github icon\"></i>\n      <div class=\"content\">\n        {{ repoName }}\n        <div class=\"sub header\">Quelltext auf Github</div>\n      </div>\n</h4>\n\n    </div>\n  </div>\n    </a>\n"
+module.exports = "\n  <div class=\"ui sidebar inverted vertical menu\" [class.visible]=\"mobileLayout && showSidebar\">\n    <a class=\"item\" (click)=\"toggleSidebar()\">\n      Sidebar schließen <i class=\"angle double left icon\"></i>\n    </a>\n    <a class=\"item\" routerLink=\"/\" routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact: true}\"  (click)=\"toggleSidebar()\">\n      <i class=\"home icon\"></i> Home\n    </a>\n    <a class=\"item\" routerLink=\"/iteration-1\" routerLinkActive=\"active\" (click)=\"toggleSidebar()\">\n      1 - Komponenten <i class=\"angle right icon\"></i>\n    </a>\n    <a class=\"item\" routerLink=\"/iteration-2\" routerLinkActive=\"active\" (click)=\"toggleSidebar()\">\n      2 - Dependency-Injection und Routing <i class=\"angle right icon\"></i>\n    </a>\n    <a class=\"item\" routerLink=\"/iteration-3\" routerLinkActive=\"active\" (click)=\"toggleSidebar()\">\n      3 - Http <i class=\"angle right icon\"></i>\n    </a>\n    <a class=\"item\" routerLink=\"/iteration-4\" routerLinkActive=\"active\" (click)=\"toggleSidebar()\">\n      4 - Formulare und Validierung <i class=\"angle right icon\"></i>\n    </a>\n    <a class=\"item\" routerLink=\"/iteration-5\" routerLinkActive=\"active\" (click)=\"toggleSidebar()\">\n      5 - Pipes und Direktiven <i class=\"angle right icon\"></i>\n    </a>\n    <a class=\"item\" routerLink=\"/iteration-6\" routerLinkActive=\"active\" (click)=\"toggleSidebar()\">\n      6 - Module und Routing <i class=\"angle right icon\"></i>\n    </a>\n  </div>\n\n  <div class=\"pusher dimmed\">\n\n    <div class=\"ui top fixed inverted pointing menu let-space-for-mobile-top-menu\" *ngIf=\"mobileLayout\">\n      <a class=\"toc item\" (click)=\"toggleSidebar()\">\n        <i class=\"sidebar icon\"></i> Hauptmenü\n      </a>\n    </div>\n    <!-- Site content !-->\n\n    <div class=\"let-space-for-footer\">\n      <div class=\"ui seven steps\" *ngIf=\"!mobileLayout\">\n        <a routerLink=\"/\" routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact: true}\" class=\"step\">\n          <i class=\"home icon\"></i>\n        </a>\n        <a routerLink=\"/iteration-1\" routerLinkActive=\"active\" class=\"step\">\n          <div class=\"content\">\n            <div class=\"title\">Iteration 1</div>\n            <div class=\"description\">Komponenten</div>\n          </div>\n        </a>\n        <a routerLink=\"/iteration-2\" routerLinkActive=\"active\" class=\"step\">\n          <div class=\"content\">\n            <div class=\"title\">Iteration 2</div>\n            <div class=\"description\">Dependency-Injection und Routing</div>\n          </div>\n        </a>\n        <a routerLink=\"/iteration-3\" routerLinkActive=\"active\" class=\"step\">\n          <div class=\"content\">\n            <div class=\"title\">Iteration 3</div>\n            <div class=\"description\">Http</div>\n          </div>\n        </a>\n        <a routerLink=\"/iteration-4\" routerLinkActive=\"active\" class=\"step\">\n          <div class=\"content\">\n            <div class=\"title\">Iteration 4</div>\n            <div class=\"description\">Formulare und Validierung</div>\n          </div>\n        </a>\n        <a routerLink=\"/iteration-5\" routerLinkActive=\"active\" class=\"step\">\n          <div class=\"content\">\n            <div class=\"title\">Iteration 5</div>\n            <div class=\"description\">Pipes und Direktiven</div>\n          </div>\n        </a>\n        <a routerLink=\"/iteration-6\" routerLinkActive=\"active\" class=\"step\">\n          <div class=\"content\">\n            <div class=\"title\">Iteration 6</div>\n            <div class=\"description\">Module und Routing</div>\n          </div>\n        </a>\n      </div>\n\n      <router-outlet></router-outlet>\n    </div>\n\n    <a [href]=\"repositoryUrl\" target=\"_blank\">\n      <div class=\"ui inverted vertical footer segment\">\n        <div class=\"ui center aligned container\">\n          <h4 class=\"ui inverted icon header\">\n            <i class=\"github icon\"></i>\n            <div class=\"content\">\n              {{ repoName }}\n              <div class=\"sub header\">Quelltext auf Github</div>\n            </div>\n          </h4>\n        </div>\n      </div>\n    </a>\n\n</div>\n\n"
 
 /***/ },
 /* 581 */
