@@ -65,7 +65,7 @@ var AppModule = (function () {
             ],
             providers: [
                 __WEBPACK_IMPORTED_MODULE_10__shared_book_store_service__["a" /* BookStoreService */],
-                __WEBPACK_IMPORTED_MODULE_11__shared_book_validators__["a" /* BookValidators */]
+                __WEBPACK_IMPORTED_MODULE_11__shared_book_validators__["a" /* BookValidators */] // NEW
             ],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */]]
         }), 
