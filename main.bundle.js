@@ -1,4 +1,4 @@
-webpackJsonp([14,16],[
+webpackJsonp([16,18],[
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -37085,59 +37085,67 @@ exports.isPromise = isPromise;
 var map = {
 	"app/book-monkey/iteration-1/iteration-1.module": [
 		607,
-		7
+		9
 	],
 	"app/book-monkey/iteration-2/iteration-2.module": [
 		608,
-		9
+		11
 	],
 	"app/book-monkey/iteration-2/navigation/app.module": [
 		609,
-		8
+		10
 	],
 	"app/book-monkey/iteration-3/http/app.module": [
 		610,
-		6
+		5
 	],
 	"app/book-monkey/iteration-3/iteration-3.module": [
 		611,
-		13
+		15
 	],
 	"app/book-monkey/iteration-4/custom-validation/app.module": [
 		612,
-		3
+		2
 	],
 	"app/book-monkey/iteration-4/iteration-4.module": [
 		613,
-		12
+		14
 	],
 	"app/book-monkey/iteration-4/reactive-forms/app.module": [
 		614,
-		5
+		4
 	],
 	"app/book-monkey/iteration-4/template-driven-forms/app.module": [
 		615,
-		4
+		3
 	],
 	"app/book-monkey/iteration-5/directives/app.module": [
 		616,
-		1
+		0
 	],
 	"app/book-monkey/iteration-5/iteration-5.module": [
 		617,
-		11
+		13
 	],
 	"app/book-monkey/iteration-5/pipes/app.module": [
 		618,
-		2
+		1
 	],
 	"app/book-monkey/iteration-6/iteration-6.module": [
 		619,
-		10
+		12
+	],
+	"app/book-monkey/iteration-6/modules/admin/admin.module": [
+		620,
+		6
 	],
 	"app/book-monkey/iteration-6/modules/app.module": [
-		620,
-		0
+		621,
+		8
+	],
+	"app/book-monkey/iteration-6/modules/book/book.module": [
+		622,
+		7
 	]
 };
 function webpackAsyncContext(req) {
