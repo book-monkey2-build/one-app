@@ -52129,7 +52129,7 @@ process.umask = function() { return 0; };
 /* 579 */
 /***/ function(module, exports) {
 
-module.exports = ".let-space-for-footer {\n  margin-top: 60px;\n}\n\n.let-space-for-mobile-top-menu {\n  margin-bottom: 140px;\n}\n\n.ui.footer.segment {\n  width: 100%;\n  position: fixed;\n  left:0;\n  bottom:0;\n}\n\nh4.ui.inverted.icon.header {\n  margin:0px;\n}\n"
+module.exports = ".let-space-for-footer {\n  padding-bottom: 130px;\n}\n\n.let-space-for-mobile-top-menu {\n  margin-bottom: 140px;\n}\n\n.ui.footer.segment {\n  width: 100%;\n  position: fixed;\n  left:0;\n  bottom:0;\n}\n\nh4.ui.inverted.icon.header {\n  margin:0px;\n}\n"
 
 /***/ },
 /* 580 */
