@@ -68,6 +68,7 @@ var Book = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core_src_console__ = __webpack_require__(114);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return AppComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -79,10 +80,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var AppComponent = (function () {
-    function AppComponent() {
+    function AppComponent(console) {
         this.listOn = true;
         this.detailsOn = false;
+        console.log('One example for an inbuild injectable!');
     }
     AppComponent.prototype.showList = function () {
         this.listOn = true;
@@ -98,9 +101,10 @@ var AppComponent = (function () {
             selector: 'bm-root',
             template: "\n    <bm-book-list *ngIf=\"listOn\" (showDetailsEvent)=\"showDetails($event)\"></bm-book-list>\n    <bm-book-details *ngIf=\"detailsOn\" (showListEvent)=\"showList()\" [book]=\"book\"></bm-book-details>\n  "
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_core_src_console__["a" /* Console */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_core_src_console__["a" /* Console */]) === 'function' && _a) || Object])
     ], AppComponent);
     return AppComponent;
+    var _a;
 }());
 
 
