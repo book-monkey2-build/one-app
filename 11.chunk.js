@@ -85,7 +85,7 @@ var AppComponent = (function () {
     function AppComponent(console) {
         this.listOn = true;
         this.detailsOn = false;
-        console.log('One example for an inbuild injectable!');
+        console.log('One example for a built-in injectable!');
     }
     AppComponent.prototype.showList = function () {
         this.listOn = true;
