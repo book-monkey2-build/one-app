@@ -10,7 +10,7 @@ webpackJsonp([8,18],{
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(753);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__home_home_component__ = __webpack_require__(757);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_book_store_service__ = __webpack_require__(684);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__shared_book_validators__ = __webpack_require__(700);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__shared_book_validators_service__ = __webpack_require__(700);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_routing_module_one_app__ = __webpack_require__(820);
 /* harmony export (binding) */ __webpack_require__.d(exports, "AppModule", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -46,7 +46,7 @@ var AppModule = (function () {
             ],
             providers: [
                 __WEBPACK_IMPORTED_MODULE_5__shared_book_store_service__["a" /* BookStoreService */],
-                __WEBPACK_IMPORTED_MODULE_6__shared_book_validators__["a" /* BookValidators */]
+                __WEBPACK_IMPORTED_MODULE_6__shared_book_validators_service__["a" /* BookValidatorsService */]
             ],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* AppComponent */]]
         }), 
@@ -2749,7 +2749,7 @@ var BookStoreService = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_book_store_service__ = __webpack_require__(684);
-/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return BookValidators; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return BookValidatorsService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2761,28 +2761,28 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var BookValidators = (function () {
-    function BookValidators(bs) {
+var BookValidatorsService = (function () {
+    function BookValidatorsService(bs) {
         this.bs = bs;
     }
-    BookValidators.prototype.isbnFormat = function (control) {
+    BookValidatorsService.prototype.isbnFormat = function (control) {
         var isolatedNumbers = control.value.replace(/[-]/g, '');
         var isbnPattern = /(^\d{10}$)|(^\d{13}$)/g;
         return isbnPattern.test(isolatedNumbers) ? null : {
             isbnFormat: { valid: false }
         };
     };
-    BookValidators.prototype.isbnExists = function (control) {
+    BookValidatorsService.prototype.isbnExists = function (control) {
         return this.bs.check(control.value)
             .map(function (exists) { return (exists === false) ? null : {
             isbnExists: { valid: false }
         }; });
     };
-    BookValidators = __decorate([
+    BookValidatorsService = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__shared_book_store_service__["a" /* BookStoreService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__shared_book_store_service__["a" /* BookStoreService */]) === 'function' && _a) || Object])
-    ], BookValidators);
-    return BookValidators;
+    ], BookValidatorsService);
+    return BookValidatorsService;
     var _a;
 }());
 
