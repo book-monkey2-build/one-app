@@ -11,7 +11,7 @@ webpackJsonp([8,18],{
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__home_home_component__ = __webpack_require__(757);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_book_store_service__ = __webpack_require__(684);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__shared_book_validators_service__ = __webpack_require__(700);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_routing_module_one_app__ = __webpack_require__(820);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_routing_module_one_app__ = __webpack_require__(821);
 /* harmony export (binding) */ __webpack_require__.d(exports, "AppModule", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2811,7 +2811,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'bm-root',
-            template: __webpack_require__(869)
+            template: __webpack_require__(871)
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
@@ -2888,7 +2888,7 @@ var HomeComponent = (function () {
 
 /***/ },
 
-/***/ 820:
+/***/ 821:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2896,7 +2896,7 @@ var HomeComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(187);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(753);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_routing_module__ = __webpack_require__(821);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_routing_module__ = __webpack_require__(822);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return AppRoutingModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2932,7 +2932,7 @@ var AppRoutingModule = (function () {
 
 /***/ },
 
-/***/ 821:
+/***/ 822:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2992,7 +2992,7 @@ var AppRoutingModule = (function () {
 
 /***/ },
 
-/***/ 869:
+/***/ 871:
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"ui three item tabs menu\">\n  <a routerLink=\"home\"  routerLinkActive=\"active\" class=\"item\">Home</a>\n  <a routerLink=\"book/books\" routerLinkActive=\"active\" class=\"item\">Bücher</a>\n  <a routerLink=\"admin/admin\" routerLinkActive=\"active\" class=\"item\">Administration</a>\n</div>\n<router-outlet></router-outlet>\n"
