@@ -8769,11 +8769,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var routes = [
     {
-        path: 'admin',
+        path: '',
         component: __WEBPACK_IMPORTED_MODULE_2__book_form_book_form_component__["a" /* BookFormComponent */],
     },
     {
-        path: 'admin/:isbn',
+        path: ':isbn',
         component: __WEBPACK_IMPORTED_MODULE_2__book_form_book_form_component__["a" /* BookFormComponent */],
         resolve: {
             book: __WEBPACK_IMPORTED_MODULE_3__shared_book_resolver_service__["a" /* BookResolver */]
