@@ -5,7 +5,7 @@ webpackJsonp([11,18],{
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__iteration_2_component__ = __webpack_require__(709);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__iteration_2_component__ = __webpack_require__(708);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__di_app_module__ = __webpack_require__(772);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__iteration_2_routing_module__ = __webpack_require__(777);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -63,7 +63,7 @@ var Book = (function () {
 
 /***/ },
 
-/***/ 707:
+/***/ 706:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -110,7 +110,7 @@ var AppComponent = (function () {
 
 /***/ },
 
-/***/ 708:
+/***/ 707:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -148,7 +148,7 @@ var BookStoreService = (function () {
 
 /***/ },
 
-/***/ 709:
+/***/ 708:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -185,11 +185,11 @@ var Iteration2Component = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common__ = __webpack_require__(80);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_component__ = __webpack_require__(707);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_component__ = __webpack_require__(706);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__book_list_book_list_component__ = __webpack_require__(775);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__book_list_item_book_list_item_component__ = __webpack_require__(774);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__book_details_book_details_component__ = __webpack_require__(773);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__shared_book_store_service__ = __webpack_require__(708);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__shared_book_store_service__ = __webpack_require__(707);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -328,7 +328,7 @@ var BookListItemComponent = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_book_store_service__ = __webpack_require__(708);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_book_store_service__ = __webpack_require__(707);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return BookListComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -392,8 +392,8 @@ var Thumbnail = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(187);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__iteration_2_component__ = __webpack_require__(709);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__di_app_component__ = __webpack_require__(707);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__iteration_2_component__ = __webpack_require__(708);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__di_app_component__ = __webpack_require__(706);
 /* unused harmony export routes */
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Iteration2RoutingModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {

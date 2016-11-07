@@ -5,7 +5,7 @@ webpackJsonp([12,18],{
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__iteration_6_component__ = __webpack_require__(751);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__iteration_6_component__ = __webpack_require__(750);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__iteration_6_routing_module__ = __webpack_require__(818);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -36,7 +36,7 @@ var Iteration6Module = (function () {
 
 /***/ },
 
-/***/ 751:
+/***/ 750:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -73,7 +73,7 @@ var Iteration6Component = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(187);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__iteration_6_component__ = __webpack_require__(751);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__iteration_6_component__ = __webpack_require__(750);
 /* unused harmony export routes */
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Iteration6RoutingModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {

@@ -2747,7 +2747,7 @@ var BookStoreService = (function () {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__thumbnail__ = __webpack_require__(701);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__thumbnail__ = __webpack_require__(700);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Book; });
 /* unused harmony reexport Thumbnail */
 
@@ -2771,7 +2771,7 @@ var Book = (function () {
 
 /***/ },
 
-/***/ 701:
+/***/ 700:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
