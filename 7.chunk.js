@@ -2779,7 +2779,7 @@ var BookResolver = (function () {
 
 /***/ },
 
-/***/ 691:
+/***/ 700:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2829,8 +2829,7 @@ var Thumbnail = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(187);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_book__ = __webpack_require__(691);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_book_store_service__ = __webpack_require__(684);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_book_store_service__ = __webpack_require__(684);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return BookDetailsComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2844,7 +2843,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
 var BookDetailsComponent = (function () {
     function BookDetailsComponent(bs, router, route) {
         this.bs = bs;
@@ -2852,11 +2850,7 @@ var BookDetailsComponent = (function () {
         this.route = route;
     }
     BookDetailsComponent.prototype.ngOnInit = function () {
-        this.book = new __WEBPACK_IMPORTED_MODULE_2__shared_book__["a" /* Book */]('', '', [''], new Date(), '', 0, [{ url: '', title: '' }], '');
         this.book = this.route.snapshot.data['book'];
-        /*let params = this.route.snapshot.params;
-        this.bs.getSingle(params['isbn'])
-          .subscribe(b => this.book = b);*/
     };
     BookDetailsComponent.prototype.getRating = function (num) {
         return new Array(num);
@@ -2872,7 +2866,7 @@ var BookDetailsComponent = (function () {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             template: __webpack_require__(873)
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__shared_book_store_service__["a" /* BookStoreService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__shared_book_store_service__["a" /* BookStoreService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* Router */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === 'function' && _c) || Object])
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__shared_book_store_service__["a" /* BookStoreService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_book_store_service__["a" /* BookStoreService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* Router */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === 'function' && _c) || Object])
     ], BookDetailsComponent);
     return BookDetailsComponent;
     var _a, _b, _c;
@@ -2925,7 +2919,7 @@ var BookListComponent = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_book__ = __webpack_require__(691);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_book__ = __webpack_require__(700);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return BookListItemComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;

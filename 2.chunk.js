@@ -8526,7 +8526,7 @@ var BookStoreService = (function () {
 
 /***/ },
 
-/***/ 696:
+/***/ 695:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8592,7 +8592,7 @@ var AppComponent = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(187);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_book__ = __webpack_require__(696);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_book__ = __webpack_require__(695);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_book_store_service__ = __webpack_require__(685);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return BookDetailsComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -8651,7 +8651,7 @@ var BookDetailsComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(187);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(666);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_book__ = __webpack_require__(696);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_book__ = __webpack_require__(695);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__book_form_error_messages__ = __webpack_require__(790);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_book_store_service__ = __webpack_require__(685);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__shared_book_validators_service__ = __webpack_require__(726);
@@ -9029,7 +9029,7 @@ var BookFormErrorMessages = [
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_book__ = __webpack_require__(696);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_book__ = __webpack_require__(695);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return BookListItemComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;

@@ -8536,7 +8536,7 @@ var BookResolver = (function () {
 
 /***/ },
 
-/***/ 691:
+/***/ 700:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8587,7 +8587,7 @@ var Thumbnail = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(187);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(666);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_book__ = __webpack_require__(691);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_book__ = __webpack_require__(700);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__book_form_error_messages__ = __webpack_require__(821);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_book_store_service__ = __webpack_require__(684);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__shared_book_validators_service__ = __webpack_require__(753);

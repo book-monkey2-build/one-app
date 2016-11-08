@@ -13,7 +13,7 @@ webpackJsonp([5,18],{
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__book_list_book_list_component__ = __webpack_require__(717);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__book_list_item_book_list_item_component__ = __webpack_require__(785);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__book_details_book_details_component__ = __webpack_require__(716);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__shared_book_store_service__ = __webpack_require__(695);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__shared_book_store_service__ = __webpack_require__(694);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__app_routing_module_one_app__ = __webpack_require__(783);
 /* harmony export (binding) */ __webpack_require__.d(exports, "AppModule", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -8353,7 +8353,7 @@ exports.toPromise = toPromise;
 
 /***/ },
 
-/***/ 695:
+/***/ 694:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8453,7 +8453,7 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(187);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_book__ = __webpack_require__(719);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_book_store_service__ = __webpack_require__(695);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_book_store_service__ = __webpack_require__(694);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return BookDetailsComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -8509,7 +8509,7 @@ var BookDetailsComponent = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_book_store_service__ = __webpack_require__(695);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_book_store_service__ = __webpack_require__(694);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return BookListComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
