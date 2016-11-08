@@ -1,12 +1,12 @@
-webpackJsonp([14,18],{
+webpackJsonp([14,20],{
 
-/***/ 613:
+/***/ 619:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__iteration_4_component__ = __webpack_require__(727);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__iteration_4_routing_module__ = __webpack_require__(793);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__iteration_6_component__ = __webpack_require__(753);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__iteration_6_routing_module__ = __webpack_require__(829);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -19,29 +19,29 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var Iteration4Module = (function () {
-    function Iteration4Module() {
+var Iteration6Module = (function () {
+    function Iteration6Module() {
     }
-    Iteration4Module = __decorate([
+    Iteration6Module = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
-            declarations: [__WEBPACK_IMPORTED_MODULE_1__iteration_4_component__["a" /* Iteration4Component */]],
-            imports: [__WEBPACK_IMPORTED_MODULE_2__iteration_4_routing_module__["a" /* Iteration4RoutingModule */]]
+            declarations: [__WEBPACK_IMPORTED_MODULE_1__iteration_6_component__["a" /* Iteration6Component */]],
+            imports: [__WEBPACK_IMPORTED_MODULE_2__iteration_6_routing_module__["a" /* Iteration6RoutingModule */]]
         }), 
         __metadata('design:paramtypes', [])
-    ], Iteration4Module);
-    return Iteration4Module;
+    ], Iteration6Module);
+    return Iteration6Module;
 }());
-/* harmony default export */ exports["default"] = Iteration4Module;
+/* harmony default export */ exports["default"] = Iteration6Module;
 
 
 /***/ },
 
-/***/ 727:
+/***/ 753:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Iteration4Component; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Iteration6Component; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -52,30 +52,30 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-var Iteration4Component = (function () {
-    function Iteration4Component() {
+var Iteration6Component = (function () {
+    function Iteration6Component() {
     }
-    Iteration4Component = __decorate([
+    Iteration6Component = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            template: "\n    <div class=\"ui three small ordered steps\">\n    <a routerLink=\"template-driven-forms\" routerLinkActive=\"active\" class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Formulare (Template-Driven)</div>\n      </div>\n    </a>\n    <a routerLink=\"reactive-forms\" routerLinkActive=\"active\" class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Formulare (Reactive Forms)</div>\n      </div>\n    </a>\n    <a routerLink=\"custom-validation\" routerLinkActive=\"active\" class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Custom Validation</div>\n      </div>\n    </a>\n  </div>\n  <div class=\"ui raised padded container segment\">\n    <router-outlet></router-outlet>\n  </div>\n  "
+            template: "\n    <div class=\"ui three small ordered steps\">\n    <a routerLink=\"modules\" routerLinkActive=\"active\" class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Module</div>\n      </div>\n    </a>\n    <a routerLink=\"lazy-loading\" routerLinkActive=\"active\" class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Lazy-Loading</div>\n      </div>\n    </a>\n    <a routerLink=\"routing-tools\" routerLinkActive=\"active\" class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Routing-Tools</div>\n      </div>\n    </a>\n  </div>\n  <div class=\"ui raised padded container segment\">\n    <router-outlet></router-outlet>\n  </div>\n  "
         }), 
         __metadata('design:paramtypes', [])
-    ], Iteration4Component);
-    return Iteration4Component;
+    ], Iteration6Component);
+    return Iteration6Component;
 }());
 
 
 /***/ },
 
-/***/ 793:
+/***/ 829:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(187);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__iteration_4_component__ = __webpack_require__(727);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__iteration_6_component__ = __webpack_require__(753);
 /* unused harmony export routes */
-/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Iteration4RoutingModule; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Iteration6RoutingModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -91,27 +91,27 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var routes = [
     {
         path: '',
-        component: __WEBPACK_IMPORTED_MODULE_2__iteration_4_component__["a" /* Iteration4Component */],
+        component: __WEBPACK_IMPORTED_MODULE_2__iteration_6_component__["a" /* Iteration6Component */],
         children: [
-            { path: '', redirectTo: 'template-driven-forms', pathMatch: 'full' },
-            { path: 'template-driven-forms', loadChildren: 'app/book-monkey/iteration-4/template-driven-forms/app.module#AppModule' },
-            { path: 'reactive-forms', loadChildren: 'app/book-monkey/iteration-4/reactive-forms/app.module#AppModule' },
-            { path: 'custom-validation', loadChildren: 'app/book-monkey/iteration-4/custom-validation/app.module#AppModule' }
+            { path: '', redirectTo: 'modules', pathMatch: 'full' },
+            { path: 'modules', loadChildren: 'app/book-monkey/iteration-6/modules/app.module#AppModule' },
+            { path: 'lazy-loading', loadChildren: 'app/book-monkey/iteration-6/lazy-loading/app.module#AppModule' },
+            { path: 'routing-tools', loadChildren: 'app/book-monkey/iteration-6/routing-tools/app.module#AppModule' }
         ]
     }
 ];
-var Iteration4RoutingModule = (function () {
-    function Iteration4RoutingModule() {
+var Iteration6RoutingModule = (function () {
+    function Iteration6RoutingModule() {
     }
-    Iteration4RoutingModule = __decorate([
+    Iteration6RoutingModule = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             imports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* RouterModule */].forChild(routes)],
             exports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* RouterModule */]],
             providers: []
         }), 
         __metadata('design:paramtypes', [])
-    ], Iteration4RoutingModule);
-    return Iteration4RoutingModule;
+    ], Iteration6RoutingModule);
+    return Iteration6RoutingModule;
 }());
 
 

@@ -1,12 +1,12 @@
-webpackJsonp([15,20],{
+webpackJsonp([17,20],{
 
-/***/ 617:
+/***/ 611:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__iteration_5_component__ = __webpack_require__(746);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__iteration_5_routing_module__ = __webpack_require__(822);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__iteration_3_component__ = __webpack_require__(722);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__iteration_3_routing_module__ = __webpack_require__(797);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -19,29 +19,29 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var Iteration5Module = (function () {
-    function Iteration5Module() {
+var Iteration3Module = (function () {
+    function Iteration3Module() {
     }
-    Iteration5Module = __decorate([
+    Iteration3Module = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
-            declarations: [__WEBPACK_IMPORTED_MODULE_1__iteration_5_component__["a" /* Iteration5Component */]],
-            imports: [__WEBPACK_IMPORTED_MODULE_2__iteration_5_routing_module__["a" /* Iteration5RoutingModule */]]
+            declarations: [__WEBPACK_IMPORTED_MODULE_1__iteration_3_component__["a" /* Iteration3Component */]],
+            imports: [__WEBPACK_IMPORTED_MODULE_2__iteration_3_routing_module__["a" /* Iteration3RoutingModule */]]
         }), 
         __metadata('design:paramtypes', [])
-    ], Iteration5Module);
-    return Iteration5Module;
+    ], Iteration3Module);
+    return Iteration3Module;
 }());
-/* harmony default export */ exports["default"] = Iteration5Module;
+/* harmony default export */ exports["default"] = Iteration3Module;
 
 
 /***/ },
 
-/***/ 746:
+/***/ 722:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Iteration5Component; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Iteration3Component; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -52,30 +52,30 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-var Iteration5Component = (function () {
-    function Iteration5Component() {
+var Iteration3Component = (function () {
+    function Iteration3Component() {
     }
-    Iteration5Component = __decorate([
+    Iteration3Component = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            template: "\n    <div class=\"ui two small ordered steps\">\n    <a routerLink=\"pipes\" routerLinkActive=\"active\" class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Pipes</div>\n      </div>\n    </a>\n    <a routerLink=\"directives\" routerLinkActive=\"active\" class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Direktiven</div>\n      </div>\n    </a>\n  </div>\n  <div class=\"ui raised padded container segment\">\n    <router-outlet></router-outlet>\n  </div>\n  "
+            template: "\n    <div class=\"ui one small ordered steps\">\n    <a routerLink=\"http\" routerLinkActive=\"active\" class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Http</div>\n      </div>\n    </a>\n  </div>\n  <div class=\"ui raised padded container segment\">\n    <router-outlet></router-outlet>\n  </div>\n  "
         }), 
         __metadata('design:paramtypes', [])
-    ], Iteration5Component);
-    return Iteration5Component;
+    ], Iteration3Component);
+    return Iteration3Component;
 }());
 
 
 /***/ },
 
-/***/ 822:
+/***/ 797:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(187);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__iteration_5_component__ = __webpack_require__(746);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__iteration_3_component__ = __webpack_require__(722);
 /* unused harmony export routes */
-/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Iteration5RoutingModule; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Iteration3RoutingModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -91,30 +91,29 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var routes = [
     {
         path: '',
-        component: __WEBPACK_IMPORTED_MODULE_2__iteration_5_component__["a" /* Iteration5Component */],
+        component: __WEBPACK_IMPORTED_MODULE_2__iteration_3_component__["a" /* Iteration3Component */],
         children: [
-            { path: '', redirectTo: 'pipes', pathMatch: 'full' },
-            { path: 'pipes', loadChildren: 'app/book-monkey/iteration-5/pipes/app.module#AppModule' },
-            { path: 'directives', loadChildren: 'app/book-monkey/iteration-5/directives/app.module#AppModule' }
+            { path: '', redirectTo: 'http', pathMatch: 'full' },
+            { path: 'http', loadChildren: 'app/book-monkey/iteration-3/http/app.module#AppModule' },
         ]
     }
 ];
-var Iteration5RoutingModule = (function () {
-    function Iteration5RoutingModule() {
+var Iteration3RoutingModule = (function () {
+    function Iteration3RoutingModule() {
     }
-    Iteration5RoutingModule = __decorate([
+    Iteration3RoutingModule = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             imports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* RouterModule */].forChild(routes)],
             exports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* RouterModule */]],
             providers: []
         }), 
         __metadata('design:paramtypes', [])
-    ], Iteration5RoutingModule);
-    return Iteration5RoutingModule;
+    ], Iteration3RoutingModule);
+    return Iteration3RoutingModule;
 }());
 
 
 /***/ }
 
 });
-//# sourceMappingURL=15.map
+//# sourceMappingURL=17.map
