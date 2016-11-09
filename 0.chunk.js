@@ -48,9 +48,7 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_7__book_book_module__["a" /* BookModule */],
                 __WEBPACK_IMPORTED_MODULE_8__admin_admin_module__["a" /* AdminModule */]
             ],
-            providers: [
-                __WEBPACK_IMPORTED_MODULE_5__shared_book_store_service__["a" /* BookStoreService */]
-            ],
+            providers: [__WEBPACK_IMPORTED_MODULE_5__shared_book_store_service__["a" /* BookStoreService */]],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* AppComponent */]]
         }), 
         __metadata('design:paramtypes', [])

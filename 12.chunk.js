@@ -40,11 +40,9 @@ var AppModule = (function () {
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_common__["a" /* CommonModule */],
                 __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* HttpModule */],
-                __WEBPACK_IMPORTED_MODULE_6__app_routing_module_one_app__["a" /* AppRoutingModule */],
+                __WEBPACK_IMPORTED_MODULE_6__app_routing_module_one_app__["a" /* AppRoutingModule */]
             ],
-            providers: [
-                __WEBPACK_IMPORTED_MODULE_5__shared_book_store_service__["a" /* BookStoreService */]
-            ],
+            providers: [__WEBPACK_IMPORTED_MODULE_5__shared_book_store_service__["a" /* BookStoreService */]],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* AppComponent */]]
         }), 
         __metadata('design:paramtypes', [])
@@ -2882,7 +2880,7 @@ var routes = [
     },
     {
         path: 'admin',
-        loadChildren: 'app/book-monkey/iteration-6/lazy-loading/admin/admin.module#AdminModule',
+        loadChildren: 'app/book-monkey/iteration-6/lazy-loading/admin/admin.module#AdminModule'
     }
 ];
 var AppRoutingModule = (function () {

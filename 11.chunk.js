@@ -42,7 +42,7 @@ var AppModule = (function () {
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_common__["a" /* CommonModule */],
                 __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* HttpModule */],
-                __WEBPACK_IMPORTED_MODULE_6__app_routing_module_one_app__["a" /* AppRoutingModule */],
+                __WEBPACK_IMPORTED_MODULE_6__app_routing_module_one_app__["a" /* AppRoutingModule */]
             ],
             providers: [
                 __WEBPACK_IMPORTED_MODULE_5__shared_book_store_service__["a" /* BookStoreService */],
@@ -2957,11 +2957,11 @@ var routes = [
     },
     {
         path: 'books',
-        loadChildren: 'app/book-monkey/iteration-6/routing-tools/book/book.module#BookModule'
+        loadChildren: './book/book.module#BookModule'
     },
     {
         path: 'admin',
-        loadChildren: 'app/book-monkey/iteration-6/routing-tools/admin/admin.module#AdminModule',
+        loadChildren: './admin/admin.module#AdminModule',
         canActivate: [__WEBPACK_IMPORTED_MODULE_3__can_navigate_to_admin_guard__["a" /* CanNavigateToAdminGuard */]]
     }
 ];

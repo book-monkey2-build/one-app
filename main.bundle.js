@@ -37083,6 +37083,14 @@ exports.isPromise = isPromise;
 /***/ function(module, exports, __webpack_require__) {
 
 var map = {
+	"./admin/admin.module": [
+		624,
+		7
+	],
+	"./book/book.module": [
+		626,
+		9
+	],
 	"app/book-monkey/iteration-1/iteration-1.module": [
 		607,
 		13
@@ -37151,17 +37159,9 @@ var map = {
 		623,
 		0
 	],
-	"app/book-monkey/iteration-6/routing-tools/admin/admin.module": [
-		624,
-		7
-	],
-	"app/book-monkey/iteration-6/routing-tools/app.module": [
+	"app/book-monkey/iteration-6/routing/app.module": [
 		625,
 		11
-	],
-	"app/book-monkey/iteration-6/routing-tools/book/book.module": [
-		626,
-		9
 	]
 };
 function webpackAsyncContext(req) {

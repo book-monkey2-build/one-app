@@ -57,7 +57,7 @@ var Iteration6Component = (function () {
     }
     Iteration6Component = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            template: "\n    <div class=\"ui three small ordered steps\">\n    <a routerLink=\"modules\" routerLinkActive=\"active\" class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Module</div>\n      </div>\n    </a>\n    <a routerLink=\"lazy-loading\" routerLinkActive=\"active\" class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Lazy-Loading</div>\n      </div>\n    </a>\n    <a routerLink=\"routing-tools\" routerLinkActive=\"active\" class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Routing-Tools</div>\n      </div>\n    </a>\n  </div>\n  <div class=\"ui raised padded container segment\">\n    <router-outlet></router-outlet>\n  </div>\n  "
+            template: "\n    <div class=\"ui three small ordered steps\">\n    <a routerLink=\"modules\" routerLinkActive=\"active\" class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Module</div>\n      </div>\n    </a>\n    <a routerLink=\"lazy-loading\" routerLinkActive=\"active\" class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Lazy-Loading</div>\n      </div>\n    </a>\n    <a routerLink=\"routing\" routerLinkActive=\"active\" class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Routing</div>\n      </div>\n    </a>\n  </div>\n  <div class=\"ui raised padded container segment\">\n    <router-outlet></router-outlet>\n  </div>\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], Iteration6Component);
@@ -96,7 +96,7 @@ var routes = [
             { path: '', redirectTo: 'modules', pathMatch: 'full' },
             { path: 'modules', loadChildren: 'app/book-monkey/iteration-6/modules/app.module#AppModule' },
             { path: 'lazy-loading', loadChildren: 'app/book-monkey/iteration-6/lazy-loading/app.module#AppModule' },
-            { path: 'routing-tools', loadChildren: 'app/book-monkey/iteration-6/routing-tools/app.module#AppModule' }
+            { path: 'routing', loadChildren: 'app/book-monkey/iteration-6/routing/app.module#AppModule' }
         ]
     }
 ];
