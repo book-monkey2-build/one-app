@@ -8639,7 +8639,7 @@ var BookFormComponent = (function () {
             description: [this.book.description],
             authors: this.buildAuthorsArray(),
             thumbnails: this.buildThumbnailsArray(),
-            published: [new Date(this.book.published)]
+            published: this.book.published
         });
         this.myForm.valueChanges.subscribe(function () { return _this.updateErrorMessages(); });
     };
