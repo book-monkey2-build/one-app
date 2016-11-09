@@ -1,4 +1,4 @@
-webpackJsonp([21,23],[
+webpackJsonp([20,22],[
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -37085,55 +37085,55 @@ exports.isPromise = isPromise;
 var map = {
 	"app/book-monkey/iteration-1/iteration-1.module": [
 		607,
-		14
+		13
 	],
 	"app/book-monkey/iteration-2/iteration-2.module": [
 		608,
-		16
+		15
 	],
 	"app/book-monkey/iteration-2/navigation/app.module": [
 		609,
-		15
+		14
 	],
 	"app/book-monkey/iteration-3/http/app.module": [
 		610,
-		5
+		6
 	],
 	"app/book-monkey/iteration-3/iteration-3.module": [
 		611,
-		20
+		19
 	],
 	"app/book-monkey/iteration-4/custom-validation/app.module": [
 		612,
-		2
+		3
 	],
 	"app/book-monkey/iteration-4/iteration-4.module": [
 		613,
-		19
+		18
 	],
 	"app/book-monkey/iteration-4/reactive-forms/app.module": [
 		614,
-		4
+		5
 	],
 	"app/book-monkey/iteration-4/template-driven-forms/app.module": [
 		615,
-		3
+		4
 	],
 	"app/book-monkey/iteration-5/directives/app.module": [
 		616,
-		0
+		1
 	],
 	"app/book-monkey/iteration-5/iteration-5.module": [
 		617,
-		18
+		17
 	],
 	"app/book-monkey/iteration-5/pipes/app.module": [
 		618,
-		1
+		2
 	],
 	"app/book-monkey/iteration-6/iteration-6.module": [
 		619,
-		17
+		16
 	],
 	"app/book-monkey/iteration-6/lazy-loading/admin/admin.module": [
 		620,
@@ -37141,30 +37141,26 @@ var map = {
 	],
 	"app/book-monkey/iteration-6/lazy-loading/app.module": [
 		621,
-		13
+		12
 	],
 	"app/book-monkey/iteration-6/lazy-loading/book/book.module": [
 		622,
-		11
-	],
-	"app/book-monkey/iteration-6/modules/admin/admin.module": [
-		623,
-		7
-	],
-	"app/book-monkey/iteration-6/modules/book/book.module": [
-		624,
 		10
 	],
+	"app/book-monkey/iteration-6/modules/app.module": [
+		623,
+		0
+	],
 	"app/book-monkey/iteration-6/routing-tools/admin/admin.module": [
-		625,
-		6
+		624,
+		7
 	],
 	"app/book-monkey/iteration-6/routing-tools/app.module": [
-		626,
-		12
+		625,
+		11
 	],
 	"app/book-monkey/iteration-6/routing-tools/book/book.module": [
-		627,
+		626,
 		9
 	]
 };
