@@ -8711,7 +8711,7 @@ var BookFormComponent = (function () {
                 ], this.isUpdatingBook ? null : this.bv.isbnExists.bind(this)],
             description: [this.book.description],
             authors: this.buildAuthorsArray(),
-            thumbnails: this.buildThumbnialsArray(),
+            thumbnails: this.buildThumbnailsArray(),
             published: [new Date(this.book.published)]
         });
         this.myForm.valueChanges.subscribe(function () { return _this.updateErrorMessages(); });
@@ -8720,7 +8720,7 @@ var BookFormComponent = (function () {
         this.authors = this.fb.array(this.book.authors, __WEBPACK_IMPORTED_MODULE_2__angular_forms__["Validators"].required);
         return this.authors;
     };
-    BookFormComponent.prototype.buildThumbnialsArray = function () {
+    BookFormComponent.prototype.buildThumbnailsArray = function () {
         var _this = this;
         this.thumbnails = this.fb.array(this.book.thumbnails.map(function (t) { return _this.fb.group({
             url: _this.fb.control(t.url),
