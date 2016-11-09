@@ -1,4 +1,4 @@
-webpackJsonp([18,20],[
+webpackJsonp([21,23],[
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -37085,15 +37085,15 @@ exports.isPromise = isPromise;
 var map = {
 	"app/book-monkey/iteration-1/iteration-1.module": [
 		607,
-		11
+		14
 	],
 	"app/book-monkey/iteration-2/iteration-2.module": [
 		608,
-		13
+		16
 	],
 	"app/book-monkey/iteration-2/navigation/app.module": [
 		609,
-		12
+		15
 	],
 	"app/book-monkey/iteration-3/http/app.module": [
 		610,
@@ -37101,7 +37101,7 @@ var map = {
 	],
 	"app/book-monkey/iteration-3/iteration-3.module": [
 		611,
-		17
+		20
 	],
 	"app/book-monkey/iteration-4/custom-validation/app.module": [
 		612,
@@ -37109,7 +37109,7 @@ var map = {
 	],
 	"app/book-monkey/iteration-4/iteration-4.module": [
 		613,
-		16
+		19
 	],
 	"app/book-monkey/iteration-4/reactive-forms/app.module": [
 		614,
@@ -37125,7 +37125,7 @@ var map = {
 	],
 	"app/book-monkey/iteration-5/iteration-5.module": [
 		617,
-		15
+		18
 	],
 	"app/book-monkey/iteration-5/pipes/app.module": [
 		618,
@@ -37133,27 +37133,39 @@ var map = {
 	],
 	"app/book-monkey/iteration-6/iteration-6.module": [
 		619,
-		14
+		17
+	],
+	"app/book-monkey/iteration-6/lazy-loading/admin/admin.module": [
+		620,
+		8
 	],
 	"app/book-monkey/iteration-6/lazy-loading/app.module": [
-		620,
-		10
+		621,
+		13
+	],
+	"app/book-monkey/iteration-6/lazy-loading/book/book.module": [
+		622,
+		11
 	],
 	"app/book-monkey/iteration-6/modules/admin/admin.module": [
-		621,
-		6
-	],
-	"app/book-monkey/iteration-6/modules/app.module": [
-		622,
-		9
-	],
-	"app/book-monkey/iteration-6/modules/book/book.module": [
 		623,
 		7
 	],
-	"app/book-monkey/iteration-6/routing-tools/app.module": [
+	"app/book-monkey/iteration-6/modules/book/book.module": [
 		624,
-		8
+		10
+	],
+	"app/book-monkey/iteration-6/routing-tools/admin/admin.module": [
+		625,
+		6
+	],
+	"app/book-monkey/iteration-6/routing-tools/app.module": [
+		626,
+		12
+	],
+	"app/book-monkey/iteration-6/routing-tools/book/book.module": [
+		627,
+		9
 	]
 };
 function webpackAsyncContext(req) {
