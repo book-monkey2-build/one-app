@@ -8714,7 +8714,7 @@ var BookFormComponent = (function () {
         this.myForm.valueChanges.subscribe(function () { return _this.updateErrorMessages(); });
     };
     BookFormComponent.prototype.buildAuthorsArray = function () {
-        this.authors = this.fb.array(this.book.authors, __WEBPACK_IMPORTED_MODULE_2__angular_forms__["Validators"].required);
+        this.authors = this.fb.array(this.book.authors, this.bv.atLeastOneAuthor);
         return this.authors;
     };
     BookFormComponent.prototype.buildThumbnailsArray = function () {
@@ -8873,6 +8873,14 @@ var BookValidatorsService = (function () {
             isbnFormat: { valid: false }
         };
     };
+    BookValidatorsService.prototype.atLeastOneAuthor = function (controlArray) {
+        var check = controlArray.controls.some(function (el) {
+            return (el.value) ? true : false;
+        });
+        return check ? null : {
+            atLeastOneAuthor: { valid: false }
+        };
+    };
     BookValidatorsService.prototype.isbnExists = function (control) {
         return this.bs.check(control.value)
             .map(function (exists) { return (exists === false) ? null : {
@@ -9023,7 +9031,7 @@ var BookFormErrorMessages = [
     new ErrorMessage('isbn', 'isbnFormat', 'Die ISBN Nummer muss aus 10 oder 13 Zeichen bestehen'),
     new ErrorMessage('isbn', 'isbnExists', 'Die ISBN Nummer existiert bereits'),
     new ErrorMessage('published', 'required', 'Es muss ein Erscheinungsdatum angegeben werden'),
-    new ErrorMessage('author', 'required', 'Es muss ein Autor angegeben werden'),
+    new ErrorMessage('authors', 'atLeastOneAuthor', 'Es muss ein Autor angegeben werden')
 ];
 
 
