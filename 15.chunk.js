@@ -260,7 +260,7 @@ var BookDetailsComponent = (function () {
         return new Array(num);
     };
     BookDetailsComponent.prototype.showBookList = function () {
-        this.showListEvent.emit(0);
+        this.showListEvent.emit();
     };
     __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(), 
