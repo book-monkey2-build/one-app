@@ -1,17 +1,17 @@
 webpackJsonp([11,22],{
 
-/***/ 625:
+/***/ 627:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common__ = __webpack_require__(80);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(670);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(671);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(775);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__home_home_component__ = __webpack_require__(779);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_book_store_service__ = __webpack_require__(688);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_routing_module_one_app__ = __webpack_require__(864);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__shared_book_resolver_service__ = __webpack_require__(694);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(776);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__home_home_component__ = __webpack_require__(780);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_book_store_service__ = __webpack_require__(689);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_routing_module_one_app__ = __webpack_require__(865);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__shared_book_resolver_service__ = __webpack_require__(695);
 /* harmony export (binding) */ __webpack_require__.d(exports, "AppModule", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -55,196 +55,6 @@ var AppModule = (function () {
     return AppModule;
 }());
 
-
-/***/ },
-
-/***/ 627:
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(global) {/* unused harmony export scheduleMicroTask */
-/* harmony export (binding) */ __webpack_require__.d(exports, "e", function() { return _global; });
-/* unused harmony export getTypeNameForDebugging */
-/* harmony export (immutable) */ exports["a"] = isPresent;
-/* harmony export (immutable) */ exports["b"] = isBlank;
-/* unused harmony export isStrictStringMap */
-/* unused harmony export isDate */
-/* unused harmony export noop */
-/* unused harmony export stringify */
-/* unused harmony export NumberWrapper */
-/* unused harmony export looseIdentical */
-/* unused harmony export normalizeBlank */
-/* unused harmony export normalizeBool */
-/* harmony export (immutable) */ exports["c"] = isJsObject;
-/* unused harmony export print */
-/* unused harmony export warn */
-/* unused harmony export setValueOnPath */
-/* harmony export (immutable) */ exports["d"] = getSymbolIterator;
-/* unused harmony export isPrimitive */
-/* unused harmony export escapeRegExp */
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-var globalScope;
-if (typeof window === 'undefined') {
-    if (typeof WorkerGlobalScope !== 'undefined' && self instanceof WorkerGlobalScope) {
-        // TODO: Replace any with WorkerGlobalScope from lib.webworker.d.ts #3492
-        globalScope = self;
-    }
-    else {
-        globalScope = global;
-    }
-}
-else {
-    globalScope = window;
-}
-function scheduleMicroTask(fn) {
-    Zone.current.scheduleMicroTask('scheduleMicrotask', fn);
-}
-// Need to declare a new variable for global here since TypeScript
-// exports the original value of the symbol.
-var _global = globalScope;
-
-function getTypeNameForDebugging(type) {
-    return type['name'] || typeof type;
-}
-// TODO: remove calls to assert in production environment
-// Note: Can't just export this and import in in other files
-// as `assert` is a reserved keyword in Dart
-_global.assert = function assert(condition) {
-    // TODO: to be fixed properly via #2830, noop for now
-};
-function isPresent(obj) {
-    return obj !== undefined && obj !== null;
-}
-function isBlank(obj) {
-    return obj === undefined || obj === null;
-}
-var STRING_MAP_PROTO = Object.getPrototypeOf({});
-function isStrictStringMap(obj) {
-    return typeof obj === 'object' && obj !== null && Object.getPrototypeOf(obj) === STRING_MAP_PROTO;
-}
-function isDate(obj) {
-    return obj instanceof Date && !isNaN(obj.valueOf());
-}
-function noop() { }
-function stringify(token) {
-    if (typeof token === 'string') {
-        return token;
-    }
-    if (token === undefined || token === null) {
-        return '' + token;
-    }
-    if (token.overriddenName) {
-        return token.overriddenName;
-    }
-    if (token.name) {
-        return token.name;
-    }
-    var res = token.toString();
-    var newLineIndex = res.indexOf('\n');
-    return newLineIndex === -1 ? res : res.substring(0, newLineIndex);
-}
-var NumberWrapper = (function () {
-    function NumberWrapper() {
-    }
-    NumberWrapper.parseIntAutoRadix = function (text) {
-        var result = parseInt(text);
-        if (isNaN(result)) {
-            throw new Error('Invalid integer literal when parsing ' + text);
-        }
-        return result;
-    };
-    NumberWrapper.parseInt = function (text, radix) {
-        if (radix == 10) {
-            if (/^(\-|\+)?[0-9]+$/.test(text)) {
-                return parseInt(text, radix);
-            }
-        }
-        else if (radix == 16) {
-            if (/^(\-|\+)?[0-9ABCDEFabcdef]+$/.test(text)) {
-                return parseInt(text, radix);
-            }
-        }
-        else {
-            var result = parseInt(text, radix);
-            if (!isNaN(result)) {
-                return result;
-            }
-        }
-        throw new Error('Invalid integer literal when parsing ' + text + ' in base ' + radix);
-    };
-    NumberWrapper.isNumeric = function (value) { return !isNaN(value - parseFloat(value)); };
-    return NumberWrapper;
-}());
-// JS has NaN !== NaN
-function looseIdentical(a, b) {
-    return a === b || typeof a === 'number' && typeof b === 'number' && isNaN(a) && isNaN(b);
-}
-function normalizeBlank(obj) {
-    return isBlank(obj) ? null : obj;
-}
-function normalizeBool(obj) {
-    return isBlank(obj) ? false : obj;
-}
-function isJsObject(o) {
-    return o !== null && (typeof o === 'function' || typeof o === 'object');
-}
-function print(obj) {
-    console.log(obj);
-}
-function warn(obj) {
-    console.warn(obj);
-}
-function setValueOnPath(global, path, value) {
-    var parts = path.split('.');
-    var obj = global;
-    while (parts.length > 1) {
-        var name = parts.shift();
-        if (obj.hasOwnProperty(name) && isPresent(obj[name])) {
-            obj = obj[name];
-        }
-        else {
-            obj = obj[name] = {};
-        }
-    }
-    if (obj === undefined || obj === null) {
-        obj = {};
-    }
-    obj[parts.shift()] = value;
-}
-var _symbolIterator = null;
-function getSymbolIterator() {
-    if (isBlank(_symbolIterator)) {
-        if (isPresent(globalScope.Symbol) && isPresent(Symbol.iterator)) {
-            _symbolIterator = Symbol.iterator;
-        }
-        else {
-            // es6-shim specific logic
-            var keys = Object.getOwnPropertyNames(Map.prototype);
-            for (var i = 0; i < keys.length; ++i) {
-                var key = keys[i];
-                if (key !== 'entries' && key !== 'size' &&
-                    Map.prototype[key] === Map.prototype['entries']) {
-                    _symbolIterator = key;
-                }
-            }
-        }
-    }
-    return _symbolIterator;
-}
-function isPrimitive(obj) {
-    return !isJsObject(obj);
-}
-function escapeRegExp(s) {
-    return s.replace(/([.*+?^=!:${}()|[\]\/\\])/g, '\\$1');
-}
-//# sourceMappingURL=lang.js.map
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(48)))
 
 /***/ },
 
@@ -339,7 +149,6 @@ var ResponseContentType;
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_facade_collection__ = __webpack_require__(676);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Headers; });
 /**
  * @license
@@ -348,7 +157,6 @@ var ResponseContentType;
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
-
 /**
  * Polyfill for [Headers](https://developer.mozilla.org/en-US/docs/Web/API/Headers/Headers), as
  * specified in the [Fetch Spec](https://fetch.spec.whatwg.org/#headers-class).
@@ -389,7 +197,7 @@ var Headers = (function () {
             return;
         }
         if (headers instanceof Headers) {
-            headers._headers.forEach(function (values, name) {
+            headers.forEach(function (values, name) {
                 values.forEach(function (value) { return _this.append(name, value); });
             });
             return;
@@ -456,7 +264,7 @@ var Headers = (function () {
     /**
      * Returns the names of the headers
      */
-    Headers.prototype.keys = function () { return __WEBPACK_IMPORTED_MODULE_0__src_facade_collection__["a" /* MapWrapper */].values(this._normalizedNames); };
+    Headers.prototype.keys = function () { return Array.from(this._normalizedNames.values()); };
     /**
      * Sets or overrides header value for given name.
      */
@@ -474,7 +282,7 @@ var Headers = (function () {
     /**
      * Returns values of all headers.
      */
-    Headers.prototype.values = function () { return __WEBPACK_IMPORTED_MODULE_0__src_facade_collection__["a" /* MapWrapper */].values(this._headers); };
+    Headers.prototype.values = function () { return Array.from(this._headers.values()); };
     /**
      * Returns string of all headers.
      */
@@ -567,9 +375,8 @@ var XSRFStrategy = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_facade_lang__ = __webpack_require__(627);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__enums__ = __webpack_require__(629);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__headers__ = __webpack_require__(634);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__enums__ = __webpack_require__(629);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__headers__ = __webpack_require__(634);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return ResponseOptions; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return BaseResponseOptions; });
 /**
@@ -584,7 +391,6 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-
 
 
 
@@ -619,12 +425,12 @@ var __extends = (this && this.__extends) || function (d, b) {
 var ResponseOptions = (function () {
     function ResponseOptions(_a) {
         var _b = _a === void 0 ? {} : _a, body = _b.body, status = _b.status, headers = _b.headers, statusText = _b.statusText, type = _b.type, url = _b.url;
-        this.body = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__src_facade_lang__["a" /* isPresent */])(body) ? body : null;
-        this.status = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__src_facade_lang__["a" /* isPresent */])(status) ? status : null;
-        this.headers = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__src_facade_lang__["a" /* isPresent */])(headers) ? headers : null;
-        this.statusText = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__src_facade_lang__["a" /* isPresent */])(statusText) ? statusText : null;
-        this.type = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__src_facade_lang__["a" /* isPresent */])(type) ? type : null;
-        this.url = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__src_facade_lang__["a" /* isPresent */])(url) ? url : null;
+        this.body = body != null ? body : null;
+        this.status = status != null ? status : null;
+        this.headers = headers != null ? headers : null;
+        this.statusText = statusText != null ? statusText : null;
+        this.type = type != null ? type : null;
+        this.url = url != null ? url : null;
     }
     /**
      * Creates a copy of the `ResponseOptions` instance, using the optional input as values to
@@ -653,13 +459,12 @@ var ResponseOptions = (function () {
      */
     ResponseOptions.prototype.merge = function (options) {
         return new ResponseOptions({
-            body: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__src_facade_lang__["a" /* isPresent */])(options) && __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__src_facade_lang__["a" /* isPresent */])(options.body) ? options.body : this.body,
-            status: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__src_facade_lang__["a" /* isPresent */])(options) && __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__src_facade_lang__["a" /* isPresent */])(options.status) ? options.status : this.status,
-            headers: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__src_facade_lang__["a" /* isPresent */])(options) && __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__src_facade_lang__["a" /* isPresent */])(options.headers) ? options.headers : this.headers,
-            statusText: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__src_facade_lang__["a" /* isPresent */])(options) && __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__src_facade_lang__["a" /* isPresent */])(options.statusText) ? options.statusText :
-                this.statusText,
-            type: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__src_facade_lang__["a" /* isPresent */])(options) && __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__src_facade_lang__["a" /* isPresent */])(options.type) ? options.type : this.type,
-            url: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__src_facade_lang__["a" /* isPresent */])(options) && __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__src_facade_lang__["a" /* isPresent */])(options.url) ? options.url : this.url,
+            body: options && options.body != null ? options.body : this.body,
+            status: options && options.status != null ? options.status : this.status,
+            headers: options && options.headers != null ? options.headers : this.headers,
+            statusText: options && options.statusText != null ? options.statusText : this.statusText,
+            type: options && options.type != null ? options.type : this.type,
+            url: options && options.url != null ? options.url : this.url,
         });
     };
     return ResponseOptions;
@@ -713,7 +518,7 @@ var ResponseOptions = (function () {
 var BaseResponseOptions = (function (_super) {
     __extends(BaseResponseOptions, _super);
     function BaseResponseOptions() {
-        _super.call(this, { status: 200, statusText: 'Ok', type: __WEBPACK_IMPORTED_MODULE_2__enums__["a" /* ResponseType */].Default, headers: new __WEBPACK_IMPORTED_MODULE_3__headers__["a" /* Headers */]() });
+        _super.call(this, { status: 200, statusText: 'Ok', type: __WEBPACK_IMPORTED_MODULE_1__enums__["a" /* ResponseType */].Default, headers: new __WEBPACK_IMPORTED_MODULE_2__headers__["a" /* Headers */]() });
     }
     BaseResponseOptions.decorators = [
         { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"] },
@@ -731,12 +536,10 @@ var BaseResponseOptions = (function (_super) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__enums__ = __webpack_require__(629);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_facade_lang__ = __webpack_require__(627);
-/* harmony export (immutable) */ exports["e"] = normalizeMethodName;
-/* harmony export (binding) */ __webpack_require__.d(exports, "d", function() { return isSuccess; });
-/* harmony export (immutable) */ exports["c"] = getResponseURL;
-/* harmony export (immutable) */ exports["b"] = stringToArrayBuffer;
-/* harmony reexport (binding) */ __webpack_require__.d(exports, "a", function() { return __WEBPACK_IMPORTED_MODULE_1__src_facade_lang__["c"]; });
+/* harmony export (immutable) */ exports["d"] = normalizeMethodName;
+/* harmony export (binding) */ __webpack_require__.d(exports, "c", function() { return isSuccess; });
+/* harmony export (immutable) */ exports["b"] = getResponseURL;
+/* harmony export (immutable) */ exports["a"] = stringToArrayBuffer;
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -783,7 +586,6 @@ function stringToArrayBuffer(input) {
     }
     return view.buffer;
 }
-
 //# sourceMappingURL=http_utils.js.map
 
 /***/ },
@@ -1015,11 +817,10 @@ var BrowserXhr = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_facade_lang__ = __webpack_require__(627);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__enums__ = __webpack_require__(629);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__headers__ = __webpack_require__(634);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__http_utils__ = __webpack_require__(638);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__url_search_params__ = __webpack_require__(639);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__enums__ = __webpack_require__(629);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__headers__ = __webpack_require__(634);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__http_utils__ = __webpack_require__(638);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__url_search_params__ = __webpack_require__(639);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return RequestOptions; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return BaseRequestOptions; });
 /**
@@ -1034,7 +835,6 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-
 
 
 
@@ -1069,16 +869,14 @@ var __extends = (this && this.__extends) || function (d, b) {
 var RequestOptions = (function () {
     function RequestOptions(_a) {
         var _b = _a === void 0 ? {} : _a, method = _b.method, headers = _b.headers, body = _b.body, url = _b.url, search = _b.search, withCredentials = _b.withCredentials, responseType = _b.responseType;
-        this.method = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__src_facade_lang__["a" /* isPresent */])(method) ? __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_4__http_utils__["e" /* normalizeMethodName */])(method) : null;
-        this.headers = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__src_facade_lang__["a" /* isPresent */])(headers) ? headers : null;
-        this.body = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__src_facade_lang__["a" /* isPresent */])(body) ? body : null;
-        this.url = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__src_facade_lang__["a" /* isPresent */])(url) ? url : null;
-        this.search = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__src_facade_lang__["a" /* isPresent */])(search) ?
-            (typeof search === 'string' ? new __WEBPACK_IMPORTED_MODULE_5__url_search_params__["a" /* URLSearchParams */]((search)) :
-                (search)) :
-            null;
-        this.withCredentials = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__src_facade_lang__["a" /* isPresent */])(withCredentials) ? withCredentials : null;
-        this.responseType = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__src_facade_lang__["a" /* isPresent */])(responseType) ? responseType : null;
+        this.method = method != null ? __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3__http_utils__["d" /* normalizeMethodName */])(method) : null;
+        this.headers = headers != null ? headers : null;
+        this.body = body != null ? body : null;
+        this.url = url != null ? url : null;
+        this.search =
+            search != null ? (typeof search === 'string' ? new __WEBPACK_IMPORTED_MODULE_4__url_search_params__["a" /* URLSearchParams */](search) : search) : null;
+        this.withCredentials = withCredentials != null ? withCredentials : null;
+        this.responseType = responseType != null ? responseType : null;
     }
     /**
      * Creates a copy of the `RequestOptions` instance, using the optional input as values to override
@@ -1107,17 +905,17 @@ var RequestOptions = (function () {
      */
     RequestOptions.prototype.merge = function (options) {
         return new RequestOptions({
-            method: options && __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__src_facade_lang__["a" /* isPresent */])(options.method) ? options.method : this.method,
-            headers: options && __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__src_facade_lang__["a" /* isPresent */])(options.headers) ? options.headers : this.headers,
-            body: options && __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__src_facade_lang__["a" /* isPresent */])(options.body) ? options.body : this.body,
-            url: options && __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__src_facade_lang__["a" /* isPresent */])(options.url) ? options.url : this.url,
-            search: options && __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__src_facade_lang__["a" /* isPresent */])(options.search) ?
-                (typeof options.search === 'string' ? new __WEBPACK_IMPORTED_MODULE_5__url_search_params__["a" /* URLSearchParams */](options.search) :
-                    (options.search).clone()) :
+            method: options && options.method != null ? options.method : this.method,
+            headers: options && options.headers != null ? options.headers : this.headers,
+            body: options && options.body != null ? options.body : this.body,
+            url: options && options.url != null ? options.url : this.url,
+            search: options && options.search != null ?
+                (typeof options.search === 'string' ? new __WEBPACK_IMPORTED_MODULE_4__url_search_params__["a" /* URLSearchParams */](options.search) :
+                    options.search.clone()) :
                 this.search,
-            withCredentials: options && __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__src_facade_lang__["a" /* isPresent */])(options.withCredentials) ? options.withCredentials :
+            withCredentials: options && options.withCredentials != null ? options.withCredentials :
                 this.withCredentials,
-            responseType: options && __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__src_facade_lang__["a" /* isPresent */])(options.responseType) ? options.responseType :
+            responseType: options && options.responseType != null ? options.responseType :
                 this.responseType
         });
     };
@@ -1172,7 +970,7 @@ var RequestOptions = (function () {
 var BaseRequestOptions = (function (_super) {
     __extends(BaseRequestOptions, _super);
     function BaseRequestOptions() {
-        _super.call(this, { method: __WEBPACK_IMPORTED_MODULE_2__enums__["b" /* RequestMethod */].Get, headers: new __WEBPACK_IMPORTED_MODULE_3__headers__["a" /* Headers */]() });
+        _super.call(this, { method: __WEBPACK_IMPORTED_MODULE_1__enums__["b" /* RequestMethod */].Get, headers: new __WEBPACK_IMPORTED_MODULE_2__headers__["a" /* Headers */]() });
     }
     BaseRequestOptions.decorators = [
         { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"] },
@@ -1250,7 +1048,6 @@ var Response = (function (_super) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_lang__ = __webpack_require__(627);
 /* unused harmony export JSONP_HOME */
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return BrowserJsonp; });
 /**
@@ -1261,13 +1058,13 @@ var Response = (function (_super) {
  * found in the LICENSE file at https://angular.io/license
  */
 
-
 var _nextRequestId = 0;
 var JSONP_HOME = '__ng_jsonp__';
 var _jsonpConnections = null;
 function _getJsonpConnections() {
+    var w = typeof window == 'object' ? window : {};
     if (_jsonpConnections === null) {
-        _jsonpConnections = __WEBPACK_IMPORTED_MODULE_1__facade_lang__["e" /* global */][JSONP_HOME] = {};
+        _jsonpConnections = w[JSONP_HOME] = {};
     }
     return _jsonpConnections;
 }
@@ -1319,10 +1116,9 @@ var BrowserJsonp = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__base_response_options__ = __webpack_require__(637);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__enums__ = __webpack_require__(629);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__facade_lang__ = __webpack_require__(627);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__interfaces__ = __webpack_require__(635);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__static_response__ = __webpack_require__(649);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__browser_jsonp__ = __webpack_require__(657);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__interfaces__ = __webpack_require__(635);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__static_response__ = __webpack_require__(649);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__browser_jsonp__ = __webpack_require__(657);
 /* unused harmony export JSONPConnection */
 /* unused harmony export JSONPConnection_ */
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return JSONPBackend; });
@@ -1339,7 +1135,6 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-
 
 
 
@@ -1393,17 +1188,17 @@ var JSONPConnection_ = (function (_super) {
                 _dom.cleanup(script);
                 if (!_this._finished) {
                     var responseOptions_1 = new __WEBPACK_IMPORTED_MODULE_2__base_response_options__["a" /* ResponseOptions */]({ body: JSONP_ERR_NO_CALLBACK, type: __WEBPACK_IMPORTED_MODULE_3__enums__["a" /* ResponseType */].Error, url: url });
-                    if (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_4__facade_lang__["a" /* isPresent */])(baseResponseOptions)) {
+                    if (baseResponseOptions) {
                         responseOptions_1 = baseResponseOptions.merge(responseOptions_1);
                     }
-                    responseObserver.error(new __WEBPACK_IMPORTED_MODULE_6__static_response__["a" /* Response */](responseOptions_1));
+                    responseObserver.error(new __WEBPACK_IMPORTED_MODULE_5__static_response__["a" /* Response */](responseOptions_1));
                     return;
                 }
                 var responseOptions = new __WEBPACK_IMPORTED_MODULE_2__base_response_options__["a" /* ResponseOptions */]({ body: _this._responseData, url: url });
-                if (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_4__facade_lang__["a" /* isPresent */])(_this.baseResponseOptions)) {
+                if (_this.baseResponseOptions) {
                     responseOptions = _this.baseResponseOptions.merge(responseOptions);
                 }
-                responseObserver.next(new __WEBPACK_IMPORTED_MODULE_6__static_response__["a" /* Response */](responseOptions));
+                responseObserver.next(new __WEBPACK_IMPORTED_MODULE_5__static_response__["a" /* Response */](responseOptions));
                 responseObserver.complete();
             };
             var onError = function (error) {
@@ -1412,10 +1207,10 @@ var JSONPConnection_ = (function (_super) {
                 _this.readyState = __WEBPACK_IMPORTED_MODULE_3__enums__["c" /* ReadyState */].Done;
                 _dom.cleanup(script);
                 var responseOptions = new __WEBPACK_IMPORTED_MODULE_2__base_response_options__["a" /* ResponseOptions */]({ body: error.message, type: __WEBPACK_IMPORTED_MODULE_3__enums__["a" /* ResponseType */].Error });
-                if (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_4__facade_lang__["a" /* isPresent */])(baseResponseOptions)) {
+                if (baseResponseOptions) {
                     responseOptions = baseResponseOptions.merge(responseOptions);
                 }
-                responseObserver.error(new __WEBPACK_IMPORTED_MODULE_6__static_response__["a" /* Response */](responseOptions));
+                responseObserver.error(new __WEBPACK_IMPORTED_MODULE_5__static_response__["a" /* Response */](responseOptions));
             };
             script.addEventListener('load', onLoad);
             script.addEventListener('error', onError);
@@ -1424,9 +1219,7 @@ var JSONPConnection_ = (function (_super) {
                 _this.readyState = __WEBPACK_IMPORTED_MODULE_3__enums__["c" /* ReadyState */].Cancelled;
                 script.removeEventListener('load', onLoad);
                 script.removeEventListener('error', onError);
-                if (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_4__facade_lang__["a" /* isPresent */])(script)) {
-                    _this._dom.cleanup(script);
-                }
+                _this._dom.cleanup(script);
             };
         });
     }
@@ -1451,7 +1244,7 @@ var JSONPBackend = (function (_super) {
         _super.apply(this, arguments);
     }
     return JSONPBackend;
-}(__WEBPACK_IMPORTED_MODULE_5__interfaces__["a" /* ConnectionBackend */]));
+}(__WEBPACK_IMPORTED_MODULE_4__interfaces__["a" /* ConnectionBackend */]));
 var JSONPBackend_ = (function (_super) {
     __extends(JSONPBackend_, _super);
     function JSONPBackend_(_browserJSONP, _baseResponseOptions) {
@@ -1467,7 +1260,7 @@ var JSONPBackend_ = (function (_super) {
     ];
     /** @nocollapse */
     JSONPBackend_.ctorParameters = [
-        { type: __WEBPACK_IMPORTED_MODULE_7__browser_jsonp__["a" /* BrowserJsonp */], },
+        { type: __WEBPACK_IMPORTED_MODULE_6__browser_jsonp__["a" /* BrowserJsonp */], },
         { type: __WEBPACK_IMPORTED_MODULE_2__base_response_options__["a" /* ResponseOptions */], },
     ];
     return JSONPBackend_;
@@ -1481,17 +1274,16 @@ var JSONPBackend_ = (function (_super) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(188);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(192);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__base_response_options__ = __webpack_require__(637);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__enums__ = __webpack_require__(629);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__facade_lang__ = __webpack_require__(627);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__headers__ = __webpack_require__(634);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__http_utils__ = __webpack_require__(638);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__interfaces__ = __webpack_require__(635);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__static_response__ = __webpack_require__(649);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__browser_xhr__ = __webpack_require__(647);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__headers__ = __webpack_require__(634);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__http_utils__ = __webpack_require__(638);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__interfaces__ = __webpack_require__(635);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__static_response__ = __webpack_require__(649);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__browser_xhr__ = __webpack_require__(647);
 /* unused harmony export XHRConnection */
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return CookieXSRFStrategy; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return XHRBackend; });
@@ -1502,7 +1294,6 @@ var JSONPBackend_ = (function (_super) {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
-
 
 
 
@@ -1531,35 +1322,41 @@ var XHRConnection = (function () {
         this.response = new __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"](function (responseObserver) {
             var _xhr = browserXHR.build();
             _xhr.open(__WEBPACK_IMPORTED_MODULE_4__enums__["b" /* RequestMethod */][req.method].toUpperCase(), req.url);
-            if (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5__facade_lang__["a" /* isPresent */])(req.withCredentials)) {
+            if (req.withCredentials != null) {
                 _xhr.withCredentials = req.withCredentials;
             }
             // load event handler
             var onLoad = function () {
-                // responseText is the old-school way of retrieving response (supported by IE8 & 9)
-                // response/responseType properties were introduced in ResourceLoader Level2 spec (supported
-                // by IE10)
-                var body = _xhr.response === undefined ? _xhr.responseText : _xhr.response;
-                // Implicitly strip a potential XSSI prefix.
-                if (typeof body === 'string')
-                    body = body.replace(XSSI_PREFIX, '');
-                var headers = __WEBPACK_IMPORTED_MODULE_6__headers__["a" /* Headers */].fromResponseHeaderString(_xhr.getAllResponseHeaders());
-                var url = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_7__http_utils__["c" /* getResponseURL */])(_xhr);
                 // normalize IE9 bug (http://bugs.jquery.com/ticket/1450)
                 var status = _xhr.status === 1223 ? 204 : _xhr.status;
+                var body = null;
+                // HTTP 204 means no content
+                if (status !== 204) {
+                    // responseText is the old-school way of retrieving response (supported by IE8 & 9)
+                    // response/responseType properties were introduced in ResourceLoader Level2 spec
+                    // (supported by IE10)
+                    body = _xhr.response == null ? _xhr.responseText : _xhr.response;
+                    // Implicitly strip a potential XSSI prefix.
+                    if (typeof body === 'string') {
+                        body = body.replace(XSSI_PREFIX, '');
+                    }
+                }
                 // fix status code when it is 0 (0 status is undocumented).
                 // Occurs when accessing file resources or on Android 4.1 stock browser
                 // while retrieving files from application cache.
                 if (status === 0) {
                     status = body ? 200 : 0;
                 }
+                var headers = __WEBPACK_IMPORTED_MODULE_5__headers__["a" /* Headers */].fromResponseHeaderString(_xhr.getAllResponseHeaders());
+                // IE 9 does not provide the way to get URL of response
+                var url = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__http_utils__["b" /* getResponseURL */])(_xhr) || req.url;
                 var statusText = _xhr.statusText || 'OK';
                 var responseOptions = new __WEBPACK_IMPORTED_MODULE_3__base_response_options__["a" /* ResponseOptions */]({ body: body, status: status, headers: headers, statusText: statusText, url: url });
-                if (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5__facade_lang__["a" /* isPresent */])(baseResponseOptions)) {
+                if (baseResponseOptions != null) {
                     responseOptions = baseResponseOptions.merge(responseOptions);
                 }
-                var response = new __WEBPACK_IMPORTED_MODULE_9__static_response__["a" /* Response */](responseOptions);
-                response.ok = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_7__http_utils__["d" /* isSuccess */])(status);
+                var response = new __WEBPACK_IMPORTED_MODULE_8__static_response__["a" /* Response */](responseOptions);
+                response.ok = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__http_utils__["c" /* isSuccess */])(status);
                 if (response.ok) {
                     responseObserver.next(response);
                     // TODO(gdi2290): defer complete if array buffer until done
@@ -1576,17 +1373,17 @@ var XHRConnection = (function () {
                     status: _xhr.status,
                     statusText: _xhr.statusText,
                 });
-                if (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5__facade_lang__["a" /* isPresent */])(baseResponseOptions)) {
+                if (baseResponseOptions != null) {
                     responseOptions = baseResponseOptions.merge(responseOptions);
                 }
-                responseObserver.error(new __WEBPACK_IMPORTED_MODULE_9__static_response__["a" /* Response */](responseOptions));
+                responseObserver.error(new __WEBPACK_IMPORTED_MODULE_8__static_response__["a" /* Response */](responseOptions));
             };
             _this.setDetectedContentType(req, _xhr);
-            if (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5__facade_lang__["a" /* isPresent */])(req.headers)) {
+            if (req.headers != null) {
                 req.headers.forEach(function (values, name) { return _xhr.setRequestHeader(name, values.join(',')); });
             }
             // Select the correct buffer type to store the response
-            if (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5__facade_lang__["a" /* isPresent */])(req.responseType) && __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5__facade_lang__["a" /* isPresent */])(_xhr.responseType)) {
+            if (req.responseType != null && _xhr.responseType != null) {
                 switch (req.responseType) {
                     case __WEBPACK_IMPORTED_MODULE_4__enums__["d" /* ResponseContentType */].ArrayBuffer:
                         _xhr.responseType = 'arraybuffer';
@@ -1614,9 +1411,9 @@ var XHRConnection = (function () {
             };
         });
     }
-    XHRConnection.prototype.setDetectedContentType = function (req /** TODO #9100 */, _xhr /** TODO #9100 */) {
+    XHRConnection.prototype.setDetectedContentType = function (req /** TODO Request */, _xhr /** XMLHttpRequest */) {
         // Skip if a custom Content-Type header is provided
-        if (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5__facade_lang__["a" /* isPresent */])(req.headers) && __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5__facade_lang__["a" /* isPresent */])(req.headers.get('Content-Type'))) {
+        if (req.headers != null && req.headers.get('Content-Type') != null) {
             return;
         }
         // Set the detected content type
@@ -1662,7 +1459,7 @@ var CookieXSRFStrategy = (function () {
     }
     CookieXSRFStrategy.prototype.configureRequest = function (req) {
         var xsrfToken = __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["a" /* __platform_browser_private__ */].getDOM().getCookie(this._cookieName);
-        if (xsrfToken && !req.headers.has(this._headerName)) {
+        if (xsrfToken) {
             req.headers.set(this._headerName, xsrfToken);
         }
     };
@@ -1709,9 +1506,9 @@ var XHRBackend = (function () {
     ];
     /** @nocollapse */
     XHRBackend.ctorParameters = [
-        { type: __WEBPACK_IMPORTED_MODULE_10__browser_xhr__["a" /* BrowserXhr */], },
+        { type: __WEBPACK_IMPORTED_MODULE_9__browser_xhr__["a" /* BrowserXhr */], },
         { type: __WEBPACK_IMPORTED_MODULE_3__base_response_options__["a" /* ResponseOptions */], },
-        { type: __WEBPACK_IMPORTED_MODULE_8__interfaces__["b" /* XSRFStrategy */], },
+        { type: __WEBPACK_IMPORTED_MODULE_7__interfaces__["b" /* XSRFStrategy */], },
     ];
     return XHRBackend;
 }());
@@ -1767,7 +1564,7 @@ var Body = (function () {
         if (this._body === null) {
             return '';
         }
-        if (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__http_utils__["a" /* isJsObject */])(this._body)) {
+        if (typeof this._body === 'object') {
             return JSON.stringify(this._body, null, 2);
         }
         return this._body.toString();
@@ -1779,7 +1576,7 @@ var Body = (function () {
         if (this._body instanceof ArrayBuffer) {
             return this._body;
         }
-        return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__http_utils__["b" /* stringToArrayBuffer */])(this.text());
+        return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__http_utils__["a" /* stringToArrayBuffer */])(this.text());
     };
     /**
       * Returns the request's body as a Blob, assuming that body exists.
@@ -1804,11 +1601,10 @@ var Body = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_facade_lang__ = __webpack_require__(627);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__base_request_options__ = __webpack_require__(648);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__enums__ = __webpack_require__(629);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__interfaces__ = __webpack_require__(635);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__static_request__ = __webpack_require__(662);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__base_request_options__ = __webpack_require__(648);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__enums__ = __webpack_require__(629);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__interfaces__ = __webpack_require__(635);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__static_request__ = __webpack_require__(662);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Http; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return Jsonp; });
 /**
@@ -1828,15 +1624,14 @@ var __extends = (this && this.__extends) || function (d, b) {
 
 
 
-
 function httpRequest(backend, request) {
     return backend.createConnection(request).response;
 }
 function mergeOptions(defaultOpts, providedOpts, method, url) {
     var newOptions = defaultOpts;
-    if (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__src_facade_lang__["a" /* isPresent */])(providedOpts)) {
+    if (providedOpts) {
         // Hack so Dart can used named parameters
-        return newOptions.merge(new __WEBPACK_IMPORTED_MODULE_2__base_request_options__["a" /* RequestOptions */]({
+        return newOptions.merge(new __WEBPACK_IMPORTED_MODULE_1__base_request_options__["a" /* RequestOptions */]({
             method: providedOpts.method || method,
             url: providedOpts.url || url,
             search: providedOpts.search,
@@ -1846,12 +1641,7 @@ function mergeOptions(defaultOpts, providedOpts, method, url) {
             responseType: providedOpts.responseType
         }));
     }
-    if (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__src_facade_lang__["a" /* isPresent */])(method)) {
-        return newOptions.merge(new __WEBPACK_IMPORTED_MODULE_2__base_request_options__["a" /* RequestOptions */]({ method: method, url: url }));
-    }
-    else {
-        return newOptions.merge(new __WEBPACK_IMPORTED_MODULE_2__base_request_options__["a" /* RequestOptions */]({ url: url }));
-    }
+    return newOptions.merge(new __WEBPACK_IMPORTED_MODULE_1__base_request_options__["a" /* RequestOptions */]({ method: method, url: url }));
 }
 /**
  * Performs http requests using `XMLHttpRequest` as the default backend.
@@ -1927,9 +1717,9 @@ var Http = (function () {
     Http.prototype.request = function (url, options) {
         var responseObservable;
         if (typeof url === 'string') {
-            responseObservable = httpRequest(this._backend, new __WEBPACK_IMPORTED_MODULE_5__static_request__["a" /* Request */](mergeOptions(this._defaultOptions, options, __WEBPACK_IMPORTED_MODULE_3__enums__["b" /* RequestMethod */].Get, url)));
+            responseObservable = httpRequest(this._backend, new __WEBPACK_IMPORTED_MODULE_4__static_request__["a" /* Request */](mergeOptions(this._defaultOptions, options, __WEBPACK_IMPORTED_MODULE_2__enums__["b" /* RequestMethod */].Get, url)));
         }
-        else if (url instanceof __WEBPACK_IMPORTED_MODULE_5__static_request__["a" /* Request */]) {
+        else if (url instanceof __WEBPACK_IMPORTED_MODULE_4__static_request__["a" /* Request */]) {
             responseObservable = httpRequest(this._backend, url);
         }
         else {
@@ -1941,51 +1731,51 @@ var Http = (function () {
      * Performs a request with `get` http method.
      */
     Http.prototype.get = function (url, options) {
-        return this.request(new __WEBPACK_IMPORTED_MODULE_5__static_request__["a" /* Request */](mergeOptions(this._defaultOptions, options, __WEBPACK_IMPORTED_MODULE_3__enums__["b" /* RequestMethod */].Get, url)));
+        return this.request(new __WEBPACK_IMPORTED_MODULE_4__static_request__["a" /* Request */](mergeOptions(this._defaultOptions, options, __WEBPACK_IMPORTED_MODULE_2__enums__["b" /* RequestMethod */].Get, url)));
     };
     /**
      * Performs a request with `post` http method.
      */
     Http.prototype.post = function (url, body, options) {
-        return this.request(new __WEBPACK_IMPORTED_MODULE_5__static_request__["a" /* Request */](mergeOptions(this._defaultOptions.merge(new __WEBPACK_IMPORTED_MODULE_2__base_request_options__["a" /* RequestOptions */]({ body: body })), options, __WEBPACK_IMPORTED_MODULE_3__enums__["b" /* RequestMethod */].Post, url)));
+        return this.request(new __WEBPACK_IMPORTED_MODULE_4__static_request__["a" /* Request */](mergeOptions(this._defaultOptions.merge(new __WEBPACK_IMPORTED_MODULE_1__base_request_options__["a" /* RequestOptions */]({ body: body })), options, __WEBPACK_IMPORTED_MODULE_2__enums__["b" /* RequestMethod */].Post, url)));
     };
     /**
      * Performs a request with `put` http method.
      */
     Http.prototype.put = function (url, body, options) {
-        return this.request(new __WEBPACK_IMPORTED_MODULE_5__static_request__["a" /* Request */](mergeOptions(this._defaultOptions.merge(new __WEBPACK_IMPORTED_MODULE_2__base_request_options__["a" /* RequestOptions */]({ body: body })), options, __WEBPACK_IMPORTED_MODULE_3__enums__["b" /* RequestMethod */].Put, url)));
+        return this.request(new __WEBPACK_IMPORTED_MODULE_4__static_request__["a" /* Request */](mergeOptions(this._defaultOptions.merge(new __WEBPACK_IMPORTED_MODULE_1__base_request_options__["a" /* RequestOptions */]({ body: body })), options, __WEBPACK_IMPORTED_MODULE_2__enums__["b" /* RequestMethod */].Put, url)));
     };
     /**
      * Performs a request with `delete` http method.
      */
     Http.prototype.delete = function (url, options) {
-        return this.request(new __WEBPACK_IMPORTED_MODULE_5__static_request__["a" /* Request */](mergeOptions(this._defaultOptions, options, __WEBPACK_IMPORTED_MODULE_3__enums__["b" /* RequestMethod */].Delete, url)));
+        return this.request(new __WEBPACK_IMPORTED_MODULE_4__static_request__["a" /* Request */](mergeOptions(this._defaultOptions, options, __WEBPACK_IMPORTED_MODULE_2__enums__["b" /* RequestMethod */].Delete, url)));
     };
     /**
      * Performs a request with `patch` http method.
      */
     Http.prototype.patch = function (url, body, options) {
-        return this.request(new __WEBPACK_IMPORTED_MODULE_5__static_request__["a" /* Request */](mergeOptions(this._defaultOptions.merge(new __WEBPACK_IMPORTED_MODULE_2__base_request_options__["a" /* RequestOptions */]({ body: body })), options, __WEBPACK_IMPORTED_MODULE_3__enums__["b" /* RequestMethod */].Patch, url)));
+        return this.request(new __WEBPACK_IMPORTED_MODULE_4__static_request__["a" /* Request */](mergeOptions(this._defaultOptions.merge(new __WEBPACK_IMPORTED_MODULE_1__base_request_options__["a" /* RequestOptions */]({ body: body })), options, __WEBPACK_IMPORTED_MODULE_2__enums__["b" /* RequestMethod */].Patch, url)));
     };
     /**
      * Performs a request with `head` http method.
      */
     Http.prototype.head = function (url, options) {
-        return this.request(new __WEBPACK_IMPORTED_MODULE_5__static_request__["a" /* Request */](mergeOptions(this._defaultOptions, options, __WEBPACK_IMPORTED_MODULE_3__enums__["b" /* RequestMethod */].Head, url)));
+        return this.request(new __WEBPACK_IMPORTED_MODULE_4__static_request__["a" /* Request */](mergeOptions(this._defaultOptions, options, __WEBPACK_IMPORTED_MODULE_2__enums__["b" /* RequestMethod */].Head, url)));
     };
     /**
      * Performs a request with `options` http method.
      */
     Http.prototype.options = function (url, options) {
-        return this.request(new __WEBPACK_IMPORTED_MODULE_5__static_request__["a" /* Request */](mergeOptions(this._defaultOptions, options, __WEBPACK_IMPORTED_MODULE_3__enums__["b" /* RequestMethod */].Options, url)));
+        return this.request(new __WEBPACK_IMPORTED_MODULE_4__static_request__["a" /* Request */](mergeOptions(this._defaultOptions, options, __WEBPACK_IMPORTED_MODULE_2__enums__["b" /* RequestMethod */].Options, url)));
     };
     Http.decorators = [
         { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"] },
     ];
     /** @nocollapse */
     Http.ctorParameters = [
-        { type: __WEBPACK_IMPORTED_MODULE_4__interfaces__["a" /* ConnectionBackend */], },
-        { type: __WEBPACK_IMPORTED_MODULE_2__base_request_options__["a" /* RequestOptions */], },
+        { type: __WEBPACK_IMPORTED_MODULE_3__interfaces__["a" /* ConnectionBackend */], },
+        { type: __WEBPACK_IMPORTED_MODULE_1__base_request_options__["a" /* RequestOptions */], },
     ];
     return Http;
 }());
@@ -2015,10 +1805,10 @@ var Jsonp = (function (_super) {
         var responseObservable;
         if (typeof url === 'string') {
             url =
-                new __WEBPACK_IMPORTED_MODULE_5__static_request__["a" /* Request */](mergeOptions(this._defaultOptions, options, __WEBPACK_IMPORTED_MODULE_3__enums__["b" /* RequestMethod */].Get, url));
+                new __WEBPACK_IMPORTED_MODULE_4__static_request__["a" /* Request */](mergeOptions(this._defaultOptions, options, __WEBPACK_IMPORTED_MODULE_2__enums__["b" /* RequestMethod */].Get, url));
         }
-        if (url instanceof __WEBPACK_IMPORTED_MODULE_5__static_request__["a" /* Request */]) {
-            if (url.method !== __WEBPACK_IMPORTED_MODULE_3__enums__["b" /* RequestMethod */].Get) {
+        if (url instanceof __WEBPACK_IMPORTED_MODULE_4__static_request__["a" /* Request */]) {
+            if (url.method !== __WEBPACK_IMPORTED_MODULE_2__enums__["b" /* RequestMethod */].Get) {
                 throw new Error('JSONP requests must use GET request method.');
             }
             responseObservable = httpRequest(this._backend, url);
@@ -2033,8 +1823,8 @@ var Jsonp = (function (_super) {
     ];
     /** @nocollapse */
     Jsonp.ctorParameters = [
-        { type: __WEBPACK_IMPORTED_MODULE_4__interfaces__["a" /* ConnectionBackend */], },
-        { type: __WEBPACK_IMPORTED_MODULE_2__base_request_options__["a" /* RequestOptions */], },
+        { type: __WEBPACK_IMPORTED_MODULE_3__interfaces__["a" /* ConnectionBackend */], },
+        { type: __WEBPACK_IMPORTED_MODULE_1__base_request_options__["a" /* RequestOptions */], },
     ];
     return Jsonp;
 }(Http));
@@ -2046,12 +1836,11 @@ var Jsonp = (function (_super) {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_facade_lang__ = __webpack_require__(627);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__body__ = __webpack_require__(660);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__enums__ = __webpack_require__(629);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__headers__ = __webpack_require__(634);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__http_utils__ = __webpack_require__(638);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__url_search_params__ = __webpack_require__(639);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__body__ = __webpack_require__(660);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__enums__ = __webpack_require__(629);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__headers__ = __webpack_require__(634);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__http_utils__ = __webpack_require__(638);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__url_search_params__ = __webpack_require__(639);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Request; });
 /**
  * @license
@@ -2065,7 +1854,6 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-
 
 
 
@@ -2118,7 +1906,7 @@ var Request = (function (_super) {
         // TODO: assert that url is present
         var url = requestOptions.url;
         this.url = requestOptions.url;
-        if (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__src_facade_lang__["a" /* isPresent */])(requestOptions.search)) {
+        if (requestOptions.search) {
             var search = requestOptions.search.toString();
             if (search.length > 0) {
                 var prefix = '?';
@@ -2130,11 +1918,10 @@ var Request = (function (_super) {
             }
         }
         this._body = requestOptions.body;
-        this.method = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_4__http_utils__["e" /* normalizeMethodName */])(requestOptions.method);
+        this.method = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3__http_utils__["d" /* normalizeMethodName */])(requestOptions.method);
         // TODO(jeffbcross): implement behavior
         // Defaults to 'omit', consistent with browser
-        // TODO(jeffbcross): implement behavior
-        this.headers = new __WEBPACK_IMPORTED_MODULE_3__headers__["a" /* Headers */](requestOptions.headers);
+        this.headers = new __WEBPACK_IMPORTED_MODULE_2__headers__["a" /* Headers */](requestOptions.headers);
         this.contentType = this.detectContentType();
         this.withCredentials = requestOptions.withCredentials;
         this.responseType = requestOptions.responseType;
@@ -2145,16 +1932,16 @@ var Request = (function (_super) {
     Request.prototype.detectContentType = function () {
         switch (this.headers.get('content-type')) {
             case 'application/json':
-                return __WEBPACK_IMPORTED_MODULE_2__enums__["e" /* ContentType */].JSON;
+                return __WEBPACK_IMPORTED_MODULE_1__enums__["e" /* ContentType */].JSON;
             case 'application/x-www-form-urlencoded':
-                return __WEBPACK_IMPORTED_MODULE_2__enums__["e" /* ContentType */].FORM;
+                return __WEBPACK_IMPORTED_MODULE_1__enums__["e" /* ContentType */].FORM;
             case 'multipart/form-data':
-                return __WEBPACK_IMPORTED_MODULE_2__enums__["e" /* ContentType */].FORM_DATA;
+                return __WEBPACK_IMPORTED_MODULE_1__enums__["e" /* ContentType */].FORM_DATA;
             case 'text/plain':
             case 'text/html':
-                return __WEBPACK_IMPORTED_MODULE_2__enums__["e" /* ContentType */].TEXT;
+                return __WEBPACK_IMPORTED_MODULE_1__enums__["e" /* ContentType */].TEXT;
             case 'application/octet-stream':
-                return __WEBPACK_IMPORTED_MODULE_2__enums__["e" /* ContentType */].BLOB;
+                return __WEBPACK_IMPORTED_MODULE_1__enums__["e" /* ContentType */].BLOB;
             default:
                 return this.detectContentTypeFromBody();
         }
@@ -2164,25 +1951,25 @@ var Request = (function (_super) {
      */
     Request.prototype.detectContentTypeFromBody = function () {
         if (this._body == null) {
-            return __WEBPACK_IMPORTED_MODULE_2__enums__["e" /* ContentType */].NONE;
+            return __WEBPACK_IMPORTED_MODULE_1__enums__["e" /* ContentType */].NONE;
         }
-        else if (this._body instanceof __WEBPACK_IMPORTED_MODULE_5__url_search_params__["a" /* URLSearchParams */]) {
-            return __WEBPACK_IMPORTED_MODULE_2__enums__["e" /* ContentType */].FORM;
+        else if (this._body instanceof __WEBPACK_IMPORTED_MODULE_4__url_search_params__["a" /* URLSearchParams */]) {
+            return __WEBPACK_IMPORTED_MODULE_1__enums__["e" /* ContentType */].FORM;
         }
         else if (this._body instanceof FormData) {
-            return __WEBPACK_IMPORTED_MODULE_2__enums__["e" /* ContentType */].FORM_DATA;
+            return __WEBPACK_IMPORTED_MODULE_1__enums__["e" /* ContentType */].FORM_DATA;
         }
         else if (this._body instanceof Blob) {
-            return __WEBPACK_IMPORTED_MODULE_2__enums__["e" /* ContentType */].BLOB;
+            return __WEBPACK_IMPORTED_MODULE_1__enums__["e" /* ContentType */].BLOB;
         }
         else if (this._body instanceof ArrayBuffer) {
-            return __WEBPACK_IMPORTED_MODULE_2__enums__["e" /* ContentType */].ARRAY_BUFFER;
+            return __WEBPACK_IMPORTED_MODULE_1__enums__["e" /* ContentType */].ARRAY_BUFFER;
         }
         else if (this._body && typeof this._body == 'object') {
-            return __WEBPACK_IMPORTED_MODULE_2__enums__["e" /* ContentType */].JSON;
+            return __WEBPACK_IMPORTED_MODULE_1__enums__["e" /* ContentType */].JSON;
         }
         else {
-            return __WEBPACK_IMPORTED_MODULE_2__enums__["e" /* ContentType */].TEXT;
+            return __WEBPACK_IMPORTED_MODULE_1__enums__["e" /* ContentType */].TEXT;
         }
     };
     /**
@@ -2191,24 +1978,24 @@ var Request = (function (_super) {
      */
     Request.prototype.getBody = function () {
         switch (this.contentType) {
-            case __WEBPACK_IMPORTED_MODULE_2__enums__["e" /* ContentType */].JSON:
+            case __WEBPACK_IMPORTED_MODULE_1__enums__["e" /* ContentType */].JSON:
                 return this.text();
-            case __WEBPACK_IMPORTED_MODULE_2__enums__["e" /* ContentType */].FORM:
+            case __WEBPACK_IMPORTED_MODULE_1__enums__["e" /* ContentType */].FORM:
                 return this.text();
-            case __WEBPACK_IMPORTED_MODULE_2__enums__["e" /* ContentType */].FORM_DATA:
+            case __WEBPACK_IMPORTED_MODULE_1__enums__["e" /* ContentType */].FORM_DATA:
                 return this._body;
-            case __WEBPACK_IMPORTED_MODULE_2__enums__["e" /* ContentType */].TEXT:
+            case __WEBPACK_IMPORTED_MODULE_1__enums__["e" /* ContentType */].TEXT:
                 return this.text();
-            case __WEBPACK_IMPORTED_MODULE_2__enums__["e" /* ContentType */].BLOB:
+            case __WEBPACK_IMPORTED_MODULE_1__enums__["e" /* ContentType */].BLOB:
                 return this.blob();
-            case __WEBPACK_IMPORTED_MODULE_2__enums__["e" /* ContentType */].ARRAY_BUFFER:
+            case __WEBPACK_IMPORTED_MODULE_1__enums__["e" /* ContentType */].ARRAY_BUFFER:
                 return this.arrayBuffer();
             default:
                 return null;
         }
     };
     return Request;
-}(__WEBPACK_IMPORTED_MODULE_1__body__["a" /* Body */]));
+}(__WEBPACK_IMPORTED_MODULE_0__body__["a" /* Body */]));
 var noop = function () { };
 var w = typeof window == 'object' ? window : noop;
 var FormData = w['FormData'] || noop;
@@ -2218,11 +2005,11 @@ var ArrayBuffer = w['ArrayBuffer'] || noop;
 
 /***/ },
 
-/***/ 670:
+/***/ 671:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_index__ = __webpack_require__(678);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_index__ = __webpack_require__(679);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(exports, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["a"]; });
 /* harmony namespace reexport (by used) */ __webpack_require__.d(exports, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["b"]; });
 /* harmony namespace reexport (by used) */ __webpack_require__.d(exports, "c", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["c"]; });
@@ -2243,264 +2030,7 @@ var ArrayBuffer = w['ArrayBuffer'] || noop;
 
 /***/ },
 
-/***/ 676:
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lang__ = __webpack_require__(627);
-/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return MapWrapper; });
-/* unused harmony export StringMapWrapper */
-/* unused harmony export ListWrapper */
-/* unused harmony export isListLikeIterable */
-/* unused harmony export areIterablesEqual */
-/* unused harmony export iterateListLike */
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-
-// Safari doesn't implement MapIterator.next(), which is used is Traceur's polyfill of Array.from
-// TODO(mlaval): remove the work around once we have a working polyfill of Array.from
-var _arrayFromMap = (function () {
-    try {
-        if ((new Map()).values().next) {
-            return function createArrayFromMap(m, getValues) {
-                return getValues ? Array.from(m.values()) : Array.from(m.keys());
-            };
-        }
-    }
-    catch (e) {
-    }
-    return function createArrayFromMapWithForeach(m, getValues) {
-        var res = new Array(m.size), i = 0;
-        m.forEach(function (v, k) {
-            res[i] = getValues ? v : k;
-            i++;
-        });
-        return res;
-    };
-})();
-var MapWrapper = (function () {
-    function MapWrapper() {
-    }
-    MapWrapper.createFromStringMap = function (stringMap) {
-        var result = new Map();
-        for (var prop in stringMap) {
-            result.set(prop, stringMap[prop]);
-        }
-        return result;
-    };
-    MapWrapper.keys = function (m) { return _arrayFromMap(m, false); };
-    MapWrapper.values = function (m) { return _arrayFromMap(m, true); };
-    return MapWrapper;
-}());
-/**
- * Wraps Javascript Objects
- */
-var StringMapWrapper = (function () {
-    function StringMapWrapper() {
-    }
-    StringMapWrapper.merge = function (m1, m2) {
-        var m = {};
-        for (var _i = 0, _a = Object.keys(m1); _i < _a.length; _i++) {
-            var k = _a[_i];
-            m[k] = m1[k];
-        }
-        for (var _b = 0, _c = Object.keys(m2); _b < _c.length; _b++) {
-            var k = _c[_b];
-            m[k] = m2[k];
-        }
-        return m;
-    };
-    StringMapWrapper.equals = function (m1, m2) {
-        var k1 = Object.keys(m1);
-        var k2 = Object.keys(m2);
-        if (k1.length != k2.length) {
-            return false;
-        }
-        for (var i = 0; i < k1.length; i++) {
-            var key = k1[i];
-            if (m1[key] !== m2[key]) {
-                return false;
-            }
-        }
-        return true;
-    };
-    return StringMapWrapper;
-}());
-var ListWrapper = (function () {
-    function ListWrapper() {
-    }
-    // JS has no way to express a statically fixed size list, but dart does so we
-    // keep both methods.
-    ListWrapper.createFixedSize = function (size) { return new Array(size); };
-    ListWrapper.createGrowableSize = function (size) { return new Array(size); };
-    ListWrapper.clone = function (array) { return array.slice(0); };
-    ListWrapper.forEachWithIndex = function (array, fn) {
-        for (var i = 0; i < array.length; i++) {
-            fn(array[i], i);
-        }
-    };
-    ListWrapper.first = function (array) {
-        if (!array)
-            return null;
-        return array[0];
-    };
-    ListWrapper.last = function (array) {
-        if (!array || array.length == 0)
-            return null;
-        return array[array.length - 1];
-    };
-    ListWrapper.indexOf = function (array, value, startIndex) {
-        if (startIndex === void 0) { startIndex = 0; }
-        return array.indexOf(value, startIndex);
-    };
-    ListWrapper.contains = function (list, el) { return list.indexOf(el) !== -1; };
-    ListWrapper.reversed = function (array) {
-        var a = ListWrapper.clone(array);
-        return a.reverse();
-    };
-    ListWrapper.concat = function (a, b) { return a.concat(b); };
-    ListWrapper.insert = function (list, index, value) { list.splice(index, 0, value); };
-    ListWrapper.removeAt = function (list, index) {
-        var res = list[index];
-        list.splice(index, 1);
-        return res;
-    };
-    ListWrapper.removeAll = function (list, items) {
-        for (var i = 0; i < items.length; ++i) {
-            var index = list.indexOf(items[i]);
-            list.splice(index, 1);
-        }
-    };
-    ListWrapper.remove = function (list, el) {
-        var index = list.indexOf(el);
-        if (index > -1) {
-            list.splice(index, 1);
-            return true;
-        }
-        return false;
-    };
-    ListWrapper.clear = function (list) { list.length = 0; };
-    ListWrapper.isEmpty = function (list) { return list.length == 0; };
-    ListWrapper.fill = function (list, value, start, end) {
-        if (start === void 0) { start = 0; }
-        if (end === void 0) { end = null; }
-        list.fill(value, start, end === null ? list.length : end);
-    };
-    ListWrapper.equals = function (a, b) {
-        if (a.length != b.length)
-            return false;
-        for (var i = 0; i < a.length; ++i) {
-            if (a[i] !== b[i])
-                return false;
-        }
-        return true;
-    };
-    ListWrapper.slice = function (l, from, to) {
-        if (from === void 0) { from = 0; }
-        if (to === void 0) { to = null; }
-        return l.slice(from, to === null ? undefined : to);
-    };
-    ListWrapper.splice = function (l, from, length) { return l.splice(from, length); };
-    ListWrapper.sort = function (l, compareFn) {
-        if (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__lang__["a" /* isPresent */])(compareFn)) {
-            l.sort(compareFn);
-        }
-        else {
-            l.sort();
-        }
-    };
-    ListWrapper.toString = function (l) { return l.toString(); };
-    ListWrapper.toJSON = function (l) { return JSON.stringify(l); };
-    ListWrapper.maximum = function (list, predicate) {
-        if (list.length == 0) {
-            return null;
-        }
-        var solution = null;
-        var maxValue = -Infinity;
-        for (var index = 0; index < list.length; index++) {
-            var candidate = list[index];
-            if (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__lang__["b" /* isBlank */])(candidate)) {
-                continue;
-            }
-            var candidateValue = predicate(candidate);
-            if (candidateValue > maxValue) {
-                solution = candidate;
-                maxValue = candidateValue;
-            }
-        }
-        return solution;
-    };
-    ListWrapper.flatten = function (list) {
-        var target = [];
-        _flattenArray(list, target);
-        return target;
-    };
-    ListWrapper.addAll = function (list, source) {
-        for (var i = 0; i < source.length; i++) {
-            list.push(source[i]);
-        }
-    };
-    return ListWrapper;
-}());
-function _flattenArray(source, target) {
-    if (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__lang__["a" /* isPresent */])(source)) {
-        for (var i = 0; i < source.length; i++) {
-            var item = source[i];
-            if (Array.isArray(item)) {
-                _flattenArray(item, target);
-            }
-            else {
-                target.push(item);
-            }
-        }
-    }
-    return target;
-}
-function isListLikeIterable(obj) {
-    if (!__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__lang__["c" /* isJsObject */])(obj))
-        return false;
-    return Array.isArray(obj) ||
-        (!(obj instanceof Map) &&
-            __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__lang__["d" /* getSymbolIterator */])() in obj); // JS Iterable have a Symbol.iterator prop
-}
-function areIterablesEqual(a, b, comparator) {
-    var iterator1 = a[__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__lang__["d" /* getSymbolIterator */])()]();
-    var iterator2 = b[__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__lang__["d" /* getSymbolIterator */])()]();
-    while (true) {
-        var item1 = iterator1.next();
-        var item2 = iterator2.next();
-        if (item1.done && item2.done)
-            return true;
-        if (item1.done || item2.done)
-            return false;
-        if (!comparator(item1.value, item2.value))
-            return false;
-    }
-}
-function iterateListLike(obj, fn) {
-    if (Array.isArray(obj)) {
-        for (var i = 0; i < obj.length; i++) {
-            fn(obj[i]);
-        }
-    }
-    else {
-        var iterator = obj[__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__lang__["d" /* getSymbolIterator */])()]();
-        var item = void 0;
-        while (!((item = iterator.next()).done)) {
-            fn(item.value);
-        }
-    }
-}
-//# sourceMappingURL=collection.js.map
-
-/***/ },
-
-/***/ 677:
+/***/ 678:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2598,7 +2128,7 @@ var JsonpModule = (function () {
 
 /***/ },
 
-/***/ 678:
+/***/ 679:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2610,7 +2140,7 @@ var JsonpModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__enums__ = __webpack_require__(629);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__headers__ = __webpack_require__(634);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__http__ = __webpack_require__(661);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__http_module__ = __webpack_require__(677);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__http_module__ = __webpack_require__(678);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__interfaces__ = __webpack_require__(635);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__static_request__ = __webpack_require__(662);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__static_response__ = __webpack_require__(649);
@@ -2665,25 +2195,25 @@ var JsonpModule = (function () {
 
 /***/ },
 
-/***/ 679:
+/***/ 680:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(15);
-var map_1 = __webpack_require__(82);
+var map_1 = __webpack_require__(86);
 Observable_1.Observable.prototype.map = map_1.map;
 //# sourceMappingURL=map.js.map
 
 /***/ },
 
-/***/ 688:
+/***/ 689:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(670);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(679);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(671);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(680);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return BookStoreService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -2743,12 +2273,12 @@ var BookStoreService = (function () {
 
 /***/ },
 
-/***/ 694:
+/***/ 695:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__book_store_service__ = __webpack_require__(688);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__book_store_service__ = __webpack_require__(689);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return BookResolver; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2779,7 +2309,7 @@ var BookResolver = (function () {
 
 /***/ },
 
-/***/ 775:
+/***/ 776:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2801,7 +2331,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'bm-root',
-            template: __webpack_require__(924)
+            template: __webpack_require__(925)
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
@@ -2811,7 +2341,7 @@ var AppComponent = (function () {
 
 /***/ },
 
-/***/ 778:
+/***/ 779:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2847,7 +2377,7 @@ var CanNavigateToAdminGuard = (function () {
 
 /***/ },
 
-/***/ 779:
+/***/ 780:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2879,15 +2409,15 @@ var HomeComponent = (function () {
 
 /***/ },
 
-/***/ 864:
+/***/ 865:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(187);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_component__ = __webpack_require__(775);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__can_navigate_to_admin_guard__ = __webpack_require__(778);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_routing_module__ = __webpack_require__(865);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(191);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_component__ = __webpack_require__(776);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__can_navigate_to_admin_guard__ = __webpack_require__(779);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_routing_module__ = __webpack_require__(866);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return AppRoutingModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2923,14 +2453,14 @@ var AppRoutingModule = (function () {
 
 /***/ },
 
-/***/ 865:
+/***/ 866:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(187);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_home_component__ = __webpack_require__(779);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__can_navigate_to_admin_guard__ = __webpack_require__(778);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(191);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_home_component__ = __webpack_require__(780);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__can_navigate_to_admin_guard__ = __webpack_require__(779);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return routes; });
 /* unused harmony export AppRoutingModule */
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -2983,7 +2513,7 @@ var AppRoutingModule = (function () {
 
 /***/ },
 
-/***/ 924:
+/***/ 925:
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"ui three item tabs menu\">\n  <a routerLink=\"home\"  routerLinkActive=\"active\" class=\"item\">Home</a>\n  <a routerLink=\"books\" routerLinkActive=\"active\" class=\"item\">Bücher</a>\n  <a routerLink=\"admin\" routerLinkActive=\"active\" class=\"item\">Administration</a>\n</div>\n<router-outlet></router-outlet>\n"
