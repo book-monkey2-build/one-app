@@ -1,4 +1,4 @@
-webpackJsonp([20,22],[
+webpackJsonp([23,25],[
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -37471,15 +37471,15 @@ exports.isPromise = isPromise;
 var map = {
 	"app/book-monkey/iteration-1/iteration-1.module": [
 		609,
-		12
+		14
 	],
 	"app/book-monkey/iteration-2/iteration-2.module": [
 		610,
-		15
+		18
 	],
 	"app/book-monkey/iteration-2/navigation/app.module": [
 		611,
-		14
+		17
 	],
 	"app/book-monkey/iteration-3/http/app.module": [
 		612,
@@ -37487,7 +37487,7 @@ var map = {
 	],
 	"app/book-monkey/iteration-3/iteration-3.module": [
 		613,
-		19
+		22
 	],
 	"app/book-monkey/iteration-4/custom-validation/app.module": [
 		614,
@@ -37495,7 +37495,7 @@ var map = {
 	],
 	"app/book-monkey/iteration-4/iteration-4.module": [
 		615,
-		18
+		21
 	],
 	"app/book-monkey/iteration-4/reactive-forms/app.module": [
 		616,
@@ -37511,43 +37511,55 @@ var map = {
 	],
 	"app/book-monkey/iteration-5/iteration-5.module": [
 		619,
-		17
+		20
 	],
 	"app/book-monkey/iteration-5/pipes/app.module": [
 		620,
 		2
 	],
-	"app/book-monkey/iteration-6/iteration-6.module": [
+	"app/book-monkey/iteration-6/guards/admin/admin.module": [
 		621,
-		16
+		9
+	],
+	"app/book-monkey/iteration-6/guards/app.module": [
+		622,
+		15
+	],
+	"app/book-monkey/iteration-6/guards/book/book.module": [
+		623,
+		12
+	],
+	"app/book-monkey/iteration-6/iteration-6.module": [
+		624,
+		19
 	],
 	"app/book-monkey/iteration-6/lazy-loading/admin/admin.module": [
-		622,
+		625,
 		8
 	],
 	"app/book-monkey/iteration-6/lazy-loading/app.module": [
-		623,
-		13
+		626,
+		16
 	],
 	"app/book-monkey/iteration-6/lazy-loading/book/book.module": [
-		624,
-		10
-	],
-	"app/book-monkey/iteration-6/modules/app.module": [
-		625,
-		0
-	],
-	"app/book-monkey/iteration-6/routing/admin/admin.module": [
-		626,
-		7
-	],
-	"app/book-monkey/iteration-6/routing/app.module": [
 		627,
 		11
 	],
-	"app/book-monkey/iteration-6/routing/book/book.module": [
+	"app/book-monkey/iteration-6/modules/app.module": [
 		628,
-		9
+		0
+	],
+	"app/book-monkey/iteration-6/resolver/admin/admin.module": [
+		629,
+		7
+	],
+	"app/book-monkey/iteration-6/resolver/app.module": [
+		630,
+		13
+	],
+	"app/book-monkey/iteration-6/resolver/book/book.module": [
+		631,
+		10
 	]
 };
 function webpackAsyncContext(req) {
