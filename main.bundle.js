@@ -35417,7 +35417,9 @@ var AppComponent = (function () {
             var url = e.urlAfterRedirects;
             var amountOfSlashes = (url.match(/\//g) || []).length;
             if (amountOfSlashes < 2) {
-                _this.repoName = 'one-app';
+                _this.repoName = 'book-monkey2';
+                _this.repositoryUrl = 'https://github.com/angular-buch/book-monkey2';
+                return;
             }
             else {
                 var parts = url.split('/');
@@ -35431,7 +35433,7 @@ var AppComponent = (function () {
         this.showSidebar = !this.showSidebar;
     };
     AppComponent.prototype.onResize = function () {
-        this.mobileLayout = (window.innerWidth < 767) ? true : false;
+        this.mobileLayout = window.innerWidth < 767;
     };
     __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["HostListener"])('window:resize', ['$event']), 
