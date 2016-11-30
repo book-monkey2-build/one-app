@@ -11,7 +11,7 @@ webpackJsonp([13,25],{
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__home_home_component__ = __webpack_require__(793);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_book_store_service__ = __webpack_require__(692);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_routing_module_one_app__ = __webpack_require__(887);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__shared_book_resolver_service__ = __webpack_require__(699);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__shared_book_resolver_service__ = __webpack_require__(695);
 /* harmony export (binding) */ __webpack_require__.d(exports, "AppModule", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2273,7 +2273,7 @@ var BookStoreService = (function () {
 
 /***/ },
 
-/***/ 699:
+/***/ 695:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";

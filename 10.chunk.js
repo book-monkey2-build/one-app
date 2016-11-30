@@ -2273,7 +2273,7 @@ var BookStoreService = (function () {
 
 /***/ },
 
-/***/ 699:
+/***/ 695:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2492,7 +2492,7 @@ var BookListItemComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(191);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__book_list_book_list_component__ = __webpack_require__(791);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__book_details_book_details_component__ = __webpack_require__(790);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__shared_book_resolver_service__ = __webpack_require__(699);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__shared_book_resolver_service__ = __webpack_require__(695);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return BookRoutingModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
