@@ -8011,7 +8011,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'bm-root',
-            template: __webpack_require__(931),
+            template: __webpack_require__(931)
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

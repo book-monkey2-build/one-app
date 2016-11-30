@@ -413,7 +413,7 @@ var BookListComponent = (function () {
     BookListComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'bm-book-list',
-            template: __webpack_require__(896),
+            template: __webpack_require__(896)
         }), 
         __metadata('design:paramtypes', [])
     ], BookListComponent);
