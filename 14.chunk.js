@@ -5,11 +5,11 @@ webpackJsonp([14,25],{
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__book_list_app_module__ = __webpack_require__(803);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__book_list_refactored_app_module__ = __webpack_require__(799);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__book_details_app_module__ = __webpack_require__(794);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__book_list_app_module__ = __webpack_require__(796);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__book_list_refactored_app_module__ = __webpack_require__(792);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__book_details_app_module__ = __webpack_require__(787);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__iteration_1_component__ = __webpack_require__(722);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__iteration_1_routing_module__ = __webpack_require__(807);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__iteration_1_routing_module__ = __webpack_require__(800);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -51,7 +51,7 @@ var Iteration1Module = (function () {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__thumbnail__ = __webpack_require__(798);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__thumbnail__ = __webpack_require__(791);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Book; });
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__thumbnail__["a"]; });
 
@@ -151,7 +151,7 @@ var AppComponent = (function () {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__thumbnail__ = __webpack_require__(802);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__thumbnail__ = __webpack_require__(795);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Book; });
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__thumbnail__["a"]; });
 
@@ -235,16 +235,16 @@ var Iteration1Component = (function () {
 
 /***/ },
 
-/***/ 794:
+/***/ 787:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common__ = __webpack_require__(84);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_component__ = __webpack_require__(718);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__book_list_book_list_component__ = __webpack_require__(797);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__book_list_item_book_list_item_component__ = __webpack_require__(796);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__book_details_book_details_component__ = __webpack_require__(795);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__book_list_book_list_component__ = __webpack_require__(790);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__book_list_item_book_list_item_component__ = __webpack_require__(789);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__book_details_book_details_component__ = __webpack_require__(788);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -286,7 +286,7 @@ var AppModule = (function () {
 
 /***/ },
 
-/***/ 795:
+/***/ 788:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -336,7 +336,7 @@ var BookDetailsComponent = (function () {
 
 /***/ },
 
-/***/ 796:
+/***/ 789:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -375,7 +375,7 @@ var BookListItemComponent = (function () {
 
 /***/ },
 
-/***/ 797:
+/***/ 790:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -423,7 +423,7 @@ var BookListComponent = (function () {
 
 /***/ },
 
-/***/ 798:
+/***/ 791:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -439,15 +439,15 @@ var Thumbnail = (function () {
 
 /***/ },
 
-/***/ 799:
+/***/ 792:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common__ = __webpack_require__(84);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_component__ = __webpack_require__(719);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__book_list_book_list_component__ = __webpack_require__(801);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__book_list_item_book_list_item_component__ = __webpack_require__(800);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__book_list_book_list_component__ = __webpack_require__(794);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__book_list_item_book_list_item_component__ = __webpack_require__(793);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -486,7 +486,7 @@ var AppModule = (function () {
 
 /***/ },
 
-/***/ 800:
+/***/ 793:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -525,7 +525,7 @@ var BookListItemComponent = (function () {
 
 /***/ },
 
-/***/ 801:
+/***/ 794:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -565,7 +565,7 @@ var BookListComponent = (function () {
 
 /***/ },
 
-/***/ 802:
+/***/ 795:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -581,14 +581,14 @@ var Thumbnail = (function () {
 
 /***/ },
 
-/***/ 803:
+/***/ 796:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common__ = __webpack_require__(84);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_component__ = __webpack_require__(721);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__book_list_book_list_component__ = __webpack_require__(804);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__book_list_book_list_component__ = __webpack_require__(797);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -625,12 +625,12 @@ var AppModule = (function () {
 
 /***/ },
 
-/***/ 804:
+/***/ 797:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_book__ = __webpack_require__(805);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_book__ = __webpack_require__(798);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return BookListComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -665,11 +665,11 @@ var BookListComponent = (function () {
 
 /***/ },
 
-/***/ 805:
+/***/ 798:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__thumbnail__ = __webpack_require__(806);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__thumbnail__ = __webpack_require__(799);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Book; });
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__thumbnail__["a"]; });
 
@@ -690,7 +690,7 @@ var Book = (function () {
 
 /***/ },
 
-/***/ 806:
+/***/ 799:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -706,7 +706,7 @@ var Thumbnail = (function () {
 
 /***/ },
 
-/***/ 807:
+/***/ 800:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";

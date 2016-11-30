@@ -4,15 +4,15 @@ webpackJsonp([11,25],{
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__shared_delay_directive__ = __webpack_require__(870);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__shared_delay_directive__ = __webpack_require__(868);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__(84);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__book_routing_module__ = __webpack_require__(869);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__book_list_book_list_component__ = __webpack_require__(779);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__book_list_item_book_list_item_component__ = __webpack_require__(868);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__book_details_book_details_component__ = __webpack_require__(778);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__shared_isbn_pipe__ = __webpack_require__(871);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__shared_zoom_directive__ = __webpack_require__(872);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__book_routing_module__ = __webpack_require__(867);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__book_list_book_list_component__ = __webpack_require__(774);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__book_list_item_book_list_item_component__ = __webpack_require__(866);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__book_details_book_details_component__ = __webpack_require__(773);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__shared_isbn_pipe__ = __webpack_require__(869);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__shared_zoom_directive__ = __webpack_require__(870);
 /* harmony export (binding) */ __webpack_require__.d(exports, "BookModule", function() { return BookModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2317,7 +2317,7 @@ var Thumbnail = (function () {
 
 /***/ },
 
-/***/ 778:
+/***/ 773:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2376,7 +2376,7 @@ var BookDetailsComponent = (function () {
 
 /***/ },
 
-/***/ 779:
+/***/ 774:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2415,7 +2415,7 @@ var BookListComponent = (function () {
 
 /***/ },
 
-/***/ 868:
+/***/ 866:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2454,14 +2454,14 @@ var BookListItemComponent = (function () {
 
 /***/ },
 
-/***/ 869:
+/***/ 867:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(191);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__book_list_book_list_component__ = __webpack_require__(779);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__book_details_book_details_component__ = __webpack_require__(778);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__book_list_book_list_component__ = __webpack_require__(774);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__book_details_book_details_component__ = __webpack_require__(773);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return BookRoutingModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2503,7 +2503,7 @@ var BookRoutingModule = (function () {
 
 /***/ },
 
-/***/ 870:
+/***/ 868:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2547,7 +2547,7 @@ var DelayDirective = (function () {
 
 /***/ },
 
-/***/ 871:
+/***/ 869:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2593,7 +2593,7 @@ var IsbnPipe = (function () {
 
 /***/ },
 
-/***/ 872:
+/***/ 870:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
