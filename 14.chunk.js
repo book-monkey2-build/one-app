@@ -399,7 +399,7 @@ var BookListComponent = (function () {
     }
     BookListComponent.prototype.ngOnInit = function () {
         this.books = [
-            new __WEBPACK_IMPORTED_MODULE_1__shared_book__["a" /* Book */]('9783864903571', 'Angular 2', ['Johannes Hoppe', 'Danny Koppenhagen', 'Ferdinand Malcher', 'Gregor Woiwode'], new Date(2016, 5, 26), 'Einstieg in die komponentenbasierte Entwicklung von Web- und Mobile-Anwendungen', 5, [new __WEBPACK_IMPORTED_MODULE_1__shared_book__["b" /* Thumbnail */]('http://goo.gl/nDi0Fc', 'Buchcover')], 'Dieses Buch vermittelt einen Schnelleinstieg in Angular 2...'),
+            new __WEBPACK_IMPORTED_MODULE_1__shared_book__["a" /* Book */]('9783864903571', 'Angular', ['Johannes Hoppe', 'Danny Koppenhagen', 'Ferdinand Malcher', 'Gregor Woiwode'], new Date(2016, 5, 26), 'Einstieg in die komponentenbasierte Entwicklung von Web- und Mobile-Anwendungen', 5, [new __WEBPACK_IMPORTED_MODULE_1__shared_book__["b" /* Thumbnail */]('http://goo.gl/nDi0Fc', 'Buchcover')], 'Dieses Buch vermittelt einen Schnelleinstieg in Angular...'),
             new __WEBPACK_IMPORTED_MODULE_1__shared_book__["a" /* Book */]('9783864901546', 'AngularJS', ['Philipp Tarasiewicz', 'Robin Böhm'], new Date(2014, 5, 29), 'Eine praktische Einführung', 5, [new __WEBPACK_IMPORTED_MODULE_1__shared_book__["b" /* Thumbnail */]('https://goo.gl/Y5lFVE', 'Buchcover')], 'Dieses Buch führt Sie anhand eines zusammenhängenden Beispielprojekts...')
         ];
     };
@@ -548,7 +548,7 @@ var BookListComponent = (function () {
     }
     BookListComponent.prototype.ngOnInit = function () {
         this.books = [
-            new __WEBPACK_IMPORTED_MODULE_1__shared_book__["a" /* Book */]('9783864903571', 'Angular 2', ['Johannes Hoppe', 'Danny Koppenhagen', 'Ferdinand Malcher', 'Gregor Woiwode'], new Date(2016, 5, 26), 'Einstieg in die komponentenbasierte Entwicklung von Web- und Mobile-Anwendungen', 5, [new __WEBPACK_IMPORTED_MODULE_1__shared_book__["b" /* Thumbnail */]('http://goo.gl/nDi0Fc', 'Buchcover')], 'Dieses Buch vermittelt einen Schnelleinstieg in Angular 2...'),
+            new __WEBPACK_IMPORTED_MODULE_1__shared_book__["a" /* Book */]('9783864903571', 'Angular', ['Johannes Hoppe', 'Danny Koppenhagen', 'Ferdinand Malcher', 'Gregor Woiwode'], new Date(2016, 5, 26), 'Einstieg in die komponentenbasierte Entwicklung von Web- und Mobile-Anwendungen', 5, [new __WEBPACK_IMPORTED_MODULE_1__shared_book__["b" /* Thumbnail */]('http://goo.gl/nDi0Fc', 'Buchcover')], 'Dieses Buch vermittelt einen Schnelleinstieg in Angular...'),
             new __WEBPACK_IMPORTED_MODULE_1__shared_book__["a" /* Book */]('9783864901546', 'AngularJS', ['Philipp Tarasiewicz', 'Robin Böhm'], new Date(2014, 5, 29), 'Eine praktische Einführung', 5, [new __WEBPACK_IMPORTED_MODULE_1__shared_book__["b" /* Thumbnail */]('https://goo.gl/Y5lFVE', 'Buchcover')], 'Dieses Buch führt Sie anhand eines zusammenhängenden Beispielprojekts...')
         ];
     };
@@ -648,7 +648,7 @@ var BookListComponent = (function () {
     }
     BookListComponent.prototype.ngOnInit = function () {
         this.books = [
-            new __WEBPACK_IMPORTED_MODULE_1__shared_book__["a" /* Book */]('9783864903571', 'Angular 2', ['Johannes Hoppe', 'Danny Koppenhagen', 'Ferdinand Malcher', 'Gregor Woiwode'], new Date(2016, 5, 26), 'Einstieg in die komponentenbasierte Entwicklung von Web- und Mobile-Anwendungen', 5, [new __WEBPACK_IMPORTED_MODULE_1__shared_book__["b" /* Thumbnail */]('http://goo.gl/nDi0Fc', 'Buchcover')], 'Dieses Buch vermittelt einen Schnelleinstieg in Angular 2...'),
+            new __WEBPACK_IMPORTED_MODULE_1__shared_book__["a" /* Book */]('9783864903571', 'Angular', ['Johannes Hoppe', 'Danny Koppenhagen', 'Ferdinand Malcher', 'Gregor Woiwode'], new Date(2016, 5, 26), 'Einstieg in die komponentenbasierte Entwicklung von Web- und Mobile-Anwendungen', 5, [new __WEBPACK_IMPORTED_MODULE_1__shared_book__["b" /* Thumbnail */]('http://goo.gl/nDi0Fc', 'Buchcover')], 'Dieses Buch vermittelt einen Schnelleinstieg in Angular...'),
             new __WEBPACK_IMPORTED_MODULE_1__shared_book__["a" /* Book */]('9783864901546', 'AngularJS', ['Philipp Tarasiewicz', 'Robin Böhm'], new Date(2014, 5, 29), 'Eine praktische Einführung', 5, [new __WEBPACK_IMPORTED_MODULE_1__shared_book__["b" /* Thumbnail */]('https://goo.gl/Y5lFVE', 'Buchcover')], 'Dieses Buch führt Sie anhand eines zusammenhängenden Beispielprojekts...')
         ];
     };

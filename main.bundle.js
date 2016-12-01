@@ -52788,7 +52788,7 @@ module.exports = "\n  <div class=\"ui sidebar inverted vertical menu\" [class.vi
 /* 584 */
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"ui vertical segment\">\n    <div class=\"ui text container\">\n      <h1 class=\"ui header\">\n        <div class=\"content\">\n          Angular 2\n          <div class=\"sub header\">Einstieg in die komponentenbasierte Entwicklung von Web- und Mobile-Anwendungen</div>\n        </div>\n      </h1>\n\n      <a href=\"http://angular-buch.com/\"><img class=\"ui right floated image\" src=\"/assets/images/book-thumbnail.png\"></a>\n\n      <h3>Der BookMonkey – Das Beispielprojekt zum Buch</h3>\n      <p></p>\n      <a routerLink=\"iteration-1\" class=\"ui huge red button\">\n        Jetzt starten\n        <i class=\"right arrow icon\"></i>\n      </a>\n    </div>\n</div>\n"
+module.exports = "<div class=\"ui vertical segment\">\n    <div class=\"ui text container\">\n      <h1 class=\"ui header\">\n        <div class=\"content\">\n          Angular\n          <div class=\"sub header\">Einstieg in die komponentenbasierte Entwicklung von Web- und Mobile-Anwendungen</div>\n        </div>\n      </h1>\n\n      <a href=\"http://angular-buch.com/\"><img class=\"ui right floated image\" src=\"/assets/images/book-thumbnail.png\"></a>\n\n      <h3>Der BookMonkey – Das Beispielprojekt zum Buch</h3>\n      <p></p>\n      <a routerLink=\"iteration-1\" class=\"ui huge red button\">\n        Jetzt starten\n        <i class=\"right arrow icon\"></i>\n      </a>\n    </div>\n</div>\n"
 
 /***/ },
 /* 585 */
