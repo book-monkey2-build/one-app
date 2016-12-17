@@ -1,12 +1,13 @@
-webpackJsonp([22,25],{
+webpackJsonp([22,26],{
 
-/***/ 613:
+/***/ 615:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__iteration_3_component__ = __webpack_require__(736);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__iteration_3_routing_module__ = __webpack_require__(815);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__iteration_3_component__ = __webpack_require__(738);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__iteration_3_routing_module__ = __webpack_require__(817);
+/* harmony export (binding) */ __webpack_require__.d(exports, "Iteration3Module", function() { return Iteration3Module; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -31,12 +32,11 @@ var Iteration3Module = (function () {
     ], Iteration3Module);
     return Iteration3Module;
 }());
-/* harmony default export */ exports["default"] = Iteration3Module;
-
+//# sourceMappingURL=/home/travis/build/angular-buch/book-monkey2/src/iteration-3.module.js.map
 
 /***/ },
 
-/***/ 736:
+/***/ 738:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57,23 +57,23 @@ var Iteration3Component = (function () {
     }
     Iteration3Component = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            template: "\n    <div class=\"ui one small ordered steps\">\n    <a routerLink=\"http\" routerLinkActive=\"active\" class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Http</div>\n      </div>\n    </a>\n  </div>\n  <div class=\"ui raised padded container segment\">\n    <router-outlet></router-outlet>\n  </div>\n  "
+            template: "\n    <div class=\"ui one small ordered steps\">\n    <a routerLink=\"http\" routerLinkActive=\"active\" class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">HTTP</div>\n      </div>\n    </a>\n  </div>\n  <div class=\"ui raised padded container segment\">\n    <router-outlet></router-outlet>\n  </div>\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], Iteration3Component);
     return Iteration3Component;
 }());
-
+//# sourceMappingURL=/home/travis/build/angular-buch/book-monkey2/src/iteration-3.component.js.map
 
 /***/ },
 
-/***/ 815:
+/***/ 817:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(191);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__iteration_3_component__ = __webpack_require__(736);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__iteration_3_component__ = __webpack_require__(738);
 /* unused harmony export routes */
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Iteration3RoutingModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -111,9 +111,9 @@ var Iteration3RoutingModule = (function () {
     ], Iteration3RoutingModule);
     return Iteration3RoutingModule;
 }());
-
+//# sourceMappingURL=/home/travis/build/angular-buch/book-monkey2/src/iteration-3-routing.module.js.map
 
 /***/ }
 
 });
-//# sourceMappingURL=22.map
+//# sourceMappingURL=22.bundle.map

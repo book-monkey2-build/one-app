@@ -1,12 +1,13 @@
-webpackJsonp([21,25],{
+webpackJsonp([21,26],{
 
-/***/ 615:
+/***/ 617:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__iteration_4_component__ = __webpack_require__(742);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__iteration_4_routing_module__ = __webpack_require__(822);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__iteration_4_component__ = __webpack_require__(744);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__iteration_4_routing_module__ = __webpack_require__(824);
+/* harmony export (binding) */ __webpack_require__.d(exports, "Iteration4Module", function() { return Iteration4Module; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -31,12 +32,11 @@ var Iteration4Module = (function () {
     ], Iteration4Module);
     return Iteration4Module;
 }());
-/* harmony default export */ exports["default"] = Iteration4Module;
-
+//# sourceMappingURL=/home/travis/build/angular-buch/book-monkey2/src/iteration-4.module.js.map
 
 /***/ },
 
-/***/ 742:
+/***/ 744:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57,23 +57,23 @@ var Iteration4Component = (function () {
     }
     Iteration4Component = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            template: "\n    <div class=\"ui three small ordered steps\">\n    <a routerLink=\"template-driven-forms\" routerLinkActive=\"active\" class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Formulare (Template-Driven)</div>\n      </div>\n    </a>\n    <a routerLink=\"reactive-forms\" routerLinkActive=\"active\" class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Formulare (Reactive Forms)</div>\n      </div>\n    </a>\n    <a routerLink=\"custom-validation\" routerLinkActive=\"active\" class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Custom Validation</div>\n      </div>\n    </a>\n  </div>\n  <div class=\"ui raised padded container segment\">\n    <router-outlet></router-outlet>\n  </div>\n  "
+            template: "\n    <div class=\"ui three small ordered steps\">\n    <a routerLink=\"template-driven-forms\" routerLinkActive=\"active\" class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Template Driven Forms</div>\n      </div>\n    </a>\n    <a routerLink=\"reactive-forms\" routerLinkActive=\"active\" class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Reactive Forms</div>\n      </div>\n    </a>\n    <a routerLink=\"custom-validation\" routerLinkActive=\"active\" class=\"step\">\n      <div class=\"content\">\n        <div class=\"title\">Custom Validation</div>\n      </div>\n    </a>\n  </div>\n  <div class=\"ui raised padded container segment\">\n    <router-outlet></router-outlet>\n  </div>\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], Iteration4Component);
     return Iteration4Component;
 }());
-
+//# sourceMappingURL=/home/travis/build/angular-buch/book-monkey2/src/iteration-4.component.js.map
 
 /***/ },
 
-/***/ 822:
+/***/ 824:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(191);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__iteration_4_component__ = __webpack_require__(742);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__iteration_4_component__ = __webpack_require__(744);
 /* unused harmony export routes */
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Iteration4RoutingModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -113,9 +113,9 @@ var Iteration4RoutingModule = (function () {
     ], Iteration4RoutingModule);
     return Iteration4RoutingModule;
 }());
-
+//# sourceMappingURL=/home/travis/build/angular-buch/book-monkey2/src/iteration-4-routing.module.js.map
 
 /***/ }
 
 });
-//# sourceMappingURL=21.map
+//# sourceMappingURL=21.bundle.map

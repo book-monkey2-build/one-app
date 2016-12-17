@@ -1,12 +1,13 @@
-webpackJsonp([20,25],{
+webpackJsonp([20,26],{
 
-/***/ 619:
+/***/ 621:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__iteration_5_component__ = __webpack_require__(758);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__iteration_5_routing_module__ = __webpack_require__(842);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__iteration_5_component__ = __webpack_require__(760);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__iteration_5_routing_module__ = __webpack_require__(844);
+/* harmony export (binding) */ __webpack_require__.d(exports, "Iteration5Module", function() { return Iteration5Module; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -31,12 +32,11 @@ var Iteration5Module = (function () {
     ], Iteration5Module);
     return Iteration5Module;
 }());
-/* harmony default export */ exports["default"] = Iteration5Module;
-
+//# sourceMappingURL=/home/travis/build/angular-buch/book-monkey2/src/iteration-5.module.js.map
 
 /***/ },
 
-/***/ 758:
+/***/ 760:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -63,17 +63,17 @@ var Iteration5Component = (function () {
     ], Iteration5Component);
     return Iteration5Component;
 }());
-
+//# sourceMappingURL=/home/travis/build/angular-buch/book-monkey2/src/iteration-5.component.js.map
 
 /***/ },
 
-/***/ 842:
+/***/ 844:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(191);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__iteration_5_component__ = __webpack_require__(758);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__iteration_5_component__ = __webpack_require__(760);
 /* unused harmony export routes */
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Iteration5RoutingModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -112,9 +112,9 @@ var Iteration5RoutingModule = (function () {
     ], Iteration5RoutingModule);
     return Iteration5RoutingModule;
 }());
-
+//# sourceMappingURL=/home/travis/build/angular-buch/book-monkey2/src/iteration-5-routing.module.js.map
 
 /***/ }
 
 });
-//# sourceMappingURL=20.map
+//# sourceMappingURL=20.bundle.map

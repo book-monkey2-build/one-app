@@ -1,15 +1,16 @@
-webpackJsonp([14,25],{
+webpackJsonp([14,26],{
 
-/***/ 609:
+/***/ 611:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__book_list_app_module__ = __webpack_require__(796);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__book_list_refactored_app_module__ = __webpack_require__(792);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__book_details_app_module__ = __webpack_require__(787);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__iteration_1_component__ = __webpack_require__(722);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__iteration_1_routing_module__ = __webpack_require__(800);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__book_list_app_module__ = __webpack_require__(798);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__book_list_refactored_app_module__ = __webpack_require__(794);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__book_details_app_module__ = __webpack_require__(789);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__iteration_1_component__ = __webpack_require__(724);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__iteration_1_routing_module__ = __webpack_require__(802);
+/* harmony export (binding) */ __webpack_require__.d(exports, "Iteration1Module", function() { return Iteration1Module; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -42,16 +43,15 @@ var Iteration1Module = (function () {
     ], Iteration1Module);
     return Iteration1Module;
 }());
-/* harmony default export */ exports["default"] = Iteration1Module;
-
+//# sourceMappingURL=/home/travis/build/angular-buch/book-monkey2/src/iteration-1.module.js.map
 
 /***/ },
 
-/***/ 704:
+/***/ 706:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__thumbnail__ = __webpack_require__(791);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__thumbnail__ = __webpack_require__(793);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Book; });
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__thumbnail__["a"]; });
 
@@ -68,11 +68,11 @@ var Book = (function () {
     }
     return Book;
 }());
-
+//# sourceMappingURL=/home/travis/build/angular-buch/book-monkey2/src/book.js.map
 
 /***/ },
 
-/***/ 718:
+/***/ 720:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -111,64 +111,7 @@ var AppComponent = (function () {
     ], AppComponent);
     return AppComponent;
 }());
-
-
-/***/ },
-
-/***/ 719:
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return AppComponent; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var AppComponent = (function () {
-    function AppComponent() {
-    }
-    AppComponent = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'bm-root',
-            template: '<bm-book-list></bm-book-list>'
-        }), 
-        __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
-}());
-
-
-/***/ },
-
-/***/ 720:
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__thumbnail__ = __webpack_require__(795);
-/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Book; });
-/* harmony reexport (binding) */ __webpack_require__.d(exports, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__thumbnail__["a"]; });
-
-var Book = (function () {
-    function Book(isbn, title, authors, published, subtitle, rating, thumbnails, description) {
-        this.isbn = isbn;
-        this.title = title;
-        this.authors = authors;
-        this.published = published;
-        this.subtitle = subtitle;
-        this.rating = rating;
-        this.thumbnails = thumbnails;
-        this.description = description;
-    }
-    return Book;
-}());
-
+//# sourceMappingURL=/home/travis/build/angular-buch/book-monkey2/src/app.component.js.map
 
 /***/ },
 
@@ -200,11 +143,68 @@ var AppComponent = (function () {
     ], AppComponent);
     return AppComponent;
 }());
-
+//# sourceMappingURL=/home/travis/build/angular-buch/book-monkey2/src/app.component.js.map
 
 /***/ },
 
 /***/ 722:
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__thumbnail__ = __webpack_require__(797);
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Book; });
+/* harmony reexport (binding) */ __webpack_require__.d(exports, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__thumbnail__["a"]; });
+
+var Book = (function () {
+    function Book(isbn, title, authors, published, subtitle, rating, thumbnails, description) {
+        this.isbn = isbn;
+        this.title = title;
+        this.authors = authors;
+        this.published = published;
+        this.subtitle = subtitle;
+        this.rating = rating;
+        this.thumbnails = thumbnails;
+        this.description = description;
+    }
+    return Book;
+}());
+//# sourceMappingURL=/home/travis/build/angular-buch/book-monkey2/src/book.js.map
+
+/***/ },
+
+/***/ 723:
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return AppComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var AppComponent = (function () {
+    function AppComponent() {
+    }
+    AppComponent = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'bm-root',
+            template: '<bm-book-list></bm-book-list>'
+        }), 
+        __metadata('design:paramtypes', [])
+    ], AppComponent);
+    return AppComponent;
+}());
+//# sourceMappingURL=/home/travis/build/angular-buch/book-monkey2/src/app.component.js.map
+
+/***/ },
+
+/***/ 724:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -225,26 +225,26 @@ var Iteration1Component = (function () {
     }
     Iteration1Component = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            template: "\n    <div class=\"ui three small ordered steps\">\n      <a routerLink=\"book-list\" routerLinkActive=\"active\" class=\"step\">\n        <div class=\"content\">\n          <div class=\"title\">Listenansicht</div>\n        </div>\n      </a>\n      <a routerLink=\"book-list-refactored\" routerLinkActive=\"active\"  class=\"step\">\n        <div class=\"content\">\n          <div class=\"title\">Verbesserte Listenansicht</div>\n        </div>\n      </a>\n      <a routerLink=\"book-details\" routerLinkActive=\"active\" class=\"step\">\n        <div class=\"content\">\n          <div class=\"title\">Detailansicht</div>\n        </div>\n      </a>\n    </div>\n    <div class=\"ui raised padded container segment\">\n      <router-outlet></router-outlet>\n    </div>\n  "
+            template: "\n    <div class=\"ui three small ordered steps\">\n      <a routerLink=\"book-list\" routerLinkActive=\"active\" class=\"step\">\n        <div class=\"content\">\n          <div class=\"title\">Koponenten</div>\n        </div>\n      </a>\n      <a routerLink=\"book-list-refactored\" routerLinkActive=\"active\"  class=\"step\">\n        <div class=\"content\">\n          <div class=\"title\">Property-Bindings</div>\n        </div>\n      </a>\n      <a routerLink=\"book-details\" routerLinkActive=\"active\" class=\"step\">\n        <div class=\"content\">\n          <div class=\"title\">Event-Bindings</div>\n        </div>\n      </a>\n    </div>\n    <div class=\"ui raised padded container segment\">\n      <router-outlet></router-outlet>\n    </div>\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], Iteration1Component);
     return Iteration1Component;
 }());
-
+//# sourceMappingURL=/home/travis/build/angular-buch/book-monkey2/src/iteration-1.component.js.map
 
 /***/ },
 
-/***/ 787:
+/***/ 789:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common__ = __webpack_require__(84);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_component__ = __webpack_require__(718);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__book_list_book_list_component__ = __webpack_require__(790);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__book_list_item_book_list_item_component__ = __webpack_require__(789);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__book_details_book_details_component__ = __webpack_require__(788);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_component__ = __webpack_require__(720);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__book_list_book_list_component__ = __webpack_require__(792);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__book_list_item_book_list_item_component__ = __webpack_require__(791);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__book_details_book_details_component__ = __webpack_require__(790);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -282,16 +282,16 @@ var AppModule = (function () {
     ], AppModule);
     return AppModule;
 }());
-
+//# sourceMappingURL=/home/travis/build/angular-buch/book-monkey2/src/app.module.js.map
 
 /***/ },
 
-/***/ 788:
+/***/ 790:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_book__ = __webpack_require__(704);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_book__ = __webpack_require__(706);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return BookDetailsComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -325,23 +325,23 @@ var BookDetailsComponent = (function () {
     BookDetailsComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'bm-book-details',
-            template: __webpack_require__(894)
+            template: __webpack_require__(896)
         }), 
         __metadata('design:paramtypes', [])
     ], BookDetailsComponent);
     return BookDetailsComponent;
     var _a;
 }());
-
+//# sourceMappingURL=/home/travis/build/angular-buch/book-monkey2/src/book-details.component.js.map
 
 /***/ },
 
-/***/ 789:
+/***/ 791:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_book__ = __webpack_require__(704);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_book__ = __webpack_require__(706);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return BookListItemComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -364,23 +364,23 @@ var BookListItemComponent = (function () {
     BookListItemComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'a.bm-book-list-item',
-            template: __webpack_require__(895)
+            template: __webpack_require__(897)
         }), 
         __metadata('design:paramtypes', [])
     ], BookListItemComponent);
     return BookListItemComponent;
     var _a;
 }());
-
+//# sourceMappingURL=/home/travis/build/angular-buch/book-monkey2/src/book-list-item.component.js.map
 
 /***/ },
 
-/***/ 790:
+/***/ 792:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_book__ = __webpack_require__(704);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_book__ = __webpack_require__(706);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return BookListComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -413,17 +413,17 @@ var BookListComponent = (function () {
     BookListComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'bm-book-list',
-            template: __webpack_require__(896)
+            template: __webpack_require__(898)
         }), 
         __metadata('design:paramtypes', [])
     ], BookListComponent);
     return BookListComponent;
 }());
-
+//# sourceMappingURL=/home/travis/build/angular-buch/book-monkey2/src/book-list.component.js.map
 
 /***/ },
 
-/***/ 791:
+/***/ 793:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -435,19 +435,19 @@ var Thumbnail = (function () {
     }
     return Thumbnail;
 }());
-
+//# sourceMappingURL=/home/travis/build/angular-buch/book-monkey2/src/thumbnail.js.map
 
 /***/ },
 
-/***/ 792:
+/***/ 794:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common__ = __webpack_require__(84);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_component__ = __webpack_require__(719);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__book_list_book_list_component__ = __webpack_require__(794);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__book_list_item_book_list_item_component__ = __webpack_require__(793);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_component__ = __webpack_require__(721);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__book_list_book_list_component__ = __webpack_require__(796);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__book_list_item_book_list_item_component__ = __webpack_require__(795);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -482,16 +482,16 @@ var AppModule = (function () {
     ], AppModule);
     return AppModule;
 }());
-
+//# sourceMappingURL=/home/travis/build/angular-buch/book-monkey2/src/app.module.js.map
 
 /***/ },
 
-/***/ 793:
+/***/ 795:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_book__ = __webpack_require__(720);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_book__ = __webpack_require__(722);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return BookListItemComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -514,23 +514,23 @@ var BookListItemComponent = (function () {
     BookListItemComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'a.bm-book-list-item',
-            template: __webpack_require__(897)
+            template: __webpack_require__(899)
         }), 
         __metadata('design:paramtypes', [])
     ], BookListItemComponent);
     return BookListItemComponent;
     var _a;
 }());
-
+//# sourceMappingURL=/home/travis/build/angular-buch/book-monkey2/src/book-list-item.component.js.map
 
 /***/ },
 
-/***/ 794:
+/***/ 796:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_book__ = __webpack_require__(720);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_book__ = __webpack_require__(722);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return BookListComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -555,17 +555,17 @@ var BookListComponent = (function () {
     BookListComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'bm-book-list',
-            template: __webpack_require__(898)
+            template: __webpack_require__(900)
         }), 
         __metadata('design:paramtypes', [])
     ], BookListComponent);
     return BookListComponent;
 }());
-
+//# sourceMappingURL=/home/travis/build/angular-buch/book-monkey2/src/book-list.component.js.map
 
 /***/ },
 
-/***/ 795:
+/***/ 797:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -577,18 +577,18 @@ var Thumbnail = (function () {
     }
     return Thumbnail;
 }());
-
+//# sourceMappingURL=/home/travis/build/angular-buch/book-monkey2/src/thumbnail.js.map
 
 /***/ },
 
-/***/ 796:
+/***/ 798:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common__ = __webpack_require__(84);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_component__ = __webpack_require__(721);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__book_list_book_list_component__ = __webpack_require__(797);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_component__ = __webpack_require__(723);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__book_list_book_list_component__ = __webpack_require__(799);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -621,16 +621,16 @@ var AppModule = (function () {
     ], AppModule);
     return AppModule;
 }());
-
+//# sourceMappingURL=/home/travis/build/angular-buch/book-monkey2/src/app.module.js.map
 
 /***/ },
 
-/***/ 797:
+/***/ 799:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_book__ = __webpack_require__(798);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_book__ = __webpack_require__(800);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return BookListComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -655,21 +655,21 @@ var BookListComponent = (function () {
     BookListComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'bm-book-list',
-            template: __webpack_require__(899)
+            template: __webpack_require__(901)
         }), 
         __metadata('design:paramtypes', [])
     ], BookListComponent);
     return BookListComponent;
 }());
-
+//# sourceMappingURL=/home/travis/build/angular-buch/book-monkey2/src/book-list.component.js.map
 
 /***/ },
 
-/***/ 798:
+/***/ 800:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__thumbnail__ = __webpack_require__(799);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__thumbnail__ = __webpack_require__(801);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Book; });
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__thumbnail__["a"]; });
 
@@ -686,11 +686,11 @@ var Book = (function () {
     }
     return Book;
 }());
-
+//# sourceMappingURL=/home/travis/build/angular-buch/book-monkey2/src/book.js.map
 
 /***/ },
 
-/***/ 799:
+/***/ 801:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -702,20 +702,20 @@ var Thumbnail = (function () {
     }
     return Thumbnail;
 }());
-
+//# sourceMappingURL=/home/travis/build/angular-buch/book-monkey2/src/thumbnail.js.map
 
 /***/ },
 
-/***/ 800:
+/***/ 802:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(191);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__iteration_1_component__ = __webpack_require__(722);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__book_list_app_component__ = __webpack_require__(721);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__book_list_refactored_app_component__ = __webpack_require__(719);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__book_details_app_component__ = __webpack_require__(718);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__iteration_1_component__ = __webpack_require__(724);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__book_list_app_component__ = __webpack_require__(723);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__book_list_refactored_app_component__ = __webpack_require__(721);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__book_details_app_component__ = __webpack_require__(720);
 /* unused harmony export routes */
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Iteration1RoutingModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -757,28 +757,14 @@ var Iteration1RoutingModule = (function () {
     ], Iteration1RoutingModule);
     return Iteration1RoutingModule;
 }());
-
-
-/***/ },
-
-/***/ 894:
-/***/ function(module, exports) {
-
-module.exports = "<div class=\"ui grid\" *ngIf=\"book\">\n  <div class=\"four wide column\">\n    <img class=\"ui large image\" [src]=\"book.thumbnails[0].url\">\n  </div>\n  <div class=\"twelve wide column\">\n    <h1 class=\"ui header\">{{ book.title }}</h1>\n    <h3 class=\"ui header\">{{ book.subtitle }}</h3>\n    <div class=\"ui divider\"></div>\n    <div class=\"ui grid\">\n      <div class=\"four wide column\">\n        <h4 class=\"ui header\">Autoren</h4>\n        <span *ngFor=\"let author of book.authors; let l=last\">\n          {{ author }}<span *ngIf=\"!l\">, </span>\n        </span>\n      </div>\n      <div class=\"four wide column\">\n        <h4 class=\"ui header\">ISBN</h4>\n        {{ book.isbn }}\n      </div>\n      <div class=\"four wide column\">\n        <h4 class=\"ui header\">Erschienen</h4>\n        {{ book.published }}\n      </div>\n      <div class=\"four wide column\">\n        <h4 class=\"ui header\">Rating</h4>\n        <i *ngFor=\"let r of getRating(book.rating)\" class=\"yellow star icon\"></i>\n      </div>\n    </div>\n  </div>\n  <div class=\"sixteen wide column\">\n    <h3 class=\"ui header\">Beschreibung</h3>\n    {{ book.description }}\n  </div>\n  <div class=\"sixteen wide column\">\n    <div class=\"ui small images\">\n      <img *ngFor=\"let thumbnail of book.thumbnails\" [src]=\"thumbnail.url\">\n    </div>\n  </div>\n</div>\n\n<button (click)=\"showBookList()\" class=\"ui red button\">Zurück zur Buchliste</button>\n"
-
-/***/ },
-
-/***/ 895:
-/***/ function(module, exports) {
-
-module.exports = "<img class=\"ui tiny image\"\n     *ngIf=\"book.thumbnails\"\n     [src]=\"book.thumbnails[0].url\"><div class=\"content\">\n  <div class=\"header\">{{ book.title }}</div>\n  <div class=\"description\"> {{ book.subtitle }} </div>\n  <div class=\"metadata\">\n    <span *ngFor=\"let author of book.authors; let l=last\">\n      {{ author }}<span *ngIf=\"!l\">, </span>\n    </span>\n  </div>\n  <div class=\"extra\">ISBN {{ book.isbn }}</div>\n</div>\n"
+//# sourceMappingURL=/home/travis/build/angular-buch/book-monkey2/src/iteration-1-routing.module.js.map
 
 /***/ },
 
 /***/ 896:
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"ui middle aligned selection divided list\">\n  <a class=\"bm-book-list-item item\"\n      *ngFor=\"let b of books\" [book]=\"b\"\n      (click)=\"showDetails(b)\">\n  </a>\n</div>\n"
+module.exports = "<div class=\"ui grid\" *ngIf=\"book\">\n  <div class=\"four wide column\">\n    <img class=\"ui large image\" [src]=\"book.thumbnails[0].url\">\n  </div>\n  <div class=\"twelve wide column\">\n    <h1 class=\"ui header\">{{ book.title }}</h1>\n    <h3 class=\"ui header\">{{ book.subtitle }}</h3>\n    <div class=\"ui divider\"></div>\n    <div class=\"ui grid\">\n      <div class=\"four wide column\">\n        <h4 class=\"ui header\">Autoren</h4>\n        <span *ngFor=\"let author of book.authors; let l=last\">\n          {{ author }}<span *ngIf=\"!l\">, </span>\n        </span>\n      </div>\n      <div class=\"four wide column\">\n        <h4 class=\"ui header\">ISBN</h4>\n        {{ book.isbn }}\n      </div>\n      <div class=\"four wide column\">\n        <h4 class=\"ui header\">Erschienen</h4>\n        {{ book.published }}\n      </div>\n      <div class=\"four wide column\">\n        <h4 class=\"ui header\">Rating</h4>\n        <i *ngFor=\"let r of getRating(book.rating)\" class=\"yellow star icon\"></i>\n      </div>\n    </div>\n  </div>\n  <div class=\"sixteen wide column\">\n    <h3 class=\"ui header\">Beschreibung</h3>\n    {{ book.description }}\n  </div>\n  <div class=\"sixteen wide column\">\n    <div class=\"ui small images\">\n      <img *ngFor=\"let thumbnail of book.thumbnails\" [src]=\"thumbnail.url\">\n    </div>\n  </div>\n</div>\n\n<button (click)=\"showBookList()\" class=\"ui red button\">Zurück zur Buchliste</button>\n"
 
 /***/ },
 
@@ -792,11 +778,25 @@ module.exports = "<img class=\"ui tiny image\"\n     *ngIf=\"book.thumbnails\"\n
 /***/ 898:
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"ui middle aligned selection divided list\">\n  <a class=\"bm-book-list-item item\" *ngFor=\"let b of books\" [book]=\"b\"></a>\n</div>\n"
+module.exports = "<div class=\"ui middle aligned selection divided list\">\n  <a class=\"bm-book-list-item item\"\n      *ngFor=\"let b of books\" [book]=\"b\"\n      (click)=\"showDetails(b)\">\n  </a>\n</div>\n"
 
 /***/ },
 
 /***/ 899:
+/***/ function(module, exports) {
+
+module.exports = "<img class=\"ui tiny image\"\n     *ngIf=\"book.thumbnails\"\n     [src]=\"book.thumbnails[0].url\"><div class=\"content\">\n  <div class=\"header\">{{ book.title }}</div>\n  <div class=\"description\"> {{ book.subtitle }} </div>\n  <div class=\"metadata\">\n    <span *ngFor=\"let author of book.authors; let l=last\">\n      {{ author }}<span *ngIf=\"!l\">, </span>\n    </span>\n  </div>\n  <div class=\"extra\">ISBN {{ book.isbn }}</div>\n</div>\n"
+
+/***/ },
+
+/***/ 900:
+/***/ function(module, exports) {
+
+module.exports = "<div class=\"ui middle aligned selection divided list\">\n  <a class=\"bm-book-list-item item\" *ngFor=\"let b of books\" [book]=\"b\"></a>\n</div>\n"
+
+/***/ },
+
+/***/ 901:
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"ui middle aligned selection divided list\">\n  <a *ngFor=\"let book of books\" class=\"item\">\n    <img class=\"ui tiny image\"\n     *ngIf=\"book.thumbnails\"\n     [src]=\"book.thumbnails[0].url\">\n    <div class=\"content\">\n      <div class=\"header\">{{ book.title }}</div>\n      <div class=\"description\"> {{ book.subtitle }} </div>\n      <div class=\"metadata\">\n        <span *ngFor=\"let author of book.authors; let l=last\">\n          {{ author }}<span *ngIf=\"!l\">, </span>\n        </span>\n      </div>\n      <div class=\"extra\">ISBN {{ book.isbn }}</div>\n    </div>\n  </a>\n</div>\n"
@@ -804,4 +804,4 @@ module.exports = "<div class=\"ui middle aligned selection divided list\">\n  <a
 /***/ }
 
 });
-//# sourceMappingURL=14.map
+//# sourceMappingURL=14.bundle.map
